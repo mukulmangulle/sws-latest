@@ -1,0 +1,310 @@
+.background-service {
+    width: 540px;
+    height: 430px;
+    background-image: url("../assets/Service/background-service.svg");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+#Typo-gray-start {
+    font-size: 18px;
+    color: gray;
+    padding: 20px 0px;
+}
+
+#typo-fray-hrading {
+    color: #053480;
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.apply-now {
+    background: linear-gradient(to bottom, #0160E7, #053480);
+    font-size: 15px;
+    width: 110px;
+    color: white !important;
+}
+
+
+
+@media (max-width:1080px) {
+    .man-reverce0 {
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: yellow;
+    }
+
+    .man-reverce1 {
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .man-reverce2 {
+
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .man-reverce1 {
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .man-reverce2 {
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+    .background-service {
+        height: 380px;
+        width: 480px;
+
+    }
+
+    .img-container {
+        height: 500px !important;
+
+    }
+
+    .service-man {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+
+    .background-service img {
+        height: 220px;
+        object-fit: cover;
+        background-position: center;
+
+    }
+
+    .man-reverce1 {
+        width: 100%;
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 60px;
+
+    }
+
+    .man-reverce2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+        margin-bottom: 10px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .background-service {
+        height: 280px;
+        width: 350px;
+
+
+    }
+
+    .img-container {
+        height: 350px !important;
+
+    }
+
+    .service-man {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+
+    .background-service img {
+        height: 200px;
+        object-fit: cover;
+        background-position: center;
+
+    }
+
+    .man-reverce1 {
+        width: 100%;
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 130px;
+
+    }
+
+    .man-reverce2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 70px;
+        margin-bottom: 10px;
+
+    }
+
+    .devlopment-text {
+        width: 300px !important;
+
+    }
+}
+
+
+
+
+
+@media (max-width: 420px) {
+    .background-service {
+        height: 250px;
+        width: 310px;
+    }
+
+    .img-container {
+        height: 320px !important;
+
+    }
+
+    .service-man {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .background-service img {
+        height: 150px;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    .man-reverce1 {
+        width: 100%;
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 180px !important;
+    }
+
+    .man-reverce2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 60px;
+        margin-bottom: 10px;
+    }
+
+    .devlopment-text {
+        width: 300px !important;
+
+    }
+}
+
+
+@media (max-width: 375px) {
+    .background-service {
+        height: 228px;
+        width: 280px;
+        margin-right: 50px;
+
+    }
+
+    .img-container {
+        height: 280px !important;
+
+    }
+
+}
+
+@media (max-width: 320px) {
+    .background-service {
+        height: 230px;
+        width: 280px;
+        margin-right: 220px;
+    }
+
+    .img-container {
+        height: 280px !important;
+
+    }
+
+    .service-man {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .background-service img {
+        height: 150px;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    .man-reverce1 {
+        width: 320px !important;
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px !important;
+    }
+
+    .man-reverce2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+        margin-bottom: 10px;
+    }
+
+    .devlopment-text {
+        width: 200px !important;
+        margin-right: 200px;
+    }
+
+}
+
+.project-requirement {
+    background-image: url("../assets/Service/background-last.png");
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    height: 370px;
+}

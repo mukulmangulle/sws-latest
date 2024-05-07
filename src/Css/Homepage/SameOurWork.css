@@ -1,0 +1,134 @@
+
+
+#work {
+    background-color:#E6edf3;
+}
+
+#work-background {
+    background: url(../assets/work/bg1.png);
+    background-repeat: no-repeat;
+}
+
+
+
+    
+#view-work {
+    width: 140px;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    border: 1px solid #053480;
+    color: #053480;
+}
+#view-work:hover {
+    background-color: #053480;
+    color: white;
+    border: none;
+}
+
+#heading {
+    padding: 1px;
+}
+
+#card{
+    position: relative;
+    border: 1px solid #053480;
+    background-color: white;
+    z-index: 0;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        transition: width 0.5s ease, height 0.5s ease;
+        z-index: -1;
+    }
+
+    &::before {
+        top: -5px;
+        left: -5px;
+        border-top: 1px solid #053480;
+        border-left: 1px solid #053480;
+    }
+
+    &::after {
+        right: -5px;
+        bottom: -5px;
+        border-bottom: 1px solid #053480;
+        border-right: 1px solid #053480;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        width: calc(100% + 9px);
+        height: calc(100% + 9px);
+    }
+}
+
+@media (max-width:420px) {
+    #heading {
+       text-align: center;
+
+    }
+
+   
+   
+
+    #card {
+        width: 320px;
+        margin: 20px;
+       
+
+    }}
+
+@media (max-width:375px) {
+    #heading {
+        font-size: 35px;
+
+    }
+
+  
+   
+
+    #card {
+        width: 260px;
+        margin: 20px;
+        height: 420px;
+    }
+    #card{
+        position: relative;
+    
+        border: 1px solid #053480;
+        background-color: white;
+    
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+    
+        &::before {
+            top: -5px;
+            left: -5px;
+            border-top: 1px solid #053480;
+            border-left: 1px solid #053480;
+        }
+    
+        &::after {
+            right: -5px;
+            bottom: -5px;
+            border-bottom: 1px solid #053480;
+            border-right: 1px solid #053480;
+        }
+    
+        &:hover::before,
+        &:hover::after {
+            width: calc(100% + 9px);
+            height: calc(100% + 9px);
+        }
+    }
+}

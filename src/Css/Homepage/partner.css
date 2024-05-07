@@ -1,0 +1,33 @@
+#size-img{
+    width: 160px;
+    height: 60px;
+    margin: 20px;
+}
+#want{
+    background: linear-gradient(to bottom, #0160E7,#053480 );
+    box-shadow:0px 0px 10px 0px #ffffff;
+}
+
+@media (max-width:480px) {
+    #want{
+        height:auto;
+        padding: 20px; 
+    }
+    #size-img{
+        width: 190px;
+        height: 80px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+             
+    }
+
+}
+@media (max-width:700px) {
+    #life-soham{
+        width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     
+   }
+}

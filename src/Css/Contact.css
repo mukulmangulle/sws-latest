@@ -1,0 +1,78 @@
+.map-img {
+    background-size: cover;
+    background-position: "center";
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.GETINTOUCH2 {
+    background: linear-gradient(to bottom, #0160E7, #053480);
+    border-radius: 0 18px 18px 0px;
+}
+
+@media (max-width:1080px) {
+    .GETINTOUCH {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: none;
+
+    }
+
+    .GETINTOUCH1 {
+
+        width: 100%;
+    }
+
+    .GETINTOUCH2 {
+
+        background-color: yellow;
+        border-radius: 40px;
+        margin-bottom: 30px;
+
+
+    }
+}
+
+
+@media (max-width:610px) {
+    #boxShadow {
+        box-shadow: none;
+    }
+}
+
+
+@media (max-width:480px) {
+    .GETINTOUCH2 {
+        width: 320px;
+        margin: 0%;
+        padding: 0%;
+
+    }
+}
+
+
+
+@media (max-width:420px) {
+    .GETINTOUCH2 {
+        width: 420px;
+        margin: 0%;
+        padding: 0%;
+        border-radius: 20px;
+
+    }
+}
+
+
+
+@media (max-width:320px) {
+
+    .css-zluqlp{
+        width:85% !important;
+    }
+
+    
+}

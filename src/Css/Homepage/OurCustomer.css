@@ -1,0 +1,9 @@
+.slick-slider div{
+    background-color: #e6f0fd;
+}
+
+.slick-slider{
+     background-color: none;
+     margin: 0px 400px;
+     width: 79%;  
+}

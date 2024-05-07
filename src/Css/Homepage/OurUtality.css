@@ -1,0 +1,60 @@
+
+
+@media (max-width:520px) {
+    #web-devlopment {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #web-devlopment-child {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #web-devlopment-img {
+        height: 70px;
+    }
+
+    #web-devlopment-typo {
+        font-size: 22px;
+        width: 200px;
+
+    }
+}
+
+@media (max-width:375px) {
+   
+    #web-devlopment {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #web-devlopment-child {
+
+        width: 74%;
+
+    }
+
+    #web-devlopment-img {
+        height: 50px;
+        
+    }
+
+    #web-devlopment-typo {
+        font-size: 20px;
+        width: 200px;
+        padding: 5px;
+
+    }
+
+}

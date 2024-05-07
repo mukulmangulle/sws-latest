@@ -1,0 +1,99 @@
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { Box, Typography } from "@mui/material";
+import Our1 from "../assets/ourCustomer/our1.svg";
+import Our2 from "../assets/ourCustomer/our2.svg";
+import Our3 from "../assets/ourCustomer/our3.svg";
+import Our4 from "../assets/ourCustomer/our4.svg";
+import Our5 from "../assets/ourCustomer/our5.svg";
+import Our6 from "../assets/ourCustomer/our6.svg";
+import { useSelector } from 'react-redux';
+
+
+function OurCustomer() {
+    const { contents } = useSelector((state) => state.content);
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 3000,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 0,
+        cssEase: 'linear',
+        variableWidth: true,
+        swipeToSlide: true,
+        touchMove: true,
+        centerMode: true,
+        centerPadding: '0',
+    };
+
+    const boxStyle = {
+        padding: '0 15px',
+        background: 'white',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: "10px",
+
+    };
+
+    const imageStyle = {
+        width: '100px',
+        height: '70px',
+        alignItems: "center"
+
+    };
+
+    return (
+
+        <Box padding={5} bgcolor={"#e6f0fd"} display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexDirection={'column'} >
+            <Box display={'flex'} alignItems={'center'} flexDirection={'column'} textAlign={'center'}>
+                <Typography id='Heading-h2' variant='h2' >
+                    {contents.ourCustomers.heading}
+                </Typography>
+                <Typography width={'67%'} id="Typography-black" paddingTop={2}>
+                {contents.ourCustomers.contant}
+                </Typography>
+
+            </Box>
+            <Slider {...settings}>
+                <Box bgcolor="white"  margin={3}>
+                    <Box className="box" style={boxStyle}>
+                        <img src={Our1} alt="Our 1" style={imageStyle} />
+                    </Box>
+                </Box>
+                <Box bgcolor="white" borderRadius={5} margin={3}>
+                    <Box className="box" style={boxStyle}>
+                        <img src={Our2} alt="Our 2" style={imageStyle} />
+                    </Box>
+                </Box>
+                <Box bgcolor="white" borderRadius={5} margin={3}>
+                    <Box className="box" style={boxStyle}>
+                        <img src={Our3} alt="Our 3" style={imageStyle} />
+                    </Box>
+                </Box>
+                <Box bgcolor="white"  borderRadius={5} margin={3}>
+                    <Box className="box" style={boxStyle}>
+                        <img src={Our4} alt="Our 4" style={imageStyle} />
+                    </Box>
+                </Box>
+                <Box bgcolor="white" borderRadius={5} margin={3}>
+                    <Box className="box" style={boxStyle}>
+                        <img src={Our5} alt="Our 5" style={imageStyle} />
+                    </Box>
+                </Box>
+                <Box bgcolor="white"  borderRadius={5} margin={3} >
+                    <Box className="box" style={boxStyle}>
+                        <img src={Our6} alt="Our 6" style={imageStyle} />
+                    </Box>
+                </Box>
+            </Slider>
+        </Box>
+    );
+}
+
+export default OurCustomer;

@@ -1,0 +1,16 @@
+.home{
+    background: linear-gradient(to bottom, #0160E7,#053480 );
+    }
+    
+@media (max-width:420px){
+    .home{
+        font-size:10.5px;    
+    } 
+   
+} 
+
+@media (max-width:760px) {
+    #home-lastSection{
+        display: none;
+    }
+}

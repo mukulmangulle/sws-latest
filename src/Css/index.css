@@ -1,0 +1,63 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+/* Heading */
+#Heading-h2 {
+    color: #053480;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+@media (max-width:576px) {
+    #Heading-h2 {
+        font-size: 40px;
+
+    }
+}
+
+@media (max-width:375px) {
+    #Heading-h2 {
+        font-size: 30px;
+
+    }
+}
+
+#typography {
+    margin: 0.5px;
+    font-size: 18px;
+    color: white;
+}
+
+#Typography-gray {
+    font-size: 18px;
+    color: gray;
+    text-align: center;
+}
+
+#Typography-black {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+#display-align-justi-Wrap{
+     display:"flex";
+     align-items: center;
+     justify-content: center;
+    flex-wrap: wrap;
+}
+
+#display-align-justi{
+    display:"flex";
+    align-items: center;
+    justify-content: center;
+   flex-wrap: wrap;
+}

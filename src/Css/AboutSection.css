@@ -1,0 +1,129 @@
+#submit{
+    width:"150px";
+    height:"50px";
+    background: linear-gradient(to bottom, #0160E7,#053480 );
+    margin-top: 50px;
+    color: white;
+}
+#Technology-focus-grid{     
+     background: white !important;
+     width: 280px;
+     height: 250px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+}
+
+@media (max-width:580px) {
+    #aboutsectionimg {
+        width: 400px;
+        margin-top: 0px;
+        padding-top: 0%;
+    }
+
+    #aboutsectiontypo {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #team {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:375px) {
+    #aboutsectionimg {
+        height: 230px;
+        margin-top: -50px;
+        margin-bottom: 10px;
+    }
+
+    #about-soham {
+        font-size: 25px;
+    }
+}
+
+/* form section */
+@media (max-width:480px) {
+    #form-control {
+        width: 350px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    #form-control {
+        width: 280px;
+        padding: 10px;
+    }
+}
+
+/* someour work2 */
+@media (max-width:420px) {
+    #heading {
+        text-align: center;
+    }
+
+    #heading2 {
+        font-size: 15px;
+        padding: 15px 30px;
+        margin: 10px;
+
+    }
+
+    #card {
+        width: 320px;
+        margin: 20px;
+
+    }
+}
+
+@media (max-width:375px) {
+    #heading2 {
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+
+    #cardnew {
+        width: 260px;
+        margin: 20px;
+        height: 420px;
+    }
+}
+
+@media (max-width:320px) {
+
+
+    #heading2 {
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+
+    #cardnew {
+        width: 260px;
+        margin: 20px;
+        height: 420px;
+    }
+}
+
+/* leadership team */
+@media (max-width:375px) {
+
+    #sir {
+        width: 250px;
+    }
+}
+
+/* form contorl */
+@media (max-width:768px) {
+    #form-control {
+        box-shadow: none !important;
+        width: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+.apply-now-Team{
+          background: linear-gradient(to bottom, #0160E7, #053480);
+          font-size: 15px;
+          width: 110px;
+           margin-left: 20px !important;
+           margin-bottom: 30px !important;
+           color: white !important;
+}
+
+
+
+@media (max-width:768px) {
+     .we-man{
+          display: flex;
+         
+          align-items: center;
+          justify-content: center;
+          flex-direction: column !important;
+     }
+   }

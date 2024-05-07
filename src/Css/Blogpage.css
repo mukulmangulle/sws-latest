@@ -1,0 +1,36 @@
+.blogsimg{
+  background-size: cover;
+  object-fit: cover;
+  height: 286px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card-heading{
+    font-weight: 550 !important;
+    color: #053480;
+    line-height:25px !important ;
+}
+.card-typography{
+  font-size: 15px !important;
+  line-height: 25px !important;
+  padding-top: 16px !important;
+}
+
+
+
+/* fontSize={15} lineHeight={"25px"} paddingTop={1} */
+.gradientbutton{
+    background: linear-gradient(to right, #0160E7,#053480 );
+     font-size: 15px;;
+     width: 250px;
+     padding: 5px;
+     color: white!important ;  
+}
+
+
+.view-more{
+  background: linear-gradient(to bottom, #0160E7, #053480);
+  font-size: 15px;
+  width: 200px;
+  color: white!important ;
+}
