@@ -14,7 +14,7 @@ export default function Mnavbar() {
            <Link to="/singleblog"> single blog</Link>
            <Link to="/contact" >Contact</Link>
            <Link to="/categories">categories</Link>
-           <Link to="/careermain">careermain</Link>
+           <Link to="/careermain">career</Link>
            <Link to="/PhpDevelopment">Php Development</Link>
            <Link to="/Service">Service</Link>
            <Link to="/phpdepartment">Php department</Link>

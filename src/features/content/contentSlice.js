@@ -71,7 +71,7 @@ const contentSlice = createSlice({
         },
       },
       ourCustomers: {
-        heading: "Our Coustomer ",
+        heading: "Our Customer ",
         contant: "Lemosys Infotech strives to cater the needs of clients in the best possible manner. What we practically do is pretty simple as an experienced website development and web designing company in India. But in the same time incredibly complex and professional. Hire Lemosys to create your company website in minutes",
       },
       ourPartner: {
