@@ -20,7 +20,7 @@ const Navbar = () => {
       <Box flexGrow={1} display={'flex'} alignItems={'center'} justifyContent={'center'}>
 
         <Box display={'flex'} alignItems={'center'} justifyContent={'space-between'} height={'90PX'} width={'87%'} >
-          <Link  to="/" >
+          <Link  href="/" >
             <img color='#FFFFFF' src={Swslogo} alt="" id='sws-logo' />
           </Link>
 
