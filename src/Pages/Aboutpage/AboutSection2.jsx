@@ -1,11 +1,19 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import AboutSectionimg from "../../assets/AboutSection1/aboutsection1.svg"
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchcontents } from '../../features/content/contentSlice';
 
 const AboutSection2 = () => {
-  const { contents } = useSelector((state) => state.content);
-  return (
+
+  const dispatch = useDispatch()
+  const { contents, isLoading, isError } = useSelector((state) => state.content);
+
+
+  useEffect(() => {
+      dispatch(fetchcontents())
+  }, [dispatch]);
+return (
     <>
 
       <Box padding={12} className='aboutsectiocolor' width={"100%"} display={'flex'} alignItems={'center'} justifyContent={'center'} flexWrap={'wrap'} >

@@ -26,7 +26,7 @@ const Footer = () => {
     return (
         <>
             <Box width={'100%'} color={"#FFFFFF"} display={'flex'} alignItems={'center'} justifyContent={'center'} bgcolor={"#053480"} >
-                <Box width={'84%'} paddingTop={20} display={'flex'} alignItems={'start'} justifyContent={"space-between"} flexWrap={'wrap'}>
+                <Box width={'87%'} paddingTop={20} display={'flex'} alignItems={'start'} justifyContent={"space-between"} flexWrap={'wrap'}>
                     <Box width={290} margin={1} >
                         <img src={Soham} alt="" />
                         <Typography color={'#FFFFFF'} marginTop={2.5} fontSize={14}>

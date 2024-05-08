@@ -1,9 +1,17 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchcontents } from '../../features/content/contentSlice';
 
 const AboutSection1 = () => {
-  const { contents } = useSelector((state) => state.content);
+
+  const dispatch = useDispatch()
+  const { contents, isLoading, isError } = useSelector((state) => state.content);
+
+
+  useEffect(() => {
+      dispatch(fetchcontents())
+  }, [dispatch]);
 
   const textStyle = {
    

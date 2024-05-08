@@ -10,7 +10,8 @@ import Laravel from "../../assets/AboutSection1/laravel.svg"
 import Codeignetor from "../../assets/AboutSection1/codeignetor.svg"
 import Sql from "../../assets/AboutSection1/sql.svg"
 import Node from "../../assets/AboutSection1/node.svg"
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchcontents } from '../../features/content/contentSlice';
 
 const AntTabs = styled(Tabs)({
 
@@ -84,7 +85,16 @@ export default function CustomizedTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  const { contents } = useSelector((state) => state.content);
+
+  const dispatch = useDispatch()
+  const { contents, isLoading, isError } = useSelector((state) => state.content);
+
+
+  React.useEffect(() => {
+      dispatch(fetchcontents())
+  }, [dispatch]);
+
+
   return (
     <Box sx={{ width: '100%' }}>
 

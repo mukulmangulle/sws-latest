@@ -38,7 +38,7 @@ const Home = () => {
 
     return (
         <Box className="home" display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
-            <Box width={"100%"} height={"100%"} paddingTop={5} paddingBottom={5} flexWrap={"wrap"}
+            <Box  width={"100%"} height={"100%"} paddingTop={5} paddingBottom={5} flexWrap={"wrap"}
                 display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexGrow={1}>
                 <Box padding={3} margin={1} width={540} >
                     <Typography id="home-h1" variant='h1' lineHeight={1.1} fontSize={60} fontWeight={600} color="#FFFFFF">

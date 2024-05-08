@@ -81,7 +81,7 @@
         },
   
         "ourCustomers": {
-          "heading": "Our Customer ",
+          "heading": "Our Coustomer ",
           "contant": "Lemosys Infotech strives to cater the needs of clients in the best possible manner. What we practically do is pretty simple as an experienced website development and web designing company in India. But in the same time incredibly complex and professional. Hire Lemosys to create your company website in minutes"
         },
   
@@ -147,7 +147,10 @@
           "heading": "Tecnological Foucus",
           "content": "we provide end -to end software and mobile application developmen services"
         },
-  
+       "Leadership":{
+             "heading":" Our Leadership Team",
+             "content":"  Driving the Organzation by strength and wisdom, Believing to set clear expecations always diliver, and never breack trust."
+       },
         "SomeourWorksection2": {
           "heading": "SAME OUR WORK",
           "contant": "Our some of these projects may seem interesting to you",
