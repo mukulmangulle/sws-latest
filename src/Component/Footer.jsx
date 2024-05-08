@@ -9,10 +9,19 @@ import call from "../assets/footer/call.svg"
 import Phone from "../assets/footer/phone.svg"
 import Email from "../assets/footer/email.svg"
 import Location from "../assets/footer/location.svg"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+import { useEffect } from "react"
+import { fetchcontents } from "../features/content/contentSlice"
 
 const Footer = () => {
+    const dispatch = useDispatch()
     const { contents } = useSelector((state) => state.content);
+
+
+    useEffect(() => {
+        dispatch(fetchcontents())
+    }, [dispatch]);
+
 
     return (
         <>
@@ -43,7 +52,7 @@ const Footer = () => {
                             <Typography id="typography">{contents.footerData.quickLinks.text4}</Typography>
                         </Box>
                     </Box>
-                    
+
                     <Box width={290} margin={1} >
                         <Typography color={'#FFFFFF'} variant="h3" fontSize={"30px"} fontWeight={600} marginBottom={1}>{contents.footerData.policyLinks.heading}</Typography>
                         <Box marginTop={2} fontSize={50} >
@@ -51,7 +60,7 @@ const Footer = () => {
                             <Typography id="typography">{contents.footerData.policyLinks.text2}</Typography>
                             <Typography id="typography">{contents.footerData.policyLinks.text3}</Typography>
                             <Typography id="typography">{contents.footerData.policyLinks.text4}</Typography>
-                            <Typography id="typography" > {contents.footerData.policyLinks.text5}</Typography>
+                            <Typography id="typography">{contents.footerData.policyLinks.text5}</Typography>
                         </Box>
 
                     </Box>
@@ -63,7 +72,7 @@ const Footer = () => {
                                 <img src={call} alt="" />
                                 <Typography id="typography" paddingLeft={1}>{contents.footerData.contactDetails.text1}</Typography>
                             </Box>
-                            
+
                             <Box display={'flex'} margin={0.5}   >
                                 <img src={Phone} alt="" />
                                 <Typography id="typography" paddingLeft={1}>{contents.footerData.contactDetails.text2}</Typography>
@@ -90,8 +99,8 @@ const Footer = () => {
             </Box>
             <Box bgcolor={"#053480"} padding={4} >
                 <Typography fontSize={14} textAlign={'CENTER'} color='#FFFFFF'>
-                {contents.footerData.copyrightText}
-                    
+                    {contents.footerData.copyrightText}
+
                 </Typography>
             </Box>
         </>

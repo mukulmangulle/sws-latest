@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box, Button, Typography } from "@mui/material";
 import Parent1 from "../assets/parent/Parent1.svg";
 import Parent2 from "../assets/parent/Parent2.svg";
@@ -6,10 +6,18 @@ import Parent3 from "../assets/parent/parent3.svg";
 import Parent4 from "../assets/parent/Parent4.svg";
 import Parent5 from "../assets/parent/parent5.svg";
 import Parent6 from "../assets/parent/parent6.svg";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchcontents } from '../features/content/contentSlice';
 
 function Partner() {
+    const dispatch = useDispatch()
     const { contents } = useSelector((state) => state.content);
+
+
+    useEffect(() => {
+        dispatch(fetchcontents())
+    }, [dispatch]);
+
     return (
         <>
             <Box marginTop={5}>

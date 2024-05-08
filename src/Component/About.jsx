@@ -5,10 +5,19 @@ import Ab0 from "../assets/About/devendra.svg"
 import Ab1 from "../assets/About/ab1.svg"
 import Ab2 from "../assets/About/ab2.svg"
 import Ab3 from "../assets/About/ab3.svg"
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchcontents } from '../features/content/contentSlice';
 
 function OurCustomer() {
+    const dispatch = useDispatch()
     const { contents } = useSelector((state) => state.content);
+
+
+    useEffect(() => {
+        dispatch(fetchcontents())
+    }, [dispatch]);
+
+
 
     return (
         <Box paddingBottom={5} paddingTop={5} width={'100%'} display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexDirection={'column'}>

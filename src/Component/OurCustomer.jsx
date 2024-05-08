@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -9,11 +9,22 @@ import Our3 from "../assets/ourCustomer/our3.svg";
 import Our4 from "../assets/ourCustomer/our4.svg";
 import Our5 from "../assets/ourCustomer/our5.svg";
 import Our6 from "../assets/ourCustomer/our6.svg";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchcontents } from '../features/content/contentSlice';
 
 
 function OurCustomer() {
+    const dispatch = useDispatch()
     const { contents } = useSelector((state) => state.content);
+
+
+    useEffect(() => {
+        dispatch(fetchcontents())
+    }, [dispatch]);
+
+
+
+
 
     const settings = {
         dots: false,

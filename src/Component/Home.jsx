@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect} from 'react'
 import Box from '@mui/material/Box';
 import Typography from "@mui/material/Typography"
 import Homeimg from "../assets/home.svg"
@@ -14,31 +14,27 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchcontents } from '../features/content/contentSlice';
 
 
-
-
 const Home = () => {
 
     const dispatch = useDispatch()
     const { contents, isLoading, isError } = useSelector((state) => state.content);
 
+
     useEffect(() => {
         dispatch(fetchcontents())
-        // console.log(fetchcontents)
     }, [dispatch]);
 
 
-    if (isLoading) {
-        return (
-            <Box display={"flex"} alignItems={'center'} justifyContent={'center'}>
-                <Typography variant='h3'>Loading......</Typography>
-            </Box>
-        )
-    }
-    if (isError) {
-        return (
-             alert=("error  ")
-        )
-    }
+    // if (isLoading) {
+    //     return (
+    //         <Typography variant='h3' textAlign={'center'}>Loading......</Typography>
+    //     )
+    // }
+    // if (isError) {
+    //     return (
+    //         <Typography variant='h3' textAlign={'center'}>Error......</Typography>
+    //     )
+    // }
 
     return (
         <Box className="home" display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
@@ -96,8 +92,8 @@ const Home = () => {
                     <img src={Insta} alt="" />
                 </Box>
             </Box>
-        </Box>
 
+    </Box>
     )
 }
 

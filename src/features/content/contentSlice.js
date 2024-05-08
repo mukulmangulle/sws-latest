@@ -9,9 +9,10 @@ const contentSlice = createSlice({
     isError: false,
     contents: {
       homeData: {
-        heading: "Hire Certified Magento 2 Developers from India",
+        heading: "*Hire Certified Magento 2 Developers from India",
         subheading: "Hire Our Developers to Get Highly Appreciating  Developments",
-        contactInfo: {
+        contactInfo:
+        {
           number: "917999203537",
           email: "devendradevda90@gmail.com",
           link: "whatsApp",
@@ -154,15 +155,31 @@ const contentSlice = createSlice({
         text5: " Digital Maketing",
       }
     },
-  },
+  },  
   reducers: {},
-  extraReducers: (builder) => {},
+  extraReducers: (builder) => { 
+
+    builder
+    .addCase(fetchcontents.pending, (state, action)=>{
+      state.isLoading=true
+    } )
+    .addCase(fetchcontents.fulfilled,(state, action)=>{
+      state.isLoading=false
+      state.isSuccess=true
+      state.contents=action.payload
+    } )
+    .addCase(fetchcontents.rejected,(state, action)=>{
+      state.isLoading=false
+      state.isError=true
+
+    } )
+  },
 });
 
 export default contentSlice.reducer;
 
 export const fetchcontents = createAsyncThunk("FETCH/CONTENTS", async () => {
-  const response = await fetch("http://localhost:5173/contents");
+  const response = await fetch("http://localhost:3000/contents");
   const data = await response.json();
   return data;
   // console.log(data)

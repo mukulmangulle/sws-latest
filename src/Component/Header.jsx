@@ -10,7 +10,7 @@ import Month from "../assets/Month1.svg"
 const Header = () => {
     return (
 
-        <Box className='header' display={'flex'} alignItems={'center'} justifyContent={'center'} >
+        <Box  className='header' display={'flex'} alignItems={'center'} justifyContent={'center'} >
             <AppBar position="static" >
 
                 <Box display={'flex'} alignItems={'center'} justifyContent={'center'}  >

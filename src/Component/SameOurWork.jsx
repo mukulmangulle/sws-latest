@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Box from '@mui/material/Box'
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
@@ -6,10 +6,18 @@ import Typography from '@mui/material/Typography';
 import Work1 from '../assets/work/work1.png'
 import Work2 from "../assets/work/work2.png"
 import Work3 from "../assets/work/work3.png"
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchcontents } from '../features/content/contentSlice';
 
 const SameOurWork = () => {
+    const dispatch = useDispatch()
     const { contents } = useSelector((state) => state.content);
+
+
+    useEffect(() => {
+        dispatch(fetchcontents())
+    }, [dispatch]);
+
     return (
         <Box id="work" paddingBottom={5} display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexDirection={'column'} >
             <Box display={'flex'} alignItems={'center'} flexDirection={'column'} paddingTop={5}>
