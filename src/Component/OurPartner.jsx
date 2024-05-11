@@ -28,17 +28,17 @@ function Partner() {
                 </Box>
                 <Box className="flex-center"  >
                     <Box marginTop={7} width={"90%"} className="flex-center" flexDirection={'coulmn'} flexWrap={'wrap'}>
-                        <img id='size-img' src={Parent1} alt="Parent 1" />
+                        <img id='size-img' src={Parent1} alt="" />
 
-                        <img id='size-img' src={Parent2} alt="Parent 2" />
+                        <img id='size-img' src={Parent2} alt="" />
 
-                        <img id='size-img' src={Parent3} alt="Parent 3" />
+                        <img id='size-img' src={Parent3} alt="" />
 
-                        <img id='size-img' src={Parent4} alt="Parent 4" />
+                        <img id='size-img' src={Parent4} alt="" />
 
-                        <img id='size-img' src={Parent5} alt="Parent 5" />
+                        <img id='size-img' src={Parent5} alt="" />
 
-                        <img id='size-img' src={Parent6} alt="Parent 6" />
+                        <img id='size-img' src={Parent6} alt="" />
                     </Box>
                 </Box>
 
