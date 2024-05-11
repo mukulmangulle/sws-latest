@@ -10,7 +10,8 @@ import Careertoggle5 from './CareerTogglepage/Careertoggle5'
 const CareerOpeningTeam = () => {
     return (
         <>
-            <Box bgcolor={"#E6EBF3"} width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"} flexDirection={"column"}>
+      
+           <Box maxWidth={"1950px"} margin={"auto"} bgcolor={"#E6EBF3"} width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"} flexDirection={"column"}>
                 <Typography id='Heading-h2' variant='h2' marginY={5}   >Current opnings in Team</Typography>
 
 
@@ -23,6 +24,7 @@ const CareerOpeningTeam = () => {
                 <Careertoggle5/>
                 </Box>
             </Box>
+          
         </>
     )
 }

@@ -9,7 +9,7 @@ const contentSlice = createSlice({
     isError: false,
     contents: {
       homeData: {
-        heading: "*Hire Certified Magento 2 Developers from India",
+        heading: "Hire*Certified Magento 2 Developers from India",
         subheading: "Hire Our Developers to Get Highly Appreciating  Developments",
         contactInfo:
         {
@@ -109,7 +109,7 @@ const contentSlice = createSlice({
       },
       aboutData: {
         heading: "About",
-        subheading: " About us",
+        subheading: " About Soham Web",
         text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer too a galley of type  and scrambled it to  a type specimen book. It has survived not only five centuries, but also typesetting,   remaining essentially remaining essentially remaining essentially  but als n typesetting,   remaining essentially remaining essentially remaining essentiallyess entially remaining essentially remaining essentiallyessentially  .",
       },
       aboutSectionData: {
@@ -119,6 +119,10 @@ const contentSlice = createSlice({
       Technologyfocus: {
         heading: "Tecnological Foucus",
         content: "we provide end -to end software and mobile application developmen services",
+      },
+      Leadership: {
+        "heading": " Our Leadership Team",
+        "content": "  Driving the Organzation by strength and wisdom, Believing to set clear expecations always diliver, and never breack trust."
       },
       SomeourWorksection2: {
         heading: "SAME OUR WORK",
@@ -155,31 +159,31 @@ const contentSlice = createSlice({
         text5: " Digital Maketing",
       }
     },
-  },  
+  },
   reducers: {},
-  extraReducers: (builder) => { 
+  extraReducers: (builder) => {
 
     builder
-    .addCase(fetchcontents.pending, (state, action)=>{
-      state.isLoading=true
-    } )
-    .addCase(fetchcontents.fulfilled,(state, action)=>{
-      state.isLoading=false
-      state.isSuccess=true
-      state.contents=action.payload
-    } )
-    .addCase(fetchcontents.rejected,(state, action)=>{
-      state.isLoading=false
-      state.isError=true
+      .addCase(fetchcontents.pending, (state, action) => {
+        state.isLoading = true
+      })
+      .addCase(fetchcontents.fulfilled, (state, action) => {
+        state.isLoading = false
+        state.isSuccess = true
+        state.contents = action.payload
+      })
+      .addCase(fetchcontents.rejected, (state, action) => {
+        state.isLoading = false
+        state.isError = true
 
-    } )
+      })
   },
 });
 
 export default contentSlice.reducer;
 
 export const fetchcontents = createAsyncThunk("FETCH/CONTENTS", async () => {
-  const response = await fetch("http://localhost:3000/contents");
+  const response = await fetch("http://localhost:8000/contents");
   const data = await response.json();
   return data;
   // console.log(data)

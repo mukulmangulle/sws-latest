@@ -11,42 +11,38 @@ function Careertoggle4() {
     };
 
     return (
-        < Box margin={2.5} id="box-shadow">
-
-          {/* 4 */}
+        <Box margin={2.5} id="box-shadow" >
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary   >
-                   <Box width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} paddingY={1.5}>
-                   <Typography variant='h5'  paddingLeft={1.5} fontWeight={550} > Php Developer </Typography>
-                    <AddIcon fontSize='large' sx={{color:"#0160E7"}} />
-                   </Box>
+                    <Box width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} paddingY={1.5}>
+                        <Typography variant='h5' fontSize={"32px"} paddingLeft={1.5} fontWeight={550} > HR Executive (Any Graduate can apply) </Typography>
+                        <AddIcon fontSize='large' sx={{ color: "#0160E7" }} />
+                    </Box>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Box paddingX={1.5} >
-        
-                            {/* <Button className='apply-now' sx={{ color: "white", width: "130px", height: "33px", borderRadius: "15PX" }}  >Apply Now</Button> */}
 
                         <Box display={'flex'}>
-                            <Typography fontSize={18} fontWeight={600}>Experience :</Typography>
-                            <Typography color={"gray"}>0-1 year</Typography>
+                            <Typography fontSize={22} fontWeight={600}>Experience :</Typography>
+                            <Typography id="Typography-gray-career" >0-1 year</Typography>
                         </Box>
 
                         <Box display={'flex'} marginY={1}>
-                            <Typography fontSize={18} fontWeight={600} >NO of  Openings:</Typography>
-                            <Typography color={"gray"}>1</Typography>
+                            <Typography fontSize={22} fontWeight={600} >NO of  Openings:</Typography>
+                            <Typography id="Typography-gray-career" >1</Typography>
                         </Box>
 
-                        <Box display={'flex'} marginBottom={3}>
-                            <Typography fontSize={18} fontWeight={600}>Location :</Typography>
-                            <Typography color={"gray"}> 12,Civil Lines,Chamunda Complex,Dewas </Typography>
+                        <Box display={'flex'} flexWrap={"wrap"} marginBottom={3}>
+                            <Typography fontSize={22} fontWeight={600}>Location :</Typography>
+                            <Typography id="Typography-gray-career" > 12,Civil Lines,Chamunda Complex,Dewas </Typography>
                         </Box>
 
-                        <Box width={"70%"}>
-                            <Typography fontWeight={600} fontSize={18} marginY={2} >Roles & Responsibilities</Typography>
+                        <Box className="career-pregraph ">
+                            <Typography fontWeight={600} fontSize={22} marginY={2} >Roles & Responsibilities</Typography>
 
                             <Box display={"flex"} alignItems={"start"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>
+                                <Typography marginLeft={1} id="Typography-gray-career" >
 
                                     Responsible for end-to-end recruitment from Fresher to Senior-level IT positions to fulfill the
                                     internal requirements of the company.</Typography>
@@ -54,133 +50,133 @@ function Careertoggle4() {
 
                             <Box display={"flex"} alignItems={"start"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Posting vacancies on Job portals, company's careers page, social media, Job boards and internal and mass
+                                <Typography marginLeft={1} id="Typography-gray-career" >Posting vacancies on Job portals, company's careers page, social media, Job boards and internal and mass
                                     mailing to reach out to a maximum qualified pool of candidates.</Typography>
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Making cold calls, scheduling and managing recruitment drives.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Making cold calls, scheduling and managing recruitment drives.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Providing shortlists of qualified candidates to hiring managers</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Providing shortlists of qualified candidates to hiring managers</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Monitor key HR metrics, including time-to-fill, time-to-hire, and source of hire.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Monitor key HR metrics, including time-to-fill, time-to-hire, and source of hire.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}> Issue offer and appointment letters, playing a pivotal role in the hiring process.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" > Issue offer and appointment letters, playing a pivotal role in the hiring process.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Contributing to policy creation and implementation, ensuring alignment with organizational goals.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Contributing to policy creation and implementation, ensuring alignment with organizational goals.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}> Manage employee attendance and leave management, ensuring accurate records and compliance.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" > Manage employee attendance and leave management, ensuring accurate records and compliance.</Typography>
 
                             </Box>
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}> Lead social media management, creating engaging content, posters, and timely posts, enhancing the
+                                <Typography marginLeft={1} id="Typography-gray-career" > Lead social media management, creating engaging content, posters, and timely posts, enhancing the
                                     company's online presence.</Typography>
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Host and organize celebrations and events to boost team morale and camaraderie.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Host and organize celebrations and events to boost team morale and camaraderie.</Typography>
 
                             </Box>
                         </Box>
 
                         <Box width={"70%"}>
-                            <Typography fontWeight={600} fontSize={18} marginY={2} >Qualifications:</Typography>
+                            <Typography fontWeight={600} fontSize={22} marginY={2} >Qualifications:</Typography>
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Education: Graduation from any stream.</Typography>
-
-                            </Box>
-                            <Box display={"flex"} alignItems={"center"} margin={1}>
-                                <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Excellent verbal and written English communication..</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Education: Graduation from any stream.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Basic computer skills, Word and Excel experience preferred along with strong typing skills. </Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Excellent verbal and written English communication..</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Should have effective convincing and negotiation skills to impress and attract top talent.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Basic computer skills, Word and Excel experience preferred along with strong typing skills. </Typography>
+
+                            </Box>
+                            <Box display={"flex"} alignItems={"center"} margin={1}>
+                                <Typography fontSize={"25px"}>•</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Should have effective convincing and negotiation skills to impress and attract top talent.</Typography>
                             </Box>
 
                         </Box>
 
                         <Box width={"70%"}>
-                            <Typography fontWeight={600} fontSize={18} marginY={2} >Benefits:</Typography>
+                            <Typography fontWeight={600} fontSize={22} marginY={2} >Benefits:</Typography>
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>5 Days working</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >5 Days working</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>12 Paid leaves</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >12 Paid leaves</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}> 13 Official holidays</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" > 13 Official holidays</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Office parties and celebrations</Typography>
-
-                            </Box>
-
-                            <Box display={"flex"} alignItems={"center"} margin={1}>
-                                <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Friendly work culture</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Office parties and celebrations</Typography>
 
                             </Box>
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Skill development/ Employee engagement activities</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Friendly work culture</Typography>
 
                             </Box>
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Annual trips</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Skill development/ Employee engagement activities</Typography>
 
                             </Box>
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} fontSize={19} color={'GRAY'}>Supportive seniors</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Annual trips</Typography>
+
+                            </Box>
+
+                            <Box display={"flex"} alignItems={"center"} margin={1}>
+                                <Typography fontSize={"25px"}>•</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Supportive seniors</Typography>
 
                             </Box>
                         </Box>
                     </Box>
                 </AccordionDetails>
+
+
                 <CareerButton />
 
             </Accordion>
 
-       
-           
         </Box>
     );
 }

@@ -1,16 +1,131 @@
-.home{
-    background: linear-gradient(to bottom, #0160E7,#053480 );
-    }
-    
-@media (max-width:420px){
-    .home{
-        font-size:10.5px;    
-    } 
-   
-} 
+#home {
+    background: linear-gradient(to bottom, #0160E7, #053480);
+    max-width: 1920px;
+    margin: auto;
+}
 
-@media (max-width:760px) {
-    #home-lastSection{
+#home-h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: white;
+}
+
+@media (max-width:1080px) {
+    #home-h1 {
+        font-size: 50px;
+    }
+
+    #home-p1 {
+        font-size: 20px;
+    }
+
+    #home-p2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+
+    #home-continer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #home-lastSection {
         display: none;
     }
 }
+
+@media (max-width:576px) {
+    #home {
+        width:100%;
+    }
+    .css-125ns5y{
+        width: 100% !important;
+    }
+
+    #home-continer {
+        width: 80%;
+    }
+
+    #home-h1 {
+        font-size: 50px;
+        width: 60%;
+        margin: auto;
+    }
+
+    #home-p1 {
+        font-size: 20px;
+        width: 60%;
+        margin: auto;
+    } 
+
+    #schadule-meeting {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+
+
+@media (max-width:480px) {
+    #home {
+        width: 100%;
+    }
+  
+
+    #home-continer {
+        width: 100%;
+
+    }
+
+    #home-h1 {
+        font-size: 45px;
+        width: 70%;
+        margin: auto;
+    }
+
+    #home-p1 {
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+    }
+
+    #schadule-meeting {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width:320px) {
+    #home {
+        width:100%;
+    }
+    .css-125ns5y{
+        width: 100% !important;
+    }
+        #home-continer {
+        width:100%;
+
+    }
+
+    #home-h1 {
+        font-size: 35px;
+        width: 65%;
+        margin: auto;
+    }
+
+    #home-p1 {
+        font-size: 15px;
+        width: 65%;
+        margin: auto;
+    }
+
+    #schadule-meeting {
+        width: 65%;
+        margin: auto;
+        font-size: 15px;
+    }
+} 

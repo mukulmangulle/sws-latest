@@ -1,15 +1,9 @@
-/* Navbar section */
-
-.navbar{
-    position: absolute;
-    z-index: 1;    
-}
-
-.css-gmuwbf header{
-    background-color: #0160E7 !important;
-}
-.css-1de1tsw header{
-    background-color: #053480!important;
+.navbar {
+  
+    z-index: 1;
+    max-width: 1920px;
+    background-color:#053480;
+    margin: auto;
 }
 
 #ul-box {
@@ -18,32 +12,29 @@
     margin: 0%;
 }
 
-#ul-list {
-
-    font-size: 14px;
-    margin-right: 5px;
-
+.ul-list {
+    color: white;
+    text-decoration: "none";
+    font-size: 16px;
 }
 
 .down-arrow {
-    width: 8px;
-    margin-right: 5px;
+    width: 12px;
+    margin: 6px;
 }
 
 #hire-button {
-    width: 155px;
+    width: 170px;
     color: white;
-    height: 40px;
-    font-size: 12px;
+    height: 50px;
+    font-size: 15px;
     display: flex;
     border: 1px solid white;
     border-radius: 5px;
- 
-
 }
+
 @media (max-width:320px) {
-    #sws-logo{
-        width:180px;
-        
+    #sws-logo {
+        width: 180px;
     }
 }

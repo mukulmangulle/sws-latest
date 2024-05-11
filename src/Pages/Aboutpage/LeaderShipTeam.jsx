@@ -33,20 +33,20 @@ const LeaderShipTeam = () => {
 
 
                 <Box id="team" padding={3} width={'100%'} display={'flex'} alignItems={'center'} justifyContent={"space-evenly"} flexWrap={'wrap'}>
-                    <Box display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'} margin={2}>
-                        <img id='sir' src={co1} alt="" width={330} />
-                        <Typography margin={1.5} fontSize={18} color={'#053480'} fontWeight={700}>Neeraj Malakar</Typography>
-                        <Typography color={'#053480'}>Founder & CEO</Typography>
+                    <Box className="flex-center-column" margin={2}>
+                        <img id='sir' src={co1} alt="" width={400} />
+                        <Typography margin={1.5} fontSize={22} color={'#053480'} fontWeight={700}>Neeraj Malakar</Typography>
+                        <Typography fontSize={20} color={'#053480'}>Founder & CEO</Typography>
                     </Box>
-                    <Box display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'} margin={2}>
-                        <img id='sir' src={co2} alt="" width={330} />
-                        <Typography margin={1.5} fontSize={18} color={'#053480'} fontWeight={700}>Anil Meena</Typography>
-                        <Typography color={'#053480'}>CTO & COO</Typography>
+                    <Box className="flex-center-column" margin={2}>
+                        <img id='sir' src={co2} alt="" width={400} />
+                        <Typography margin={1.5} fontSize={22} color={'#053480'} fontWeight={700}>Anil Meena</Typography>
+                        <Typography fontSize={20} color={'#053480'}>CTO & COO</Typography>
                     </Box>
-                    <Box display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'} margin={2}>
-                        <img id='sir' src={co3} alt="" width={330} />
-                        <Typography margin={1.5} fontSize={18} color={'#053480'} fontWeight={700}>Ravi Yadav</Typography>
-                        <Typography color={'#053480'}>Founder & CEO</Typography>
+                    <Box className="flex-center-column" margin={2}>
+                        <img id='sir' src={co3} alt="" width={400} />
+                        <Typography margin={1.5} fontSize={22} color={'#053480'} fontWeight={700}>Ravi Yadav</Typography>
+                        <Typography fontSize={20} color={'#053480'}>Founder & CEO</Typography>
                     </Box>
                 </Box>
             </Box>

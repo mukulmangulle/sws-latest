@@ -37,42 +37,42 @@ const Home = () => {
     // }
 
     return (
-        <Box className="home" display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
-            <Box  width={"100%"} height={"100%"} paddingTop={5} paddingBottom={5} flexWrap={"wrap"}
-                display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexGrow={1}>
-                <Box padding={3} margin={1} width={540} >
-                    <Typography id="home-h1" variant='h1' lineHeight={1.1} fontSize={60} fontWeight={600} color="#FFFFFF">
+        <Box id="home" className="flex-center" flexDirection={'column'}>
+            <Box id="home-continer"  width={"84.5%"}  paddingTop={8}  
+                className="flex-between" >
+                <Box id="home-section-1" marginY={1} width={590} >
+                    <Typography id="home-h1" variant='h1' lineHeight={1.1}>
                         {contents.homeData.heading}
                     </Typography>
 
-                    <Typography variant='h6' fontSize={20} color="#FFFFFF" paddingTop={2.5} >
+                    <Typography id='home-p1' variant='h6' fontSize={24} color="#FFFFFF" paddingTop={2.5}>
                         {contents.homeData.subheading}
                     </Typography>
 
-                    <Box paddingTop={2} display={"flex"} alignItems={"center"} paddingBottom={4} >
-                        <Typography marginRight={2} fontSize={20} color="#FFFFFF" variant='h6' fontWeight={500}>Schadule Meeting </Typography>
+                    <Box id="schadule-meeting" paddingTop={2} display={"flex"} paddingBottom={4} >
+                        <Typography  id='home-p2' marginRight={2} fontSize={22} color="#FFFFFF" variant='h6' fontWeight={500}>Schadule Meeting </Typography>
                         <img src={Arrow} width={25} alt="" />
 
                     </Box>
                 </Box>
 
-                <Box margin={1} width={680} padding={1} display={'flex'} alignItems={'center'} justifyContent={'center'}>
-                    <img className='home-img' src={Homeimg} alt="" width={"100%"} height={'100%'} />
+                <Box marginY={2}>
+                    <img className='home-img' src={Homeimg} alt="" width={"100%"} height={"100%"}/>
                 </Box>
             </Box>
 
 
-            <Box id="home-lastSection" width={'86%'} display={"flex"} alignItems={"center"} justifyContent={"space-between"} paddingBottom={3} flexWrap={"wrap"}  >
+            <Box id="home-lastSection" width={'84.5%'} className="flex-between" paddingY={3} flexWrap={"wrap"}  >
                 <Box display={'flex'} alignItems={"center"} >
                     <img src={Call} alt="" />
-                    <Typography fontSize={12} marginLeft={1} color="#FFFFFF" className='Typography1' >
+                    <Typography fontSize={14} marginLeft={1} color="#FFFFFF" className='Typography1' >
                         {contents.homeData.contactInfo.number}
                     </Typography>
                 </Box>
 
                 <Box display={'flex'} alignItems={"center"}  >
                     <img src={Email} alt="" />
-                    <Typography fontSize={12} marginLeft={1} color="#FFFFFF">
+                    <Typography fontSize={14} marginLeft={1} color="#FFFFFF">
                         {contents.homeData.contactInfo.email}
                     </Typography>
                 </Box>
@@ -80,12 +80,12 @@ const Home = () => {
 
                 <Box display={'flex'} alignItems={"center"}    >
                     <img src={Whatsapp} alt="" />
-                    <Typography fontSize={12} marginLeft={1} color="#FFFFFF">
+                    <Typography fontSize={14} marginLeft={1} color="#FFFFFF">
                         {contents.homeData.contactInfo.link}
                     </Typography>
                 </Box>
 
-                <Box width={140} display={'flex'} alignItems={"center"} justifyContent={'space-between'} >
+                <Box width={140} className="flex-between" >
                     <img src={Facebook} alt="" />
                     <img src={X} alt="" />
                     <img src={Linkdin} alt="" />

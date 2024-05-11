@@ -6,10 +6,10 @@ import BlogButton from '../../Child-Component/ServiceButton'
 
 const PhpdepartmentContent1 = () => {
     return (
-        <Box width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
-            <Box width={"85%"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
-                <Box className="man-reverce1" width={"100%"} display={'flex'} alignItems={'center'} justifyContent={"space-between"} flexWrap={'wrap'}  >
-                    <Box width={500} className="devlopment-text" >
+        <Box maxWidth={"1920px"} margin={'auto'} display={"flex"} alignItems={"center"} justifyContent={"center"}>
+            <Box width={"84%"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
+                <Box id="man-reverce1" width={"100%"} className="flex-between-wrap"  >
+                    <Box  width={617} id="devlopment-text">
                         <Typography variant='h4' id="typo-fray-hrading" >PHP Development</Typography>
                         <Typography id="Typo-gray-start">PHP development services focus on implementing secure
                             and powerful server-sides web applications. Our company
@@ -17,9 +17,9 @@ const PhpdepartmentContent1 = () => {
                             complex databases</Typography>
                         <BlogButton onClick={() => { alert("button click new") }} />                  
                           </Box>
-                    <Box className="img-container" width={"540px"} height={600} display={'flex'} alignItems={'center'} justifyContent={"center"}   >
+                    <Box className="img-container"  display={'flex'} alignItems={'center'} justifyContent={"center"}   >
                         <Box className="background-service" display={'flex'} alignItems={'center'} justifyContent={"center"} >
-                            <img src={Php} alt="" height={300} />
+                            <img src={Php} alt="" />
                         </Box>
                     </Box>
                 </Box>

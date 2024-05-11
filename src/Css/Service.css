@@ -1,6 +1,6 @@
 .background-service {
-    width: 540px;
-    height: 430px;
+    width: 660px;
+    height: 526px;
     background-image: url("../assets/Service/background-service.svg");
     background-position: center;
     background-size: cover;
@@ -9,14 +9,14 @@
 }
 
 #Typo-gray-start {
-    font-size: 18px;
+    font-size: 22px;
     color: gray;
     padding: 20px 0px;
 }
 
 #typo-fray-hrading {
     color: #053480;
-    font-size: 35px;
+    font-size: 42px;
     font-weight: 600;
     display: flex;
     flex-wrap: wrap;
@@ -31,280 +31,238 @@
 
 
 
-@media (max-width:1080px) {
-    .man-reverce0 {
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: yellow;
+@media (max-width:1600px) {
+    #man-reverce1 {
+        height: 500PX;
     }
 
-    .man-reverce1 {
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    #man-reverce2 {
+        height: 500PX;
     }
 
-    .man-reverce2 {
-
-
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media (max-width:768px) {
-    .man-reverce1 {
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    #devlopment-text {
+        width: 450PX;
     }
 
-    .man-reverce2 {
-        padding-left: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-}
-
-
-@media (max-width: 600px) {
     .background-service {
-        height: 380px;
-        width: 480px;
+        width: 500px;
+        height: 400PX;
 
     }
+}
 
-    .img-container {
-        height: 500px !important;
-
+@media (max-width:1200px) {
+    #man-reverce1 {
+        height: 500PX;
     }
 
-    .service-man {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
+    #man-reverce2 {
+        height: 400PX;
     }
 
+    #devlopment-text {
+        width: 350PX;
+    }
+
+    .background-service {
+        width: 430px;
+        height: 340PX;
+    }
+
+    #typo-fray-hrading {
+        font-size: 28px;
+
+    }
 
     .background-service img {
-        height: 220px;
-        object-fit: cover;
-        background-position: center;
-
+        height: 230px;
     }
 
-    .man-reverce1 {
-        width: 100%;
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 60px;
-
-    }
-
-    .man-reverce2 {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 100px;
-        margin-bottom: 10px;
-
-    }
 }
 
-@media (max-width: 480px) {
+@media (max-width:1020px) {
+    #man-reverce1 {
+        height: 380PX;
+    }
+
+    #man-reverce2 {
+        height: 380PX;
+    }
+
+    #devlopment-text {
+        width: 350PX;
+    }
+
     .background-service {
-        height: 280px;
         width: 350px;
-
-
+        height: 280PX;
     }
 
-    .img-container {
-        height: 350px !important;
+    #typo-fray-hrading {
+        font-size: 22px;
 
     }
-
-    .service-man {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-    }
-
 
     .background-service img {
         height: 200px;
-        object-fit: cover;
-        background-position: center;
-
     }
 
-    .man-reverce1 {
-        width: 100%;
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 130px;
-
-    }
-
-    .man-reverce2 {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 70px;
-        margin-bottom: 10px;
-
-    }
-
-    .devlopment-text {
-        width: 300px !important;
-
+    #Typo-gray-start {
+        font-size: 18px;
+        padding: 8px 0px;
     }
 }
 
 
 
+@media (max-width:850px) {
+    #man-reverce1 {
+        height: 400PX;
+    }
+
+    #man-reverce2 {
+        height: 400PX;
+    }
 
 
-@media (max-width: 420px) {
+    #man-reverce2 {
+        height: 200PX;
+    }
+
+    #devlopment-text {
+        width: 300PX;
+    }
+
     .background-service {
+        width: 290px;
+        height: 230PX;
+    }
+
+    #typo-fray-hrading {
+        font-size: 22px;
+
+    }
+
+    .background-service img {
+        height: 150px;
+    }
+
+    #Typo-gray-start {
+        font-size: 15px;
+        padding: 8px 0px;
+    }
+}
+
+@media (max-width:720px) {
+    #man-reverce1 {
+        height: 680PX;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #man-reverce2 {
+        height: 680PX;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    #devlopment-text {
+        width: 95%;
+    }
+
+    .background-service {
+        width: 480px;
+        height: 380PX;
+    }
+
+    #typo-fray-hrading {
+        font-size: 35px;
+    }
+
+    .background-service img {
         height: 250px;
-        width: 310px;
     }
 
-    .img-container {
-        height: 320px !important;
-
+    #Typo-gray-start {
+        font-size: 22px;
+        padding: 8px 0px;
     }
+}
 
-    .service-man {
+
+@media (max-width:480px) {
+    #man-reverce1 {
+        height: 680PX;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+      
+    }
+
+    #man-reverce2 {
+        height: 680PX;
+        width: 100%;
+           }
+
+    #devlopment-text {
+        width: 90%;
+    }
+
+    .background-service {
+        width: 380px;
+        height: 300PX;
+    }
+
+    #typo-fray-hrading {
+        font-size: 35px;
+    }
+
+    .background-service img {
+        height: 200px;
+    }
+
+    #Typo-gray-start {
+        font-size: 22px;
+        padding: 4px 0px;
+    }
+}
+
+
+@media (max-width:375px) {
+    #man-reverce1 {
+        height: 540PX;
+        width: 100%;
+      
+    }
+
+    #man-reverce2 {
+        height: 540PX;
+        width: 100%;
+           }
+
+    #devlopment-text {
+        width: 90%;
+    }
+
+    .background-service {
+        width: 280px;
+        height: 220PX;
+    }
+
+    #typo-fray-hrading {
+        font-size: 25px;
     }
 
     .background-service img {
         height: 150px;
-        object-fit: cover;
-        background-position: center;
     }
 
-    .man-reverce1 {
-        width: 100%;
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 180px !important;
-    }
-
-    .man-reverce2 {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 60px;
-        margin-bottom: 10px;
-    }
-
-    .devlopment-text {
-        width: 300px !important;
-
+    #Typo-gray-start {
+        font-size: 18px;
+        padding: 4px 0px;
     }
 }
 
-
-@media (max-width: 375px) {
-    .background-service {
-        height: 228px;
-        width: 280px;
-        margin-right: 50px;
-
-    }
-
-    .img-container {
-        height: 280px !important;
-
-    }
-
-}
-
-@media (max-width: 320px) {
-    .background-service {
-        height: 230px;
-        width: 280px;
-        margin-right: 220px;
-    }
-
-    .img-container {
-        height: 280px !important;
-
-    }
-
-    .service-man {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .background-service img {
-        height: 150px;
-        object-fit: cover;
-        background-position: center;
-    }
-
-    .man-reverce1 {
-        width: 320px !important;
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 10px !important;
-    }
-
-    .man-reverce2 {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 100px;
-        margin-bottom: 10px;
-    }
-
-    .devlopment-text {
-        width: 200px !important;
-        margin-right: 200px;
-    }
-
-}
-
-.project-requirement {
-    background-image: url("../assets/Service/background-last.png");
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-    height: 370px;
-}

@@ -14,6 +14,7 @@ import Mnavbar from "./Component/M-navbar";
 import PhpDevelopment from "./Pages/Phpdevelopment/PhpDevelopment";
 import Service from "./Pages/ServicePage/Service";
 import PhpDepartment from "./Pages/PhpDepartmentPage/PhpDepartment";
+import { Container } from "@mui/material";
 
 
 
@@ -22,12 +23,14 @@ function App() {
     <>
       <Router>
         <Mnavbar/>
-        <Header />
+       
+       <Header />
+    
         <Navbar />
 
         <Routes>
           <Route path="/" element={<HomeSection />} />
-          <Route path="/about" element={<Aboutmain />} />
+          <Route path="/about" element={<Aboutmain/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/categories" element={<CategoriesPhpBlog />} />

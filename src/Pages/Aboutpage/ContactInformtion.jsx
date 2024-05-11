@@ -22,14 +22,14 @@ const ContactInformtion = () => {
   };
   return (
     <>
-      <Box padding={6} >
+      <Box padding={6} sx={{ maxWidth: 1920, margin: 'auto' }}>
         <Typography id='Heading-h2' variant='h2'>{contents.contactinformation.heading}</Typography>
         <Typography margin={2} fontSize={21} textAlign={'center'}>{contents.contactinformation.subheading}</Typography>
 
 
         <Box width={"100"} display={'flex'} alignItems={'center'} justifyContent={'space-between'} flexDirection={'column'}>
 
-          <Box id="form-control" style={boxShadowStyle} paddingTop={5} paddingBottom={1} paddingX={7} width={"77%"} borderRadius={3} marginTop={3} >
+          <Box id="form-control" style={boxShadowStyle} paddingTop={5} paddingBottom={1} paddingX={7} width={"80%"} borderRadius={3} marginTop={3} >
             <Box width={"100%"}  >
               <Typography variant='h3' fontSize={'30px'} fontWeight={600} color={"#053480"}>{contents.contactinformation.content} </Typography>
               <Typography variant="h3" fontSize={"30px"} fontWeight={600} color={"#053480"} gutterBottom>
@@ -37,7 +37,7 @@ const ContactInformtion = () => {
               </Typography>
             </Box>
             <Box display={'flex'} justifyContent={"space-between"} width={'100%'} flexWrap={'wrap'} >
-              <Box padding={0} width={'330px'} paddingTop={1.5}>
+              <Box padding={0} width={'380px'} paddingTop={1.5}>
                 <Typography variant='h4' fontSize={22} component="legend">{contents.contactinformation.text1}</Typography>
                 {/* <TextField
                   fullWidth
@@ -95,9 +95,9 @@ const ContactInformtion = () => {
               <Box width={"350px"} padding={0}   >
 
                 <FormControl component="fieldset" fullWidth margin="normal" >
-                  <Box borderBottom={2} color={"#053480"} padding={0.5} >
+                  <Box  color={"#053480"} padding={1} >
                     <Typography color={'gray'} variant='h3' fontSize={30} component="legend">Select Your Requirement</Typography>
-
+                    <hr  color={"#053480"} />
                   </Box>
                   <RadioGroup row aria-label="project-budget" name="project-budget">
                     <Box display={'flex'} alignItems={"start"} justifyContent={"center"} flexDirection={'column'} >

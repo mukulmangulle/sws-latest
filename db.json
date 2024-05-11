@@ -3,7 +3,7 @@
     {
         "homeData":{
               "id":1,
-            "heading": "Hire Certified Magento 2 Developers from India",
+            "heading": " Hire Certified Magento 2 Developers from India",
             "subheading": "Hire Our Developers to Get Highly Appreciating  Developments",
             "contactInfo":
             {
@@ -37,8 +37,7 @@
             "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit  Curabitur elit risus, mattis a tincidunt quis, aliquet sit amet mauris. Cras nec massa enim. Aliquam congue imperdiet vestibulum.Quisque varius lectus eget est aliquet blandit. Sed et ante non neque volutpat gravida. Nulla dictum eros ac est consectetur sit amet tristique lectus ultrices.",
   
             "title2": "Bright Sparqe",
-            "description2": "lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, Curabitur elit risus, mattis a tincidunt quis, aliquet sit amet mauris. Cras nec massa enim. Aliquam congue imperdiet vestibulum.Quisque varius lectus eget est aliquet blandit. Sed et ante non neque volutpat gravida. Nulla dictum eros ac est consectetur sit amet tristique lectus ultrices.",
-  
+            "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit  Curabitur elit risus, mattis a tincidunt quis, aliquet sit amet mauris. Cras nec massa enim. Aliquam congue imperdiet vestibulum.Quisque varius lectus eget est aliquet blandit. Sed et ante non neque volutpat gravida. Nulla dictum eros ac est consectetur sit amet tristique lectus ultrices .",
             "title3": "Ludo Earn",
             "description3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit  Curabitur elit risus, mattis a tincidunt quis, aliquet sit amet mauris. Cras nec massa enim. Aliquam congue imperdiet vestibulum.Quisque varius lectus eget est aliquet blandit. Sed et ante non neque volutpat gravida. Nulla dictum eros ac est consectetur sit amet tristique lectus ultrices."
           }
@@ -97,9 +96,10 @@
           "quickLinks": {
             "heading": "Quick Links",
             "text1": "About",
-            "text2": "Career",
-            "text3": "Contact Us",
-            "text4": "Blog"
+            "text2": "Services",
+            "text3": "Career",
+            "text4": "Contact Us",
+            "text5": "Blog"
           },
   
           "policyLinks":

@@ -17,11 +17,11 @@ const ContactUsSohamweb = () => {
     };
     return (
         <>
-            <Box width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"} marginBottom={5} >
-                <Box id="boxShadow" borderRadius={4} margin={5} sx={{ boxShadow: "0px 0px 20px 1px gray" }}>
+            <Box  width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"} marginBottom={5} >
+                <Box  id="boxShadow" borderRadius={4} margin={5} sx={{ boxShadow: "0px 0px 20px 1px gray" }}>
                     <Box className="GETINTOUCH" display={'flex'} justifyContent={"space-between"} width={'100%'} flexWrap={'wrap'} >
-                        <Box className="GETINTOUCH1" padding={5} width={'100%'} maxWidth={'700px'}  >
-                            <Typography fontSize={45} textAlign={"center"} fontWeight={600} color={"#053480"} margin={2} sx={{ wordSpacing: "-5px" }}>Send Us a Message</Typography>
+                        <Box className="GETINTOUCH1" padding={7} width={{xl:"900px", xs: "100%", sm: "100%", md: "60%" }}  >
+                            <Typography fontSize={45} textAlign={"center"} fontWeight={600} color={"#053480"} margin={2} sx={{ wordSpacing:"-5px" }}>Send Us a Message</Typography>
                            <FormControl> <Grid container spacing={2} justifyContent="center">
                                 <Grid item xs={12} sm={6}>
                                     {/* <TextField id="filled-basic" label="Name" variant="filled" fullWidth /> */}
@@ -45,38 +45,38 @@ const ContactUsSohamweb = () => {
                                     <TextField required fullWidth multiline rows={4} label="Message" variant="filled" />
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Button type="submit" variant="contained" color="primary" className="gradientbutton" sx={{ width: "100%", padding: "10px", fontSize: "18px" }}>Send Message</Button>
+                                    <Button type="submit" variant="contained" color="primary" className="gradientbutton" sx={{ width: "100%", padding: "10px", fontSize: "18px",marginTop:"30PX" }}>Send Message</Button>
                                 </Grid>
                             </Grid></FormControl>
                         </Box>
-                        <Box maxWidth={"470px"} className="GETINTOUCH2" paddingY={8} paddingX={12} >
-                            <Typography variant='h4' color={"white"} >Get in Touch</Typography>
+                        <Box width={{xl:"550px", xs:"100%", sm:"100%", md: "40%" }}   className="GETINTOUCH2" paddingY={5} paddingX={13} >
+                            <Typography variant='h4' id="h4"  color={"white"} >Get in Touch</Typography>
                             <Box>
-                                <Box>
-                                    <Typography color={"white"} fontSize={25}>Phone</Typography>
+                                <Box paddingY={1.5}>
+                                    <Typography id="h4"  color={"white"} >Phone</Typography>
                                 </Box>
                                 <Box >
-                                    <Typography color={"white"} fontSize={19}>+9009 140 325</Typography>
-                                    <Typography color={"white"} fontSize={19}>+91 787 923 1700</Typography>
-                                    <Typography color={"white"} fontSize={19}>+91 774 801 8188</Typography>
+                                    <Typography id="typography" color={"white"} >+9009 140 325</Typography>
+                                    <Typography id="typography" color={"white"} >+91 787 923 1700</Typography>
+                                    <Typography id="typography" color={"white"} >+91 774 801 8188</Typography>
                                 </Box>
                             </Box>
                             <Box>
-                                <Box>
-                                    <Typography color={"white"} fontSize={25}>Email</Typography>
+                                <Box paddingY={1.5}>
+                                    <Typography   color={"white"} id="h4" >Email</Typography>
                                 </Box>
                                 <Box>
-                                    <Typography color={"white"} fontSize={19}>contact@sohamsolution.com</Typography>
-                                    <Typography color={"white"} fontSize={19}>hr@sohamsolution.com</Typography>
-                                    <Typography color={"white"} fontSize={19}>soham.solution@yahoo.com</Typography>
+                                    <Typography id="typography" color={"white"} >contact@sohamsolution.com</Typography>
+                                    <Typography id="typography" color={"white"} >hr@sohamsolution.com</Typography>
+                                    <Typography id="typography"  color={"white"} >soham.solution@yahoo.com</Typography>
                                 </Box>
                             </Box>
-                            <Box>
+                            <Box paddingY={1.5}>
                                 <Box>
-                                    <Typography color={"white"} fontSize={25}>Address</Typography>
+                                    <Typography color={"white"} id="h4">Address</Typography>
                                 </Box>
                                 <Box>
-                                    <Typography color={"white"} fontSize={19}>
+                                    <Typography id="typography"  color={"white"} >
                                         12 Civil Line Chamunda Complex,
                                         Dewas, Madhya Pradesh, PIN:
                                         455001

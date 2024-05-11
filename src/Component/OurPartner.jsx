@@ -20,14 +20,14 @@ function Partner() {
 
     return (
         <>
-            <Box marginTop={5}>
-                <Box display={'flex'} alignItems={'center'} flexDirection={'column'} flexWrap={'nowrap'}  >
-                    <Typography id='Heading-h2' variant='h2' >
-                   {contents.ourPartner.heading}
+            <Box sx={{ maxWidth: 1920, margin: 'auto' }} >
+                <Box className="flex-center" flexDirection={'column'} flexWrap={'nowrap'}  >
+                    <Typography id='Heading-h2' variant='h2' paddingTop={5} >
+                        {contents.ourPartner.heading}
                     </Typography>
                 </Box>
-                <Box display={'flex'} alignItems={'center'} justifyContent={'center'} paddingBottom={20} >
-                    <Box marginTop={2} width={"85%"} display={'flex'} alignItems={'center'} justifyContent={'space-evenly'} flexDirection={'coulmn'} flexWrap={'wrap'}>
+                <Box className="flex-center" paddingBottom={25} >
+                    <Box marginTop={2} width={"82%"} className="flex-center" flexDirection={'coulmn'} flexWrap={'wrap'}>
                         <img id='size-img' src={Parent1} alt="Parent 1" />
 
                         <img id='size-img' src={Parent2} alt="Parent 2" />
@@ -41,18 +41,18 @@ function Partner() {
                         <img id='size-img' src={Parent6} alt="Parent 6" />
                     </Box>
                 </Box>
-            </Box>
-            <Box width={"100%"} display={'flex'} alignItems={'center'} justifyContent={'center'}  >
 
-                <Box id='want' paddingLeft={5} paddingRight={5} width={"82%"} height={220}
-                    borderRadius={10} display={'flex'} alignItems={'center'}
-                    flexWrap={'wrap'} position={'absolute'}>
+                <Box className="flex-center" >
+                    <Box id='want' paddingX={5} width={"85%"} height={250}
+                        borderRadius={10} className="flex-center"
+                        flexWrap={'wrap'} position={'absolute'}>
 
-                    <Box flex={1}>
-                        <Typography fontSize={"30px"} color={"#FFFFFF"} > {contents.ourPartner.childBox.content}</Typography>
-                    </Box>
-                    <Box id="life-soham">
-                        <Button sx={{ padding: "10px", width: "220px", height: "57px", border: "1px solid white", color: "05180", fontSize: "25px", fontWeight: 700, background: "white" }}>Life@Soham</Button>
+                        <Box flex={1}>
+                            <Typography fontSize={"30px"} color={"#FFFFFF"} > {contents.ourPartner.childBox.content}</Typography>
+                        </Box>
+                        <Box id="life-soham">
+                            <Button sx={{ padding: "10px", width: "220px", height: "57px", border: "1px solid white", color: "05180", fontSize: "25px", fontWeight: 700, background: "white" }}>Life@Soham</Button>
+                        </Box>
                     </Box>
                 </Box>
             </Box>

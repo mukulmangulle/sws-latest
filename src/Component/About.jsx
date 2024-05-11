@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-import { Box, Button, Typography } from "@mui/material";
+import React, {  useEffect } from 'react';
+import { Box,  Typography } from "@mui/material";
 import Ab0 from "../assets/About/devendra.svg"
 import Ab1 from "../assets/About/ab1.svg"
 import Ab2 from "../assets/About/ab2.svg"
@@ -20,8 +20,9 @@ function OurCustomer() {
 
 
     return (
-        <Box paddingBottom={5} paddingTop={5} width={'100%'} display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexDirection={'column'}>
-            <Box display={'flex'} alignItems={'center'} flexDirection={'column'} textAlign={'center'}>
+  
+          <Box   paddingY={5}  sx={{ maxWidth: 1920, margin: 'auto'}}>
+            <Box  className="flex-center" flexDirection={'column'} textAlign={"center"} >
                 <Typography id='Heading-h2' variant='h2' >
                     {contents.aboutus.heading}
                 </Typography>
@@ -103,6 +104,7 @@ function OurCustomer() {
 
             </Box>
         </Box>
+    
     );
 }
 

@@ -6,8 +6,15 @@
            margin-bottom: 30px !important;
            color: white !important;
 }
+.career-pregraph{
+     width: 70%;
+}
 
-
+@media (max-width:1080px) {
+     .career-pregraph{
+          width: 100%;
+         }
+}
 
 @media (max-width:768px) {
      .we-man{
@@ -17,4 +24,5 @@
           justify-content: center;
           flex-direction: column !important;
      }
+  
    }

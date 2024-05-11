@@ -6,16 +6,9 @@ import About from "./About";
 import OurCustomer from "./OurCustomer";
 import OurPartner from "./OurPartner";
 
-
 const HomeSection = () => {
-   
-  
-
-
     return (
         <>
-    
-     
             <Home />
             <OurUtility />
             <SameOurWork />

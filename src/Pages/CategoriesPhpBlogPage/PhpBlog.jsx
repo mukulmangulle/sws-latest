@@ -11,7 +11,7 @@ import Blog3 from "../../assets/BlogPage/blog3.png"
 const PhpBlog = () => {
     return (
         <>
-            <Box width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"} >
+            <Box maxWidth={"1920px"} margin={"auto"} display={"flex"} alignItems={"center"} justifyContent={"center"} >
 
                 <Box width={"85%"} marginTop={7}>
                     <Typography marginLeft={3} marginBottom={7} variant='h4' color={"#053480"} fontWeight={600}>Php Blog</Typography>
@@ -19,7 +19,7 @@ const PhpBlog = () => {
                     <Box display={"flex"} alignItems={'start'} justifyContent={"space-between"} flexWrap={'wrap'} >
 
                              {/* 1 */}
-                             <Card sx={{ maxWidth: 410, height: "600px", margin: "8px" }}>
+                             <Card id='blog-card'>
                             <img className='blogsimg' src={Blog1} alt="" />
                             <CardContent  >
                                 <Typography gutterBottom variant="h6"  className='card-heading' >
@@ -36,7 +36,7 @@ const PhpBlog = () => {
 
 
                         {/* 2 */}
-                        <Card sx={{ maxWidth: 410, height: "600px", margin: "8px" }}>
+                        <Card id='blog-card'>
                             <img className='blogsimg' src={Blog2} alt="" />
                             <CardContent  >
 
@@ -53,7 +53,7 @@ const PhpBlog = () => {
                         </Card>
 
                         {/* 3 */}
-                        <Card sx={{ maxWidth: 410, height: "600px", margin: "8px" }}>
+                        <Card id='blog-card'>
                             <img className='blogsimg' src={Blog3} alt="" />
                             <CardContent >
 
@@ -70,7 +70,7 @@ const PhpBlog = () => {
                         </Card>
 
                         {/* 4 */}
-                        <Card sx={{ maxWidth: 410, height: "600px", margin: "8px" }}>
+                        <Card id='blog-card'>
                             <img className='blogsimg' src={Blog1} alt="" />
                             <CardContent  >
                                 <Typography gutterBottom variant="h6"  className='card-heading' >
@@ -86,7 +86,7 @@ const PhpBlog = () => {
                         </Card>
 
                         {/* 5 */}
-                        <Card sx={{ maxWidth: 410, height: "600px", margin: "8px" }}>
+                        <Card id='blog-card'>
                             <img className='blogsimg' src={Blog2} alt="" />
                             <CardContent  >
 
@@ -103,7 +103,7 @@ const PhpBlog = () => {
                         </Card>
 
                         {/* 6 */}
-                        <Card sx={{ maxWidth: 410, height: "600px", margin: "8px" }}>
+                        <Card id='blog-card'>
                             <img className='blogsimg' src={Blog2} alt="" />
                             <CardContent  >
 
@@ -120,7 +120,7 @@ const PhpBlog = () => {
                         </Card>
 
                         {/* 7 */}
-                          <Card sx={{ maxWidth: 410, height: "600px", margin: "8px" }}>
+                        <Card id='blog-card'>
                             <img className='blogsimg' src={Blog1} alt="" />
                             <CardContent  >
                                 <Typography gutterBottom variant="h6"  className='card-heading' >
@@ -137,7 +137,7 @@ const PhpBlog = () => {
 
 
                         {/* 8 */}
-                        <Card sx={{ maxWidth: 410, height: "600px", margin: "8px" }}>
+                        <Card id='blog-card'>
                             <img className='blogsimg' src={Blog2} alt="" />
                             <CardContent  >
 
@@ -154,7 +154,7 @@ const PhpBlog = () => {
                         </Card>
 
                         {/* 9 */}
-                        <Card sx={{ maxWidth: 410, height: "600px", margin: "8px" }}>
+                        <Card id='blog-card'>
                             <img className='blogsimg' src={Blog3} alt="" />
                             <CardContent >
 

@@ -7,26 +7,58 @@
 }
 #Technology-focus-grid{     
      background: white !important;
-     width: 280px;
-     height: 250px;
+     width: 320px;
+     height: 300px;
      display: flex;
      align-items: center;
      justify-content: center;
     
 }
 
-@media (max-width:580px) {
+@media (max-width:1525px) {
+    #aboutsectionimg{
+        height:380px;
+    }
+}
+
+@media (max-width:1320px) {
+    #aboutsectionimg{
+        height:290px;
+    }
+    #typography{
+        font-size: 15px;
+    }
+   
+}
+
+/* form contorl */
+@media (max-width:768px) {
+    #form-control {
+        box-shadow: none !important;
+        width: 100%;
+    }
+    .about-typography{
+         width: 600px;
+    }
+    #aboutsectiontypo {
+        width: 100%!important;
+        padding: 0%;
+        margin: 0%;
+    }
+    #aboutsectionimg{
+        height:420px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:576px) {
     #aboutsectionimg {
-        width: 400px;
+        width: 450px;
         margin-top: 0px;
         padding-top: 0%;
     }
 
-    #aboutsectiontypo {
-        width: 100%;
-        padding: 0%;
-        margin: 0%;
-    }
+   
 
     #team {
         text-align: center;
@@ -37,17 +69,6 @@
     }
 }
 
-@media (max-width:375px) {
-    #aboutsectionimg {
-        height: 230px;
-        margin-top: -50px;
-        margin-bottom: 10px;
-    }
-
-    #about-soham {
-        font-size: 25px;
-    }
-}
 
 /* form section */
 @media (max-width:480px) {
@@ -55,14 +76,14 @@
         width: 350px;
         padding: 10px;
     }
-}
-
-@media (max-width:320px) {
-    #form-control {
-        width: 280px;
-        padding: 10px;
+    #aboutsectionimg {
+        width: 350px;
+        margin-top: 0px;
+        padding-top: 0%;
     }
 }
+
+
 
 /* someour work2 */
 @media (max-width:420px) {
@@ -80,11 +101,34 @@
     #card {
         width: 320px;
         margin: 20px;
-
     }
+    #form-control {
+        width: 350px;
+        padding: 10px;
+    }
+    #aboutsectionimg {
+        width: 350px;
+        margin-top: 0px;
+        padding-top: 0%;
+    }
+  
 }
 
+
 @media (max-width:375px) {
+    #aboutsectionimg {
+        height: 230px;
+        margin-top: -50px;
+        margin-bottom: 10px;
+    }
+
+    #about-soham {
+        font-size: 25px;
+    }
+    
+    #sir {
+        width: 250px;
+    }
     #heading2 {
         font-size: 15px;
         padding: 15px 30px;
@@ -98,8 +142,11 @@
 }
 
 @media (max-width:320px) {
-
-
+    #form-control {
+        width: 300px !important;
+        padding: 10px;
+    }
+    
     #heading2 {
         font-size: 15px;
         padding: 15px 30px;
@@ -109,21 +156,5 @@
         width: 260px;
         margin: 20px;
         height: 420px;
-    }
-}
-
-/* leadership team */
-@media (max-width:375px) {
-
-    #sir {
-        width: 250px;
-    }
-}
-
-/* form contorl */
-@media (max-width:768px) {
-    #form-control {
-        box-shadow: none !important;
-        width: 100%;
     }
 }

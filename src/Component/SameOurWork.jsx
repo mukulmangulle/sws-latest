@@ -19,81 +19,80 @@ const SameOurWork = () => {
     }, [dispatch]);
 
     return (
-        <Box id="work" paddingBottom={5} display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexDirection={'column'} >
+        <Box sx={{ maxWidth: 1920, margin: 'auto' }} id="work" paddingBottom={5}className="flex-center-coulmn" >
             <Box display={'flex'} alignItems={'center'} flexDirection={'column'} paddingTop={5}>
                 <Typography variant='h2' id="Heading-h2"   >
                     {contents.SomeourWorks.heading}
                 </Typography>
-                <Typography  id="Typography-black"  paddingBottom={5}  paddingTop={2}>
-                {contents.SomeourWorks.contant}
+                <Typography width={"70%"} id="Typography-black" paddingBottom={5} paddingTop={2}>
+                    {contents.SomeourWorks.contant}
                 </Typography>
             </Box>
 
-            <Box id="mancard" display={'flex'} alignItems={'center'} justifyContent={'center'} flexWrap={'wrap'} >
+            <Box id="mancard" className="flex-center" flexWrap={'wrap'} >
 
                 <Box >
-                    <Box  id="card"  textAlign={'center'}  margin={1.5} width={370} padding={3} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}  >
-                        <Box padding={2}>
-                            <Box id="work-background" width={85} height={85} display={'flex'} alignItems={'center'} justifyContent={'center'}>
-                                <img src={Work1} alt="" height={33} />
+                    <Box id="card" textAlign={'center'} margin={3} width={450} padding={3} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}  >
+                        <Box id="work-margin" margin={3}>
+                            <Box id="work-background" width={100} height={100} className="flex-center">
+                                <img src={Work1} alt="" />
                             </Box>
                         </Box>
 
-                        <Box display={'flex'} variant="h6" alignItems={'center'} justifyItems={'center'} justifyContent={'center'} flexDirection={'column'} paddingTop={1}>
-                            <Typography color="#053480" fontSize={18} fontWeight={800}>
-                            {contents.SomeourWorks.card.title1}
-                            </Typography>
-                            <Typography  alignItems={'center'} fontSize={12} padding={3} color={"#053480"} textAlign={'center'}>
-                            {contents.SomeourWorks.card.description1}
-          
+                        <Box variant="h6" className="flex-center" flexDirection={'column'} paddingTop={1}>
+                            <Typography color="#053480" fontSize={22} fontWeight={800}>
+                                Allan Flowers Market                             </Typography>
+                            <Typography id='ludo-earn-p' alignItems={'center'} fontSize={12} padding={4} color={"#053480"} textAlign={'center'}>
+                                {contents.SomeourWorks.card.description2}
                             </Typography>
                         </Box>
                         <CardActions>
-                            <Button id='view-work'  padding={3} >View Work</Button>
+                            <Button id='view-work' padding={3} >View Work</Button>
                         </CardActions>
                     </Box>
                 </Box>
 
                 <Box >
-                    <Box id="card" textAlign={'center'}  margin={1.5} width={370} padding={3} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}  >
-                        <Box padding={2}>
-                            <Box id="work-background" width={85} height={85} display={'flex'} alignItems={'center'} justifyContent={'center'}>
-                                <img src={Work2} alt="" height={33} />
+                    <Box id="card" textAlign={'center'} margin={3} width={450} padding={3} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}  >
+                        <Box id="work-margin" margin={3}>
+                            <Box id="work-background" width={100} height={100} className="flex-center">
+                                <img src={Work2} alt="" />
                             </Box>
                         </Box>
 
-                        <Box display={'flex'} variant="h6" alignItems={'center'} justifyItems={'center'} justifyContent={'center'} flexDirection={'column'} paddingTop={1}>
-                            <Typography color="#053480" fontSize={18} fontWeight={800}>
+                        <Box variant="h6" className="flex-center" flexDirection={'column'} paddingTop={1}>
+                            <Typography color="#053480" fontSize={22} fontWeight={800}>
                                 Bright Square
                             </Typography>
-                            <Typography alignItems={'center'} fontSize={12} padding={3} color={"#053480"} textAlign={'center'}>
-                            {contents.SomeourWorks.card.description2}
+                            <Typography id='ludo-earn-p' alignItems={'center'} fontSize={12} padding={4} color={"#053480"} textAlign={'center'}>
+                                {contents.SomeourWorks.card.description2}
                             </Typography>
                         </Box>
                         <CardActions>
-                            <Button id='view-work'  padding={3} >View Work</Button>
+                            <Button id='view-work' padding={3} >View Work</Button>
                         </CardActions>
                     </Box>
                 </Box>
 
                 <Box >
-                    <Box id="card" textAlign={'center'} margin={1.5} width={370} padding={3} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}  >
-                        <Box padding={2}>
-                            <Box id="work-background" width={85} height={85} display={'flex'} alignItems={'center'} justifyContent={'center'}>
-                                <img src={Work3} alt="" height={33} />
+                    <Box id="card" textAlign={'center'} margin={3} width={450} padding={4} className="flex-center" flexDirection={'column'}  >
+                        <Box id="work-margin" margin={3}>
+                            <Box id="work-background" width={100} height={100} className="flex-center">
+                                <img src={Work1} alt="" />
                             </Box>
                         </Box>
 
-                        <Box display={'flex'} variant="h6" alignItems={'center'} justifyItems={'center'} justifyContent={'center'} flexDirection={'column'} paddingTop={1}>
-                            <Typography color="#053480" fontSize={18} fontWeight={800}>
-                                Ludo Earn
+                        <Box display={'flex'} variant="h6" className="flex-center" flexDirection={'column'} paddingTop={1}>
+                            <Typography color="#053480" fontSize={22} fontWeight={800}>
+                                {contents.SomeourWorks.card.title3}
                             </Typography>
-                            <Typography alignItems={'center'} fontSize={12} padding={3} color={"#053480"} textAlign={'center'}>
-                            {contents.SomeourWorks.card.description3}
+                            <Typography id='ludo-earn-p' alignItems={'center'} fontSize={12} padding={4} color={"#053480"} textAlign={'center'}>
+                                {contents.SomeourWorks.card.description1}
+
                             </Typography>
                         </Box>
                         <CardActions>
-                            <Button id='view-work' className="hover-button" padding={3} >View Work</Button>
+                            <Button id='view-work' padding={3} >View Work</Button>
                         </CardActions>
                     </Box>
                 </Box>

@@ -4,7 +4,7 @@ import React from 'react'
 const ProjectRequirement = () => {
     return (
         <>
-            <Box className="project-requirement" display={"flex"} alignItems={"center"} justifyContent={"center"} flexDirection={"column"}>
+            <Box maxWidth={"1920px"} margin={"auto"} className="project-requirement" display={"flex"} alignItems={"center"} justifyContent={"center"} flexDirection={"column"}>
                 <Typography variant='h4'color="white" textAlign={"center"}>
                   Get the best quote for your project requirement
                 </Typography>

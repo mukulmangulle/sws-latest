@@ -96,26 +96,26 @@ export default function CustomizedTabs() {
 
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ maxWidth: 1920, margin: 'auto' }}>
 
 
-      <Box bgcolor={'#e6f0fd'} padding={5} width={"100%"} display={'flex'} alignItems={'center'} justifyContent={"center"} flexDirection={'column'}>
+      <Box bgcolor={'#e6f0fd'} padding={5} width={"100%"} className="flex-center-coulmn">
         <Box textAlign={'center'}>
 
-          <Box display={"flex"} alignItems={'center'} justifyContent={"center"} flexDirection={"column"} width={"100%"} sx={{flexWrap:"wrap"}} >
+          <Box className="flex-center-coulmn" width={"100%"} sx={{flexWrap:"wrap"}} >
             <Typography id='Heading-h2' variant='h2' paddingY={1} >
               {contents.Technologyfocus.heading}
             </Typography>
             <Typography id="Typography-black" fontWeight={700} marginY={1}>
-              {contents.Technologyfocus.subheading}
+              {contents.Technologyfocus.content}
             </Typography>
-            <Box width={600} display={'flex'} alignItems={'center'} justifyContent={"space-around"} >
-              <AntTabs value={value} onChange={handleChange} aria-label="ant example">
-                <AntTab label="Freamworkes" />
-                <AntTab label="Database" />
-                <AntTab label="Languages" />
-                <AntTab label="CMS" />
-                <AntTab label="Others" />
+            <Box width={750} className="flex-between" >
+              <AntTabs  value={value} onChange={handleChange} aria-label="ant example" >
+                <AntTab  sx={{fontSize:"22px"}}     label="Freamworkes" />
+                <AntTab  sx={{fontSize:"22px"}}  label="Database" />
+                <AntTab sx={{fontSize:"22px"}}  label="Languages" />
+                <AntTab sx={{fontSize:"22px"}} label="CMS" />
+                <AntTab sx={{fontSize:"22px"}} label="Others" />
               </AntTabs>
             </Box>
 

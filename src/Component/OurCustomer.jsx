@@ -43,30 +43,30 @@ function OurCustomer() {
     };
 
     const boxStyle = {
-        padding: '0 15px',
+        padding: '0 5px',
         background: 'white',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: "10px",
+        gap: "13px",
 
     };
 
     const imageStyle = {
-        width: '100px',
-        height: '70px',
+        width: '160px',
+        height: '90px',
         alignItems: "center"
 
     };
 
     return (
 
-        <Box padding={5} bgcolor={"#e6f0fd"} display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexDirection={'column'} >
+        <Box  sx={{ maxWidth: 1920, margin: 'auto' }} padding={5} bgcolor={"#e6f0fd"} display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexDirection={'column'} >
             <Box display={'flex'} alignItems={'center'} flexDirection={'column'} textAlign={'center'}>
                 <Typography id='Heading-h2' variant='h2' >
                     {contents.ourCustomers.heading}
                 </Typography>
-                <Typography width={'67%'} id="Typography-black" paddingTop={2}>
+                <Typography width={'75%'} id="Typography-black" paddingTop={2}>
                 {contents.ourCustomers.contant}
                 </Typography>
 

@@ -3,7 +3,6 @@
     background-position: "center";
     object-fit: cover;
     width: 100%;
-
 }
 
 .GETINTOUCH2 {
@@ -11,29 +10,19 @@
     border-radius: 0 18px 18px 0px;
 }
 
-@media (max-width:1080px) {
+@media (max-width:1350px) {
     .GETINTOUCH {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: none;
-
-    }
+      
+          }
 
     .GETINTOUCH1 {
-
         width: 100%;
     }
 
     .GETINTOUCH2 {
-
-        background-color: yellow;
-        border-radius: 40px;
-        margin-bottom: 30px;
-
-
+        border-radius: 17px;
+        
     }
 }
 
@@ -44,35 +33,87 @@
     }
 }
 
-
 @media (max-width:480px) {
+    .GETINTOUCH {
+        width: 100%;
+    }
+
+    .GETINTOUCH1 {
+        width: 100%;
+    }
+
     .GETINTOUCH2 {
-        width: 320px;
+        width: 100% !;
         margin: 0%;
         padding: 0%;
+        
+    }
 
+    .css-1evx3p9 {
+        width: 480px !important;
     }
 }
-
-
 
 @media (max-width:420px) {
+    .GETINTOUCH {
+        width: 100%;
+    }
+
+    .GETINTOUCH1 {
+        width: 100%;
+    }
+
     .GETINTOUCH2 {
-        width: 420px;
+        width: 100% !;
         margin: 0%;
         padding: 0%;
-        border-radius: 20px;
+        
+    }
 
+    .css-1evx3p9 {
+        width: 100% !important;
     }
 }
 
-
-
-@media (max-width:320px) {
-
-    .css-zluqlp{
-        width:85% !important;
+@media (max-width:375px) {
+    .GETINTOUCH {
+        width: 100%;
     }
 
-    
+    .GETINTOUCH1 {
+        width: 100%;
+    }
+
+    .GETINTOUCH2 {
+        width: 100% !;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+
+    .css-1evx3p9 {
+        width: 100% !important;
+    }
+   
+}
+
+@media (max-width:320px) {
+      .GETINTOUCH {
+        width: 100%;
+    }
+
+    .GETINTOUCH1 {
+        width: 100%;
+    }
+
+    .GETINTOUCH2 {
+        width: 100% !;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+
+    .css-1evx3p9 {
+        width: 100% !important;
+    }
 }
