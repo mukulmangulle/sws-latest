@@ -88,7 +88,7 @@ const ContactUsSohamweb = () => {
                 </Box>
 
             </Box>
-            <Box>
+            <Box maxWidth={"1920px"} margin={"auto"}>
                 <img className='map-img' src={Map} alt="" />
             </Box>
         </>

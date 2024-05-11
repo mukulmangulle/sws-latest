@@ -20,14 +20,14 @@ function Partner() {
 
     return (
         <>
-            <Box sx={{ maxWidth: 1920, margin: 'auto' }} >
-                <Box className="flex-center" flexDirection={'column'} flexWrap={'nowrap'}  >
+            <Box sx={{ maxWidth: "1920px", margin: 'auto' }} >
+                <Box className="flex-center" flexDirection={'column'} flexWrap={'nowrap'}>
                     <Typography id='Heading-h2' variant='h2' paddingTop={5} >
                         {contents.ourPartner.heading}
                     </Typography>
                 </Box>
-                <Box className="flex-center" paddingBottom={25} >
-                    <Box marginTop={2} width={"82%"} className="flex-center" flexDirection={'coulmn'} flexWrap={'wrap'}>
+                <Box className="flex-center"  >
+                    <Box marginTop={7} width={"90%"} className="flex-center" flexDirection={'coulmn'} flexWrap={'wrap'}>
                         <img id='size-img' src={Parent1} alt="Parent 1" />
 
                         <img id='size-img' src={Parent2} alt="Parent 2" />
@@ -42,10 +42,10 @@ function Partner() {
                     </Box>
                 </Box>
 
-                <Box className="flex-center" >
-                    <Box id='want' paddingX={5} width={"85%"} height={250}
+                <Box className="flex-center" maxWidth={"1920px"}  margin={"auto"} >
+                    <Box id='want' paddingX={5} width={"85%"} height={280}
                         borderRadius={10} className="flex-center"
-                        flexWrap={'wrap'} position={'absolute'}>
+                        flexWrap={'wrap'} position={"relative"} top={120}>
 
                         <Box flex={1}>
                             <Typography fontSize={"30px"} color={"#FFFFFF"} > {contents.ourPartner.childBox.content}</Typography>
