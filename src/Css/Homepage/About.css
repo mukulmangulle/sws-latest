@@ -12,13 +12,13 @@
 }
 
 
-#blank{
+.blank{
   width:190px;
   height: 350px;
 
 }
 
-#blank1{
+.blank1{
   width:190px;
   height: 350px;
 
@@ -32,17 +32,17 @@
 }
 
 @media (max-width:1500px) {
-    #blank1{
+    .blank1{
       display: none;
     }
 
-    #blank{
+    .blank{
         width:350px;
     }
 }
 
 @media (max-width:920px) {
-  #blank1{
+  .blank1{
     display: none;
   }
 }
@@ -55,10 +55,10 @@
     height: 300px;
   
  }
- #blank1{
+ .blank1{
   display: none;
  }
- #blank{
+ .blank{
   display: none;
  }
 }

@@ -1,8 +1,8 @@
-#work {
+.work {
     background-color: #E6edf3;
 }
 
-#work-background {
+.work-background {
     background: url(../../assets/work/bg.svg);
     object-fit: cover;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 
 #card {
     position: relative;
-    border: 2px solid #053480;
+    border: 1px solid #053480;
     background-color: white;
     z-index: 0;
 
@@ -47,17 +47,17 @@
     }
 
     &::before {
-        top: -10px;
-        left: -10px;
-        border-top: 2px solid #053480;
-        border-left: 2px solid #053480;
+        top: -5px;
+        left: -5px;
+        border-top: 1px solid #053480;
+        border-left: 1px solid #053480;
     }
 
     &::after {
-        right: -10px;
-        bottom: -10px;
-        border-bottom: 2px solid #053480;
-        border-right: 2px solid #053480;
+        right: -5px;
+        bottom: -5px;
+        border-bottom: 1px solid #053480;
+        border-right: 1px solid #053480;
     }
 
     &:hover::before,
@@ -67,59 +67,82 @@
     }
 }
 
-@media (max-width:480px) {
-
+@media (max-width:1780px) {
     #card {
-        width: 380px;
-        margin-bottom: 20px;
+        width: 350px;
+        padding: 0%;
+        padding-bottom: 10px;
     }
 
     #view-work {
+        margin: 0px;
         width: 150px;
-        height: 33px;
+        height: 35px;
         font-size: 15px;
-        margin: 0%;
-     }
+    }
+
+    #ludo-earn-p {
+        padding: 1rem;
+    }
 }
 
-@media (max-width:420px) {
 
+
+@media (max-width:1500px) {
     #card {
-        width: 400px;
-        margin: 20px;
+        width: 280px;
+        height: 380px;
+        padding: 0%;
+        padding-bottom: 10px;
+        margin: 15px;
     }
-    #work-margin{
-        margin: 0%;
-    }
-    #ludo-earn-p{
-        width:300px;
-        margin: 0%;
-        padding: 5%;
-    }
+
     #view-work {
-       width: 140px;
-       height: 30px;
-       font-size: 15px;
-       margin: 0%;
+        margin: 0px;
+        width: 130px;
+        height: 28px;
+        font-size: 12px;
     }
-    
+        .card-heading {
+            font-size: px !important;
+        }
+
+    #ludo-earn-p {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width:480px) {
+    #card {
+        width: 250px;
+        height: 310px;
+        padding-bottom: 5px;
+        margin: 15px 0px;
+
+    }
+
+    #view-work {
+        margin: 0px;
+        width: 110px;
+        height: 22px;
+        font-size: 11px;
+    }
+
+    #ludo-earn-p {
+        padding: 0px 5px;
+        font-size: 9px;
+    }
+
+    .card-heading {
+        font-size: 15px !important;
+    }
+
 }
 
 @media (max-width:375px) {
-    #heading {
-        font-size: 35px;
-
-    }
-}
-
-@media (max-width:320px) {
-    #heading {
-        font-size: 35px;
-    }
-
-    #card {
-        width: 280px !important;
-        margin: 20px;
-        height: 500px;
+    .work-background{
+        height: 0px;
     }
 }

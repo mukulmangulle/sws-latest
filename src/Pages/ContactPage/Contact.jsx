@@ -6,8 +6,8 @@ import ContactUsSohamweb from './ContactUsSohamweb'
 
 const Contact = () => {
   return (
-    <>
-      <Box id="about-background" >
+    <Box maxWidth={"1920px"} margin={'auto'}>
+      <Box  id="about-background" >
         <Typography  id='Heading-h2' variant='h2' padding={7} >Contact Us</Typography>
       </Box>
 
@@ -22,7 +22,7 @@ const Contact = () => {
       </Box>
       <ContactUsSohamweb />
 
-    </>
+    </Box>
   )
 }
 

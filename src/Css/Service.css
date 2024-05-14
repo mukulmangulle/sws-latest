@@ -33,21 +33,31 @@
 
 @media (max-width:1600px) {
     #man-reverce1 {
-        height: 500PX;
+        height: 380PX;
     }
 
     #man-reverce2 {
-        height: 500PX;
+        height: 380PX;
     }
 
     #devlopment-text {
-        width: 450PX;
+        width: 400PX;
     }
 
     .background-service {
-        width: 500px;
-        height: 400PX;
+        width: 400px;
+        height: 320PX;
 
+    }
+    .background-service img {
+        height: 200px;
+    }
+    #typo-fray-hrading {
+        font-size: 30px;
+    }
+    #Typo-gray-start {
+        font-size: 15px;
+        padding: 3px 0px 0px 0px;
     }
 }
 

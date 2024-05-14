@@ -27,18 +27,18 @@ function Partner() {
                     </Typography>
                 </Box>
                 <Box className="flex-center"  >
-                    <Box marginTop={7} width={"90%"} className="flex-center" flexDirection={'coulmn'} flexWrap={'wrap'}>
-                        <img id='size-img' src={Parent1} alt="" />
+                    <Box marginTop={7} width={"80%"} className="flex-between" flexDirection={'coulmn'} flexWrap={'wrap'}>
+                        <img className='size-img' src={Parent1} alt="" />
 
-                        <img id='size-img' src={Parent2} alt="" />
+                        <img className='size-img' src={Parent2} alt="" />
 
-                        <img id='size-img' src={Parent3} alt="" />
+                        <img className='size-img' src={Parent3} alt="" />
 
-                        <img id='size-img' src={Parent4} alt="" />
+                        <img className='size-img' src={Parent4} alt="" />
 
-                        <img id='size-img' src={Parent5} alt="" />
+                        <img className='size-img' src={Parent5} alt="" />
 
-                        <img id='size-img' src={Parent6} alt="" />
+                        <img className='size-img' src={Parent6} alt="" />
                     </Box>
                 </Box>
 

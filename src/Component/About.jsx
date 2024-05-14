@@ -23,7 +23,7 @@ function OurCustomer() {
   
           <Box   paddingY={5}  sx={{ maxWidth: 1920, margin: 'auto'}}>
             <Box  className="flex-center" flexDirection={'column'} textAlign={"center"} >
-                <Typography id='Heading-h2' variant='h2' >
+                <Typography id='Heading-h2' variant='h2' paddingX={1} >
                     {contents.aboutus.heading}
                 </Typography>
                 <Typography width={'67%'} paddingTop={4} paddingBottom={8}>
@@ -39,7 +39,7 @@ function OurCustomer() {
                 <Box id="dev" display={'flex'} alignItems={'center'} justifyContent={'space-between'} width={'100%'} >
 
                     {/* 1 */}
-                    <Box id="blank1" textAlign={"center"} color={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
+                    <Box className="blank1" textAlign={"center"} color={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
                         <img src={Ab0} alt="" />
                         <Box>
                             <Typography fontSize={18} fontWeight={700} color={'white'}>{contents.aboutus.childContainer1.name}</Typography>
@@ -52,7 +52,7 @@ function OurCustomer() {
                     </Box>
 
                     {/* 2 */}
-                    <Box id="blank" textAlign={"center"} color={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
+                    <Box className="blank" textAlign={"center"} color={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
                         <Box>
                             <Typography fontSize={18} fontWeight={700} color={'white'}>{contents.aboutus.childContainer2.name}
                             </Typography>
@@ -77,7 +77,7 @@ function OurCustomer() {
                     </Box>
 
                     {/* 4 */}
-                    <Box id="blank" textAlign={"center"} color={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
+                    <Box className="blank" textAlign={"center"} color={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
                         <Box>
                             <Typography fontSize={18} fontWeight={700} color={'white'}>{contents.aboutus.childContainer4.name}</Typography>
                             <Typography color={'white'}>         {contents.aboutus.childContainer4.designation}</Typography>
@@ -89,7 +89,7 @@ function OurCustomer() {
                     </Box>
 
                     {/* 5 */}
-                    <Box id="blank1" textAlign={"center"} color={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
+                    <Box className="blank1" textAlign={"center"} color={'white'} display={'flex'} alignItems={'center'} justifyContent={'center'} flexDirection={'column'}>
                         <img src={Ab2} alt="" />
                         <Box>
                             <Typography fontSize={18} fontWeight={700} color={'white'}>{contents.aboutus.childContainer5.name}</Typography>

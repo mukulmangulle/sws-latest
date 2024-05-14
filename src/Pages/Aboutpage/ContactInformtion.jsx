@@ -37,7 +37,7 @@ const ContactInformtion = () => {
               </Typography>
             </Box>
             <Box display={'flex'} justifyContent={"space-between"} width={'100%'} flexWrap={'wrap'} >
-              <Box padding={0} width={'380px'} paddingTop={1.5}>
+              <Box className="contact-1" padding={0}  paddingTop={1.5}>
                 <Typography variant='h4' fontSize={22} component="legend">{contents.contactinformation.text1}</Typography>
                 {/* <TextField
                   fullWidth
@@ -92,7 +92,7 @@ const ContactInformtion = () => {
                 <Input1 label="Meassge" />
 
               </Box>
-              <Box width={"350px"} padding={0}   >
+              <Box className="contact-2"  padding={0}   >
 
                 <FormControl component="fieldset" fullWidth margin="normal" >
                   <Box  color={"#053480"} padding={1} >
@@ -115,7 +115,7 @@ const ContactInformtion = () => {
 
 
               {/* section3 */}
-              <Box width={'200px'} paddingTop={4.5}>
+              <Box className="contact-3" width={'200px'} paddingTop={4.5}>
                 <FormControl component="fieldset" fullWidth margin="normal">
 
                   <FormGroup>

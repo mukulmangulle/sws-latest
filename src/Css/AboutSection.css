@@ -1,34 +1,66 @@
-#submit{
-    width:"150px";
-    height:"50px";
-    background: linear-gradient(to bottom, #0160E7,#053480 );
+#submit {
+    width: "150px";
+    height: "50px";
+    background: linear-gradient(to bottom, #0160E7, #053480);
     margin-top: 50px;
     color: white;
 }
-#Technology-focus-grid{     
-     background: white !important;
-     width: 320px;
-     height: 300px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-    
+
+#Technology-focus-grid {
+    background: white !important;
+    width: 320px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width:1525px) {
-    #aboutsectionimg{
-        height:380px;
+.contact-1 {
+    width: 380px;
+  margin: 0px 1.5px;
+}
+
+.contact-2 {
+    width: 350px;
+    margin: 0px 1.5px;
+}
+
+.contact-3 {
+    width: 200px;
+    margin: 0px 1.5px;
+}
+
+@media (max-width:1625px) {
+    #aboutsectionimg {
+        height: 300px;
+    }
+
+    .sir {
+        width: 280px;
+    }
+
+    .contact-1 {
+        width: 280px;
+    }
+
+    .contact-2 {
+        width: 280px;
+    }
+
+    .contact-3 {
+        width: 180px;
     }
 }
 
 @media (max-width:1320px) {
-    #aboutsectionimg{
-        height:290px;
+    #aboutsectionimg {
+        height: 290px;
     }
-    #typography{
+
+    #typography {
         font-size: 15px;
     }
-   
+
 }
 
 /* form contorl */
@@ -37,17 +69,31 @@
         box-shadow: none !important;
         width: 100%;
     }
-    .about-typography{
-         width: 600px;
+
+    .about-typography {
+        width: 600px;
     }
+
     #aboutsectiontypo {
-        width: 100%!important;
+        width: 100% !important;
         padding: 0%;
         margin: 0%;
     }
-    #aboutsectionimg{
-        height:420px;
+
+    #aboutsectionimg {
+        height: 420px;
         margin-bottom: 10px;
+    }
+    .contact-1 {
+        width: 270px;
+    }
+
+    .contact-2 {
+        width: 270px;
+    }
+
+    .contact-3 {
+        width: 270px;
     }
 }
 
@@ -57,15 +103,27 @@
         margin-top: 0px;
         padding-top: 0%;
     }
-
-   
-
     #team {
         text-align: center;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .contact-1 {
+        width: 100%;
+    }
+
+    .contact-2 {
+        width: 100%;
+    }
+
+    .contact-3 {
+        width: 100%;
+    }
+   
+    .css-1coc09t{
+        padding: 45px !important;     
     }
 }
 
@@ -76,6 +134,7 @@
         width: 350px;
         padding: 10px;
     }
+
     #aboutsectionimg {
         width: 350px;
         margin-top: 0px;
@@ -102,16 +161,18 @@
         width: 320px;
         margin: 20px;
     }
+
     #form-control {
         width: 350px;
         padding: 10px;
     }
+
     #aboutsectionimg {
         width: 350px;
         margin-top: 0px;
         padding-top: 0%;
     }
-  
+
 }
 
 
@@ -125,10 +186,11 @@
     #about-soham {
         font-size: 25px;
     }
-    
-    #sir {
-        width: 250px;
+
+    .sir {
+        width: 200px;
     }
+
     #heading2 {
         font-size: 15px;
         padding: 15px 30px;
@@ -146,7 +208,7 @@
         width: 300px !important;
         padding: 10px;
     }
-    
+
     #heading2 {
         font-size: 15px;
         padding: 15px 30px;

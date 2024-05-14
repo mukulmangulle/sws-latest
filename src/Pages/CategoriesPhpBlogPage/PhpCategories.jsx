@@ -8,16 +8,16 @@ const   PhpCategories = () => {
                 <Box width={"85%"}  >
                     <Typography variant='h3' color={'#053480'} fontWeight={600} marginBottom={3} >Categories</Typography>
                     <Box display={'flex'} alignItems={'center'} justifyContent={"space-between"} flexWrap={'wrap'}>
-                        <Box width={380} marginY={2} height={350} border={5} borderColor={"#053480"} display={"flex"} fontWeight={600} fontSize={35} color={"#053480"} alignItems={'center'} justifyContent={"center"}>
+                        <Box className="categories-box">
                             PHP
                         </Box>
-                        <Box width={380} marginY={2} height={350} border={5} borderColor={"#053480"} display={"flex"} fontWeight={600} fontSize={35} color={"#053480"} alignItems={'center'} justifyContent={"center"}>
+                        <Box className="categories-box" >
                             Laraval
                         </Box>
-                        <Box width={380} marginY={2} height={350} border={5} borderColor={"#053480"} display={"flex"} fontWeight={600} fontSize={35} color={"#053480"} alignItems={'center'} justifyContent={"center"}>
+                        <Box className="categories-box">
                             Shopify
                         </Box>
-                        <Box width={380} marginY={2} height={350} border={5} borderColor={"#053480"} display={"flex"} fontWeight={600} fontSize={35} color={"#053480"} alignItems={'center'} justifyContent={"center"}>
+                        <Box className="categories-box" >
                             Wordpress
                         </Box>
                     </Box>

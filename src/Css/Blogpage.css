@@ -34,60 +34,53 @@
   color: white!important ;
 }
 
-
-@media (max-width:480px) {
-  
-  .card-typography{
-    font-size: 16px !important;
-    line-height:34px !important;
-    padding-top: 10px !important;
-  }
-  .blogsimg{
-        height: 282px;
-     }
-}
-
-@media (max-width:420px) {
+@media (max-width:1600px) {
   #blog-card{
-      height: 600px;
+      height: 500px;
+      width: 340px;
   }
   .card-typography{
-    font-size: 16px !important;
-    line-height:25px !important;
-    padding-top: 5px !important;
+    font-size: 13px !important;
+    line-height:20px !important;
+    padding-top: 3px !important;
   }
   .blogsimg{
-        height: 250px;
+        height: 238px;
      }
 }
 
 
 
-@media (max-width:375px) {
+
+
+@media (max-width:576px) {
   #blog-card{
-      height: 600px;
+      height: 500px;
   }
   .card-typography{
-    font-size: 15px !important;
-    line-height:23px !important;
-    padding-top: 5px !important;
+    font-size: 13px !important;
+    line-height:20px !important;
+    padding-top: 3px !important;
   }
   .blogsimg{
-        height: 270px;
+        height: 240px;
      }
 }
 
 
-@media (max-width:325px) {
+
+
+@media (max-width:380px) {
   #blog-card{
-      height: 630px;
+      height: 100%;
+      
   }
   .card-typography{
-    font-size: 15px !important;
-    line-height:22px !important;
-    padding-top: 5px !important;
+    font-size: 12px !important;
+    line-height:18px !important;
+    padding-top: 3px !important;
   }
   .blogsimg{
-        height: 190px;
+        height: 220px;
      }
 }

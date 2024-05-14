@@ -12,30 +12,30 @@ const Header = () => {
         <Box sx={{ maxWidth: 1920, margin: 'auto' }} className='header'>
             <AppBar position="static">
                 <Box className="flex-center">
-                    <Box width={"85%"} >
-                        <Box id="header" className="flex-between">
+                    <Box className="header-responsive" width={"85%"} >
+                        <Box className="header flex-between">
 
                             <Box className="flex-center" >
                                 <Box className="flex-center">
                                     <img src={Call} alt="" />
-                                    <Typography color={'#FFFFFF'} fontSize={14} marginLeft={1} className='Typography1'>+91 9009758263</Typography>
+                                    <Typography className='fontSize14 color-white Typography1' marginLeft={1} >+91 9009758263</Typography>
                                 </Box>
                                 <Box margin={2}>|</Box>
                                 <Box className="flex-center" >
                                     <img src={Email} alt="" />
-                                    <Typography color={'#FFFFFF'} fontSize={14} marginLeft={1}>sohamwebsolution@gmail.com</Typography>
+                                    <Typography className='fontSize14 color-white'marginLeft={1}>sohamwebsolution@gmail.com</Typography>
                                 </Box>
                                 <Box margin={2}>|</Box>
                                 <Box className="flex-center">
                                     <img src={Whatsapp} alt="" />
-                                    <Typography color={'#FFFFFF'} fontSize={14} marginLeft={1}>Whatsapp</Typography>
+                                    <Typography className='fontSize14 color-white' marginLeft={1}>Whatsapp</Typography>
                                 </Box>
                             </Box>
 
                             <Box className="flex-between">
-                                <Typography fontSize={14} marginRight={1.5} color={'#FFFFFF'}>Hire us on work</Typography>
+                                <Typography className='fontSize14 color-white' marginRight={1.5} >Hire us on work</Typography>
                                 <img src={Month} alt="" />
-                                <Typography marginLeft={0.8} fontSize={14} color={'#FFFFFF'}> Schedule Meeting</Typography>
+                                <Typography className='fontSize14 color-white' marginLeft={0.8} > Schedule Meeting</Typography>
                             </Box>
 
                         </Box>

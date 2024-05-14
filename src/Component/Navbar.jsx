@@ -19,29 +19,29 @@ const Navbar = () => {
             <img color='#FFFFFF' src={Swslogo} alt="" id='sws-logo' />
           </Link>
 
-          <Box flexGrow={1 / 10} className="flex-between"
-            id='ul-list' sx={{ display: { xs: 'none', md: 'flex' } }}>
+          <Box flexGrow={1 / 10} className="flex-between ul-list"
+           sx={{ display: { xs: 'none', md: 'flex' } }}>
 
-            <Box id="ul-box">
+            <Box className="ul-box">
               <Typography className='ul-list'>Company</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
-            <Box id="ul-box">
+            <Box className="ul-box">
               <Typography className='ul-list' >Service</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
 
-            <Box id="ul-box" >
+            <Box className="ul-box" >
               <Typography className='ul-list'>Soltions</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
 
-            <Box id="ul-box">
+            <Box className="ul-box">
               <Typography className='ul-list'>Hire Developers</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
 
-            <Box id="ul-box">
+            <Box className="ul-box">
               <Typography className='ul-list'>work</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>

@@ -42,8 +42,8 @@ const Footer = () => {
                         </Box>
                     </Box>
 
-                    <Box width={200} margin={1} >
-                        <Typography color={'#FFFFFF'} variant="h3" fontSize={'36px'} fontWeight={600} marginBottom={1} > {contents.footerData.quickLinks.heading}</Typography>
+                    <Box width={240} margin={1} >
+                        <Typography color={'#FFFFFF'} variant="h3" fontSize={{ xl: 32, lg: 30, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1} > {contents.footerData.quickLinks.heading}</Typography>
                         <Box marginTop={2}>
                             <Typography id="typography">{contents.footerData.quickLinks.text1}</Typography>
                             <Typography id="typography">{contents.footerData.quickLinks.text2}</Typography>
@@ -54,7 +54,7 @@ const Footer = () => {
                     </Box>
 
                     <Box width={290} margin={1} >
-                        <Typography color={'#FFFFFF'} variant="h3" fontSize={"36px"} fontWeight={600} marginBottom={1}>{contents.footerData.policyLinks.heading}</Typography>
+                        <Typography color={'#FFFFFF'} variant="h3"  fontSize={{ xl: 32, lg: 30, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1}>{contents.footerData.policyLinks.heading}</Typography>
                         <Box marginTop={2} fontSize={50} >
                             <Typography id="typography">{contents.footerData.policyLinks.text1}</Typography>
                             <Typography id="typography">{contents.footerData.policyLinks.text2}</Typography>
@@ -66,7 +66,7 @@ const Footer = () => {
                     </Box>
 
                     <Box width={350} margin={1} >
-                        <Typography color={'#FFFFFF'} fontSize={'36px'} variant="h3" fontWeight={600} marginBottom={1} width={'100%'} >
+                        <Typography color={'#FFFFFF'}  fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} variant="h3" fontWeight={600} marginBottom={1} width={'100%'} >
                             {contents.footerData.contactDetails.heading}</Typography>
                         <Box marginTop={2}>
                             <Box display={'flex'} margin={0.5}  >
@@ -75,12 +75,12 @@ const Footer = () => {
                             </Box>
 
                             <Box display={'flex'} margin={0.5}   >
-                            <img src={call} alt="" />
+                                <img src={call} alt="" />
                                 <Typography id="typography" paddingLeft={1}>{contents.footerData.contactDetails.text2}</Typography>
                             </Box>
 
                             <Box display={'flex'} margin={0.5} >
-                            <img src={call} alt="" />
+                                <img src={call} alt="" />
                                 <Typography id="typography" paddingLeft={1}>{contents.footerData.contactDetails.text3}</Typography>
                             </Box>
 
@@ -97,13 +97,13 @@ const Footer = () => {
                     </Box>
                 </Box>
 
-           
-            <Box bgcolor={"#053480"} padding={4} >
-                <Typography fontSize={16} textAlign={'CENTER'} color='#FFFFFF'>
-                    {contents.footerData.copyrightText}
 
-                </Typography>
-            </Box>
+                <Box bgcolor={"#053480"} padding={4} >
+                    <Typography fontSize={16} textAlign={'CENTER'} color='#FFFFFF'>
+                        {contents.footerData.copyrightText}
+
+                    </Typography>
+                </Box>
             </Box>
         </>
     )

@@ -32,19 +32,19 @@ const LeaderShipTeam = () => {
                 </Box>
 
 
-                <Box id="team" padding={3} width={'100%'} display={'flex'} alignItems={'center'} justifyContent={"space-evenly"} flexWrap={'wrap'}>
+                <Box id="team" padding={3} width={'90%'} display={'flex'} alignItems={'center'} justifyContent={"space-evenly"} flexWrap={'wrap'}>
                     <Box className="flex-center-column" margin={2}>
-                        <img id='sir' src={co1} alt="" width={400} />
+                        <img className='sir' src={co1} alt="" />
                         <Typography margin={1.5} fontSize={22} color={'#053480'} fontWeight={700}>Neeraj Malakar</Typography>
                         <Typography fontSize={20} color={'#053480'}>Founder & CEO</Typography>
                     </Box>
                     <Box className="flex-center-column" margin={2}>
-                        <img id='sir' src={co2} alt="" width={400} />
+                        <img className='sir' src={co2} alt=""  />
                         <Typography margin={1.5} fontSize={22} color={'#053480'} fontWeight={700}>Anil Meena</Typography>
                         <Typography fontSize={20} color={'#053480'}>CTO & COO</Typography>
                     </Box>
                     <Box className="flex-center-column" margin={2}>
-                        <img id='sir' src={co3} alt="" width={400} />
+                        <img className='sir' src={co3} alt=""  />
                         <Typography margin={1.5} fontSize={22} color={'#053480'} fontWeight={700}>Ravi Yadav</Typography>
                         <Typography fontSize={20} color={'#053480'}>Founder & CEO</Typography>
                     </Box>

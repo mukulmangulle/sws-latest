@@ -37,19 +37,19 @@ const Home = () => {
     // }
 
     return (
-        <Box id="home" className="flex-center" flexDirection={'column'}>
-            <Box id="home-continer"  width={"84.5%"}  paddingTop={8}  
-                className="flex-between" >
-                <Box id="home-section-1" marginY={1} width={590} >
+        <Box  className="home flex-center" flexDirection={'column'}>
+            <Box  className="home-continer flex-between" width={"84.5%"}  paddingTop={8}  
+                >
+                <Box  marginY={1} width={590} >
                     <Typography id="home-h1" variant='h1' lineHeight={1.1}>
                         {contents.homeData.heading}
                     </Typography>
 
-                    <Typography id='home-p1' variant='h6' fontSize={24} color="#FFFFFF" paddingTop={2.5}>
+                    <Typography className='home-p1' variant='h6' color="#FFFFFF" paddingTop={2.5}>
                         {contents.homeData.subheading}
                     </Typography>
 
-                    <Box id="schadule-meeting" paddingTop={2} display={"flex"} paddingBottom={4} >
+                    <Box className="schadule-meeting" paddingTop={2} display={"flex"} paddingBottom={4} >
                         <Typography  id='home-p2' marginRight={2} fontSize={22} color="#FFFFFF" variant='h6' fontWeight={500}>Schadule Meeting </Typography>
                         <img src={Arrow} width={25} alt="" />
 
@@ -57,12 +57,12 @@ const Home = () => {
                 </Box>
 
                 <Box marginY={2}>
-                    <img className='home-img' src={Homeimg} alt="" width={"100%"} height={"100%"}/>
+                    <img className='home-img' src={Homeimg} alt="" />
                 </Box>
             </Box>
 
 
-            <Box id="home-lastSection" width={'84.5%'} className="flex-between" paddingY={3} flexWrap={"wrap"}  >
+            <Box className="home-lastSection flex-between" width={'84.5%'} paddingY={3} flexWrap={"wrap"}  >
                 <Box display={'flex'} alignItems={"center"} >
                     <img src={Call} alt="" />
                     <Typography fontSize={14} marginLeft={1} color="#FFFFFF" className='Typography1' >

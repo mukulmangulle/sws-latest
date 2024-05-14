@@ -5,7 +5,7 @@ import Input1 from '../../Child-Component/Input';
 import contentSlice from '../../features/content/contentSlice';
 import { useSelector } from 'react-redux';
 
-const  Phpdepartmentform = () => {
+const ContactInformtion = () => {
   const { contents } = useSelector((state) => state.content);
 
   const handleSubmit = (event) => {
@@ -37,7 +37,7 @@ const  Phpdepartmentform = () => {
               </Typography>
             </Box>
             <Box display={'flex'} justifyContent={"space-between"} width={'100%'} flexWrap={'wrap'} >
-              <Box padding={0} width={'380px'} paddingTop={1.5}>
+              <Box className="contact-1" padding={0}  paddingTop={1.5}>
                 <Typography variant='h4' fontSize={22} component="legend">{contents.contactinformation.text1}</Typography>
                 {/* <TextField
                   fullWidth
@@ -92,12 +92,12 @@ const  Phpdepartmentform = () => {
                 <Input1 label="Meassge" />
 
               </Box>
-              <Box width={"350px"} padding={0}   >
+              <Box className="contact-2"  padding={0}   >
 
                 <FormControl component="fieldset" fullWidth margin="normal" >
-                  <Box borderBottom={2} color={"#053480"} padding={0.5} >
+                  <Box  color={"#053480"} padding={1} >
                     <Typography color={'gray'} variant='h3' fontSize={30} component="legend">Select Your Requirement</Typography>
-
+                    <hr  color={"#053480"} />
                   </Box>
                   <RadioGroup row aria-label="project-budget" name="project-budget">
                     <Box display={'flex'} alignItems={"start"} justifyContent={"center"} flexDirection={'column'} >
@@ -115,7 +115,7 @@ const  Phpdepartmentform = () => {
 
 
               {/* section3 */}
-              <Box width={'200px'} paddingTop={4.5}>
+              <Box className="contact-3" width={'200px'} paddingTop={4.5}>
                 <FormControl component="fieldset" fullWidth margin="normal">
 
                   <FormGroup>
@@ -139,14 +139,4 @@ const  Phpdepartmentform = () => {
   )
 }
 
-export default  Phpdepartmentform
-
-
-
-
-
-
-
-
-
-
+export default ContactInformtion
