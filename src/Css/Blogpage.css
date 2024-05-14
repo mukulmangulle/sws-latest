@@ -1,4 +1,4 @@
-.blogsimg{
+.blogsimg {
   background-size: cover;
   object-fit: cover;
   height: 350px;
@@ -6,64 +6,128 @@
   background-position: center;
 }
 
-#blog-card{
+#blog-card {
   max-width: 500px;
   height: 700px;
   margin: 8px;
 }
 
-.card-heading{
-    font-weight: 550 !important;
-    color: #053480;
-    line-height:25px !important ;
-    font-size: 22px;
-    margin-bottom: 10px;
-    max-width: 400px;
+.card-heading {
+  font-weight: 550 !important;
+  color: #053480;
+  line-height: 25px !important;
+  font-size: 22px;
+  margin-bottom: 10px;
+  max-width: 400px;
 }
 
-.card-typography{
+.card-typography {
   font-size: 16px !important;
   line-height: 34px !important;
   padding-top: 16px !important;
 }
 
-.view-more{
+.view-more {
   background: linear-gradient(to bottom, #0160E7, #053480);
   font-size: 15px;
   width: 200px;
-  color: white!important ;
+  color: white !important;
 }
+
+#heading-child {
+  color: #053480;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.blog-pading-top {
+  padding-top: 10px;
+}
+
+#unlocking {
+  color: #053480;
+  font-weight: 600;
+  font-size: 40px;
+
+}
+
+#pregraph {
+  font-weight: 600;
+  color: #053480;
+
+}
+
 
 @media (max-width:1600px) {
-  #blog-card{
-      height: 500px;
-      width: 340px;
+  #blog-card {
+    height: 500px;
+    width: 340px;
   }
-  .card-typography{
+
+  .card-typography {
     font-size: 13px !important;
-    line-height:20px !important;
+    line-height: 20px !important;
     padding-top: 3px !important;
   }
-  .blogsimg{
-        height: 238px;
-     }
+
+  .blogsimg {
+    height: 238px;
+  }
+
+  #heading-child {
+    font-size: 30px;
+  }
+
+  #unlocking {
+    font-size: 35px;
+  }
+
+  #pregraph {
+    font-size: 18px !important;
+
+  }
+  #unlocking{
+ font-size: 30px;
+  }
 }
 
-
-
+@media (max-width:1080px) {
+  #unlocking{
+    font-size: 25px;
+     }
+    }
 
 
 @media (max-width:576px) {
-  #blog-card{
-      height: 500px;
+  #blog-card {
+    height: 500px;
   }
-  .card-typography{
+
+  .card-typography {
     font-size: 13px !important;
-    line-height:20px !important;
+    line-height: 20px !important;
     padding-top: 3px !important;
   }
-  .blogsimg{
-        height: 240px;
+
+  .blogsimg {
+    height: 240px;
+  }
+
+  #heading-child {
+    font-size: 25px;
+  }
+
+  #unlocking {
+    font-size: 25px;
+  }
+
+  #pregraph {
+    font-size: 14px !important;
+
+  }
+  #unlocking{
+    font-size: 20px;
      }
 }
 
@@ -71,16 +135,18 @@
 
 
 @media (max-width:380px) {
-  #blog-card{
-      height: 100%;
-      
+  #blog-card {
+    height: 100%;
+
   }
-  .card-typography{
+
+  .card-typography {
     font-size: 12px !important;
-    line-height:18px !important;
+    line-height: 18px !important;
     padding-top: 3px !important;
   }
-  .blogsimg{
-        height: 220px;
-     }
+
+  .blogsimg {
+    height: 220px;
+  }
 }

@@ -10,7 +10,7 @@ const PhpDepartment = () => {
         <>
             <Box>
                 <Box id="about-background" >
-                    <Typography id='Heading-h2' variant='h2' paddingY={7} >Php Department</Typography>
+                    <Typography id='Heading-h2' variant='h2' paddingTop={7} >Php Department</Typography>
                 </Box>
             </Box>
 

@@ -25,9 +25,31 @@
     
 @media (max-width:1350px) {
     .service-box{
-        width: 200px;
+        width: 220px;
         font-size: 16px;
-        height: 60px;
+        padding: 40px;
+        padding-left: 10PX;
+       
     }
 }
-    
+  
+@media (max-width:768px) {
+    .service-box{
+        width: 250px;
+        font-size: 16px;
+      padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+   
+ 
+@media (max-width:576px) {
+    .service-box{
+        width: 100%;
+     
+        
+    }
+}

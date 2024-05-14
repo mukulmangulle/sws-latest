@@ -21,7 +21,7 @@ const ContactUsSohamweb = () => {
                 <Box  id="boxShadow" borderRadius={4} margin={5} sx={{ boxShadow: "0px 0px 20px 1px gray" }}>
                     <Box className="GETINTOUCH" display={'flex'} justifyContent={"space-between"} width={'100%'} flexWrap={'wrap'} >
                         <Box className="GETINTOUCH1" padding={7} width={{xl:"900px", xs: "100%", sm: "100%", md: "60%" }}  >
-                            <Typography fontSize={45} textAlign={"center"} fontWeight={600} color={"#053480"} margin={2} sx={{ wordSpacing:"-5px" }}>Send Us a Message</Typography>
+                            <Typography id='send-us-message' fontSize={45} textAlign={"center"} fontWeight={600} color={"#053480"} margin={2} sx={{ wordSpacing:"-5px" }}>Send Us a Message</Typography>
                            <FormControl> <Grid container spacing={2} justifyContent="center">
                                 <Grid item xs={12} sm={6}>
                                     {/* <TextField id="filled-basic" label="Name" variant="filled" fullWidth /> */}

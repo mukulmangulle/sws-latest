@@ -7,6 +7,7 @@ import Webdesigner from "../../assets/Service/webdesigner.svg"
 import Graphic from "../../assets/Service/graphic.svg"
 import Ecommerce from "../../assets/Service/ecoomerce.svg"
 import ServiceButton from '../../Child-Component/ServiceButton'
+import ProjectRequirement from './ProjectRequirement'
 
 
 
@@ -41,7 +42,7 @@ const ServiceContaint = () => {
                         </Box>
                         <Box width={617} id="devlopment-text" >
                             <Typography variant='h4' id="typo-fray-hrading">PHP Development</Typography>
-                            <Typography id="Typo-gray-start" >PHP development services focus on implementing secure and powerful server-sides web applications. Our compan deliver robust CMSs, and web-based solutions, we manage complex databases
+                            <Typography id="Typo-gray-start" >PHP development services focus on implementing secure and powerful server-sides web applications.
                             </Typography>
                             <ServiceButton onClick={() => { alert("button click new") }} />
                         </Box>

@@ -11,10 +11,10 @@ const PhpDevelopment2 = () => {
         <>
             <Box maxWidth={"1920px"} margin={"auto"} display={"flex"} alignItems={"center"} justifyContent={"center"} >
 
-                <Box width={"84%"} marginTop={7}>
-                    <Typography marginLeft={3} marginBottom={7} variant='h4' color={"#053480"} fontWeight={600}>Php Blog</Typography>
+                <Box width={"84%"}className="padding-top-bottom">
+                    <Typography id="heading-child">Php Blog</Typography>
 
-                    <Box paddingBottom={5} display={"flex"} alignItems={'start'} justifyContent={"space-between"} flexWrap={'wrap'} >
+                    <Box  display={"flex"} alignItems={'start'} justifyContent={"space-between"} flexWrap={'wrap'} >
 
 
                         {/* 1 */}

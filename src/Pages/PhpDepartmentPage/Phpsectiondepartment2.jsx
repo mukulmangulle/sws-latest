@@ -5,8 +5,8 @@ import Rightclick from "../../assets/php-department/rightclick.svg"
 const Phpsectiondepartment2 = () => {
     return (
         <>
-            <Box className="service"maxWidth={"1920px"} margin={'auto'} display={'flex'} alignItems={'center'} justifyContent={"center"} marginY={7}>
-                <Box width={"95%"} marginY={12}  >
+            <Box className="service padding-top-bottom" maxWidth={"1920px"} margin={'auto'} display={'flex'} alignItems={'center'} justifyContent={"center"} >
+                <Box width={"95%"} marginY={4}  >
                     <Typography textAlign={'center'} variant='h3' color={"white"} fontWeight={600} marginBottom={7} >Service</Typography>
                  <Box display={"flex"} alignItems={"center"} justifyContent={'center'}>
                  <Box width={"89%"} display={'flex'} alignItems={'center'} justifyContent={"space-between"} flexWrap={'wrap'}>

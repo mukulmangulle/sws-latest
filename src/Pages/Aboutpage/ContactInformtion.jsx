@@ -22,7 +22,7 @@ const ContactInformtion = () => {
   };
   return (
     <>
-      <Box padding={6} sx={{ maxWidth: 1920, margin: 'auto' }}>
+      <Box className="padding-top-bottom" sx={{ maxWidth: 1920, margin: 'auto' }}>
         <Typography id='Heading-h2' variant='h2'>{contents.contactinformation.heading}</Typography>
         <Typography margin={2} fontSize={21} textAlign={'center'}>{contents.contactinformation.subheading}</Typography>
 
@@ -31,14 +31,14 @@ const ContactInformtion = () => {
 
           <Box id="form-control" style={boxShadowStyle} paddingTop={5} paddingBottom={1} paddingX={7} width={"80%"} borderRadius={3} marginTop={3} >
             <Box width={"100%"}  >
-              <Typography variant='h3' fontSize={'30px'} fontWeight={600} color={"#053480"}>{contents.contactinformation.content} </Typography>
+              <Typography id="Ready" variant='h3' fontSize={'30px'} fontWeight={600} color={"#053480"}>{contents.contactinformation.content} </Typography>
               <Typography variant="h3" fontSize={"30px"} fontWeight={600} color={"#053480"} gutterBottom>
              
               </Typography>
             </Box>
             <Box display={'flex'} justifyContent={"space-between"} width={'100%'} flexWrap={'wrap'} >
               <Box className="contact-1" padding={0}  paddingTop={1.5}>
-                <Typography variant='h4' fontSize={22} component="legend">{contents.contactinformation.text1}</Typography>
+                <Typography id='select' variant='h4' fontSize={22} component="legend">{contents.contactinformation.text1}</Typography>
                 {/* <TextField
                   fullWidth
                   id="name"
@@ -96,7 +96,7 @@ const ContactInformtion = () => {
 
                 <FormControl component="fieldset" fullWidth margin="normal" >
                   <Box  color={"#053480"} padding={1} >
-                    <Typography color={'gray'} variant='h3' fontSize={30} component="legend">Select Your Requirement</Typography>
+                    <Typography id='select' color={'gray'} variant='h3' fontSize={30} component="legend">Select Your Requirement</Typography>
                     <hr  color={"#053480"} />
                   </Box>
                   <RadioGroup row aria-label="project-budget" name="project-budget">

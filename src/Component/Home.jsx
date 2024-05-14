@@ -38,19 +38,19 @@ const Home = () => {
 
     return (
         <Box  className="home flex-center" flexDirection={'column'}>
-            <Box  className="home-continer flex-between" width={"84.5%"}  paddingTop={8}  
+            <Box  className="home-continer flex-between"    
                 >
                 <Box  marginY={1} width={590} >
-                    <Typography id="home-h1" variant='h1' lineHeight={1.1}>
+                    <Typography id="home-h1" variant='h1'>
                         {contents.homeData.heading}
                     </Typography>
 
-                    <Typography className='home-p1' variant='h6' color="#FFFFFF" paddingTop={2.5}>
+                    <Typography id='home-p1' variant='h6' >
                         {contents.homeData.subheading}
                     </Typography>
 
-                    <Box className="schadule-meeting" paddingTop={2} display={"flex"} paddingBottom={4} >
-                        <Typography  id='home-p2' marginRight={2} fontSize={22} color="#FFFFFF" variant='h6' fontWeight={500}>Schadule Meeting </Typography>
+                    <Box id="schadule-meeting" paddingTop={2} display={"flex"} paddingBottom={4} >
+                        <Typography  id='home-p2 ' marginRight={2}  color="#FFFFFF" variant='h6' fontWeight={500}>Schadule Meeting </Typography>
                         <img src={Arrow} width={25} alt="" />
 
                     </Box>
@@ -65,14 +65,14 @@ const Home = () => {
             <Box className="home-lastSection flex-between" width={'84.5%'} paddingY={3} flexWrap={"wrap"}  >
                 <Box display={'flex'} alignItems={"center"} >
                     <img src={Call} alt="" />
-                    <Typography fontSize={14} marginLeft={1} color="#FFFFFF" className='Typography1' >
+                    <Typography className='fontSize14 color-white'  marginLeft={1}  >
                         {contents.homeData.contactInfo.number}
                     </Typography>
                 </Box>
 
                 <Box display={'flex'} alignItems={"center"}  >
                     <img src={Email} alt="" />
-                    <Typography fontSize={14} marginLeft={1} color="#FFFFFF">
+                    <Typography className='fontSize14 color-white' marginLeft={1}>
                         {contents.homeData.contactInfo.email}
                     </Typography>
                 </Box>
@@ -80,7 +80,7 @@ const Home = () => {
 
                 <Box display={'flex'} alignItems={"center"}    >
                     <img src={Whatsapp} alt="" />
-                    <Typography fontSize={14} marginLeft={1} color="#FFFFFF">
+                    <Typography className='fontSize14 color-white' marginLeft={1}>
                         {contents.homeData.contactInfo.link}
                     </Typography>
                 </Box>

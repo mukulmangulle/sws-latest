@@ -16,12 +16,13 @@ const AboutSection2 = () => {
 return (
     <>
 
-      <Box sx={{ maxWidth: 1920, margin: 'auto' }} padding={12} className='aboutsectiocolor' width={"100%"} display={'flex'} alignItems={'center'} justifyContent={'center'} flexWrap={'wrap'} >
+      <Box
+      className='aboutsectiocolor padding-top-bottom ' >
 
         <img id='aboutsectionimg'  src={AboutSectionimg} alt="" />
 
         <Box id='aboutsectiontypo' padding={5} width={"55%"} display={'flex'} alignItems={'start'} justifyContent={'center'} flexDirection={'column'}>
-          <Typography id="a bout-soham" variant='h3' fontSize={40} fontWeight={'600'} textAlign={'center'} paddingBottom={3} color={'white'}>{contents.aboutSectionData.heading}</Typography>
+          <Typography id='about-heading'  variant='h3' fontSize={40}  fontWeight={'600'} textAlign={'center'} paddingBottom={3} color={'white'}>{contents.aboutSectionData.heading}</Typography>
           <Typography id="typography">  {contents.aboutSectionData.text}</Typography>
 
         </Box>

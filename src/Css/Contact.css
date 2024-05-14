@@ -38,6 +38,9 @@
         height: 220px;
         font-size: 25px;
     }
+    #send-us-message{
+font-size: 40px;
+    }
 }
 
 
@@ -59,6 +62,9 @@
         height: 180px;
         font-size: 25px;
     }
+    #send-us-message{
+        font-size: 35px;
+            }
 }
 
 
@@ -71,11 +77,14 @@
     .GETINTOUCH {
         width: 80% !important;
         margin:auto;
-      
     }
+    .css-1cu5i81{
+        padding: 0%!important;
+    }
+    .GETINTOUCH2 {
+       margin-top: 20px;
 
-  
-
+    }
 }
 
 
@@ -92,14 +101,25 @@
 
     .GETINTOUCH2 {
         width: 100% !;
-        margin: 0%;
-        padding: 0%;
+      
 
     }
 
     .css-1evx3p9 {
         width: 480px !important;
     }
+    #categories{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     
+.categories-box {
+    width:250px;
+   height: 250px;
+   
+}
 }
 
 @media (max-width:420px) {
@@ -113,8 +133,7 @@
 
     .GETINTOUCH2 {
         width: 100% !;
-        margin: 0%;
-        padding: 0%;
+      
 
     }
 
@@ -134,8 +153,7 @@
 
     .GETINTOUCH2 {
         width: 100% !;
-        margin: 0%;
-        padding: 0%;
+     
 
     }
 
@@ -146,22 +164,27 @@
 }
 
 @media (max-width:320px) {
+    .css-jlj68f{
+        width: 50%;
+    }
     .GETINTOUCH {
-        width: 100%;
+        width: 50%;
+       
+      
     }
 
     .GETINTOUCH1 {
-        width: 100%;
+        width: 50%;
     }
 
     .GETINTOUCH2 {
-        width: 100% !;
-        margin: 0%;
-        padding: 0%;
+        width: 50% !;
+    
 
     }
 
     .css-1evx3p9 {
-        width: 100% !important;
+        width: 50% !important;
     }
+ 
 }

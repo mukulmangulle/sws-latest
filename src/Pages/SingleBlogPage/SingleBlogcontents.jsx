@@ -23,7 +23,7 @@ const SingleBlogcontents = () => {
       <Box  maxWidth={"1920px"} margin={'auto'} className="flex-center" marginY={5} >
         <Box className="singleblogpage-man" width={"85%"} display={"flex"} alignItems={"start"} justifyContent={"start"} flexWrap={'wrap'}  >
           <Box className="singleblogpage-man1" width={"720px"} paddingX={5} marginTop={3} >
-            <Typography color={"#053480"} variant='h3' fontWeight={600} fontSize={40}>Blog Heading</Typography>
+            <Typography id="unlocking">Blog Heading</Typography>
             <Box className="singleblogpage-man11">
               <Box marginY={1} color={"#053480"} display={'flex'} height={500} alignItems={"start"} justifyContent={'space-evenly'} flexDirection={"column"}>
 
@@ -45,7 +45,7 @@ const SingleBlogcontents = () => {
                 <Box className="unlocking-child" display={'flex'} marginY={3} >
                   <img src={Blog1} alt="" height={110} />
                   <Box padding={1} display={"flex"} alignItems={"start"} justifyContent={"center"} flexDirection={"column"}>
-                    <Typography fontWeight={600} color={"#053480"} lineHeight={1.1}  id='pregraph'>Unlocking the Potential:  <br /> Add Me to Search Strategies</Typography>
+                    <Typography  lineHeight={1.1}  id='pregraph'>Unlocking the Potential:  <br /> Add Me to Search Strategies</Typography>
                     <Box display={"flex"} marginTop={1.2} >
                       <img src={Month} alt="" height={25} />
                       <Typography color={"#053480"} marginLeft={1}>
@@ -106,7 +106,7 @@ const SingleBlogcontents = () => {
             <img className='singleblogpage-img' src={BLOGMAN} alt=""  />
 
             <Box className="singlepage-section2" width={"100%"}>
-              <Typography marginY={3} marginTop={6} lineHeight={1} variant='h4' fontSize={32} fontWeight={600} color={'#053480'}>Unlocking the Potential: Add Me to Search Strategies</Typography>
+              <Typography  id="unlocking" marginY={3} marginTop={6} lineHeight={1} variant='h4' fontSize={32} fontWeight={600} color={'#053480'}>Unlocking the Potential: Add Me to Search Strategies</Typography>
 
               <Typography flexWrap={'wrap'}  id='pregraph' marginY={3} lineHeight={1.8}>Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive  guide Demystifying the ‘Add Me to Search‘ process”
                 offering insights and practical tipsto elevate your online visibility game.
@@ -119,7 +119,7 @@ const SingleBlogcontents = () => {
                 "Add Me to Search"How To Create Your Google People Card?Where is my…</Typography>
 
 
-              <Typography marginY={3} marginTop={6} lineHeight={1} variant='h5' fontSize={26} fontWeight={600} color={'#053480'}>Unlocking the Potential: Add Me to Search Strategies</Typography>
+              <Typography id="unlocking" marginY={3} marginTop={6} lineHeight={1} variant='h5' fontSize={26} fontWeight={600} color={'#053480'}>Unlocking the Potential: Add Me to Search Strategies</Typography>
 
               <Typography  id='pregraph' marginY={3} lineHeight={1.8}>Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive  guide Demystifying the ‘Add Me to Search‘ process”
                 offering insights and practical tipsto elevate your online visibility game.

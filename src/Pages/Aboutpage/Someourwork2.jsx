@@ -9,8 +9,7 @@ import Work3 from "../../assets/work/work3.png"
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchcontents } from '../../features/content/contentSlice';
 
-
-const SameOurWork2 = () => {
+const SameOurWork = () => {
     const dispatch = useDispatch()
     const { contents } = useSelector((state) => state.content);
 
@@ -20,8 +19,8 @@ const SameOurWork2 = () => {
     }, [dispatch]);
 
     return (
-        <Box sx={{ maxWidth: 1920, margin: 'auto' }}  paddingBottom={5} className="work flex-center-coulmn" >
-            <Box display={'flex'} alignItems={'center'} flexDirection={'column'} paddingTop={5}>
+        <Box sx={{ maxWidth: 1920, margin: 'auto' }}  className="work flex-center-coulmn padding-top-bottom" >
+            <Box display={'flex'} alignItems={'center'} flexDirection={'column'} >
                 <Typography variant='h2' id="Heading-h2"   >
                     {contents.SomeourWorks.heading}
                 </Typography>
@@ -30,34 +29,34 @@ const SameOurWork2 = () => {
                 </Typography>
             </Box>
 
-            <Box width={"80%"} id="mancard" className="flex-center" flexWrap={'wrap'} >
+            <Box width={"80%"}  className="flex-center" flexWrap={'wrap'} >
 
             
-                    <Box id="card" textAlign={'center'} margin={3} width={420} padding={4} className="flex-center" flexDirection={'column'}  >
-                        <Box id="work-margin" margin={3}>
+                    <Box  className="flex-center " id="card" >
+                        <Box  margin={3}>
                             <Box className="work-background flex-center" width={100} height={100} >
-                                <img src={Work1} alt="" />
+                                <img src={Work2} alt="" />
                             </Box>
                         </Box>
 
                         <Box display={'flex'} variant="h6" className="flex-center" flexDirection={'column'} paddingTop={1}>
                             <Typography className='card-heading' color="#053480" fontSize={24} fontWeight={800}>
-                                {contents.SomeourWorks.card.title1}
+                                {contents.SomeourWorks.card.title2}
                             </Typography>
-                            <Typography className='card-pregraph' id='ludo-earn-p' alignItems={'center'} fontSize={14} padding={4} color={"#053480"} textAlign={'center'}>
-                                {contents.SomeourWorks.card.description1}
+                            <Typography className='card-pregraph ludo-earn-p' >
+                                {contents.SomeourWorks.card.description2}
 
                             </Typography>
                         </Box>
                         <CardActions>
-                            <Button id='view-work' padding={3} >View Work</Button>
+                            <Button id='view-work' >View Work</Button>
                         </CardActions>
                     </Box>
               
 
                     
-                        <Box id="card" textAlign={'center'} margin={3} width={420} padding={4} className="flex-center" flexDirection={'column'}  >
-                            <Box id="work-margin" margin={3}>
+                        <Box  className="flex-center " id="card">
+                            <Box  margin={3}>
                                 <Box className="work-background flex-center" width={100} height={100} >
                                     <img src={Work2} alt="" />
                                 </Box>
@@ -67,20 +66,20 @@ const SameOurWork2 = () => {
                                 <Typography className='card-heading' color="#053480" fontSize={24} fontWeight={800}>
                                     {contents.SomeourWorks.card.title2}
                                 </Typography>
-                                <Typography id='ludo-earn-p' alignItems={'center'} fontSize={14} padding={4} color={"#053480"} textAlign={'center'}>
+                                <Typography className='card-pregraph ludo-earn-p' >
                                     {contents.SomeourWorks.card.description2}
 
                                 </Typography>
                             </Box>
                             <CardActions>
-                                <Button id='view-work' padding={3} >View Work</Button>
+                                <Button id='view-work' >View Work</Button>
                             </CardActions>
                         </Box>
                    
 
             
-                    <Box id="card" textAlign={'center'} margin={3} width={420} padding={4} className="flex-center" flexDirection={'column'}  >
-                        <Box id="work-margin" margin={3}>
+                    <Box className="flex-center " id="card">
+                        <Box  margin={3}>
                             <Box className="work-background flex-center" width={100} height={100} >
                                 <img src={Work3} alt="" />
                             </Box>
@@ -90,12 +89,12 @@ const SameOurWork2 = () => {
                             <Typography className='card-heading' color="#053480" fontSize={24} fontWeight={800}>
                                 {contents.SomeourWorks.card.title3}
                             </Typography>
-                            <Typography id='ludo-earn-p' alignItems={'center'} fontSize={14} padding={4} color={"#053480"} textAlign={'center'}>
+                            <Typography className=' ludo-earn-p ' >
                                 {contents.SomeourWorks.card.description3}
                             </Typography>
                         </Box>
                         <CardActions>
-                            <Button id='view-work' padding={3} >View Work</Button>
+                            <Button id='view-work' >View Work</Button>
                         </CardActions>
                     </Box>
                
@@ -104,4 +103,4 @@ const SameOurWork2 = () => {
     )
 }
 
-export default SameOurWork2
+export default SameOurWork

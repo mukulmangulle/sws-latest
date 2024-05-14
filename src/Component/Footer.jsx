@@ -43,7 +43,7 @@ const Footer = () => {
                     </Box>
 
                     <Box width={240} margin={1} >
-                        <Typography color={'#FFFFFF'} variant="h3" fontSize={{ xl: 32, lg: 30, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1} > {contents.footerData.quickLinks.heading}</Typography>
+                        <Typography color={'#FFFFFF'} variant="h3" fontSize={{  xl: 32, lg: 25, md: 25, sm: 22, xs: 25  }} fontWeight={600} marginBottom={1} > {contents.footerData.quickLinks.heading}</Typography>
                         <Box marginTop={2}>
                             <Typography id="typography">{contents.footerData.quickLinks.text1}</Typography>
                             <Typography id="typography">{contents.footerData.quickLinks.text2}</Typography>
@@ -54,7 +54,7 @@ const Footer = () => {
                     </Box>
 
                     <Box width={290} margin={1} >
-                        <Typography color={'#FFFFFF'} variant="h3"  fontSize={{ xl: 32, lg: 30, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1}>{contents.footerData.policyLinks.heading}</Typography>
+                        <Typography color={'#FFFFFF'} variant="h3"  fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1}>{contents.footerData.policyLinks.heading}</Typography>
                         <Box marginTop={2} fontSize={50} >
                             <Typography id="typography">{contents.footerData.policyLinks.text1}</Typography>
                             <Typography id="typography">{contents.footerData.policyLinks.text2}</Typography>

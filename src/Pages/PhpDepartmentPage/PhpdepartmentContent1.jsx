@@ -6,7 +6,7 @@ import BlogButton from '../../Child-Component/ServiceButton'
 
 const PhpdepartmentContent1 = () => {
     return (
-        <Box maxWidth={"1920px"} margin={'auto'} display={"flex"} alignItems={"center"} justifyContent={"center"}>
+        <Box className="padding-top-bottom" maxWidth={"1920px"} margin={'auto'} display={"flex"} alignItems={"center"} justifyContent={"center"}>
             <Box width={"84%"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
                 <Box id="man-reverce1" width={"100%"} className="flex-between-wrap"  >
                     <Box  width={617} id="devlopment-text">

@@ -30,6 +30,43 @@
     margin: 0px 1.5px;
 }
 
+#about-soham {
+    font-size: 40px;
+    font-weight: 600;
+    color: #053480;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.aboutsectiocolor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: auto;
+}
+.leadership{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+   
+}
+#leadership-name{
+    font-weight: 700;
+    margin: 5px;
+    font-size: 22px;
+    color: #053480;
+
+}
+.leadership-p{
+    font-size: 20px;
+    color: #053480;
+}
+
 @media (max-width:1625px) {
     #aboutsectionimg {
         height: 300px;
@@ -59,7 +96,18 @@
 
     #typography {
         font-size: 15px;
+       
     }
+    #about-heading{
+        font-size: 30px;
+    }
+    #Ready{
+        font-size: 25px;
+     }
+     #select{
+ font-size: 20px;
+     }
+   
 
 }
 
@@ -71,13 +119,15 @@
     }
 
     .about-typography {
-        width: 600px;
+        width:80%;
+    
     }
 
     #aboutsectiontypo {
-        width: 100% !important;
+        width: 75% !important;
         padding: 0%;
         margin: 0%;
+     
     }
 
     #aboutsectionimg {
@@ -95,6 +145,12 @@
     .contact-3 {
         width: 270px;
     }
+    #Ready{
+        font-size: 20px;
+     }
+     #select{
+ font-size: 18px;
+     }
 }
 
 @media (max-width:576px) {
@@ -102,6 +158,12 @@
         width: 450px;
         margin-top: 0px;
         padding-top: 0%;
+    }
+    #aboutsectiontypo {
+        width: 90% !important;
+        padding: 0%;
+        margin: 0%;
+     
     }
     #team {
         text-align: center;
@@ -139,6 +201,12 @@
         width: 350px;
         margin-top: 0px;
         padding-top: 0%;
+    }
+    #Ready{
+       font-size: 20px;
+    }
+    #select{
+font-size: 18px;
     }
 }
 

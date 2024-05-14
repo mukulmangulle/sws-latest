@@ -15,8 +15,8 @@ const LatestBlog = () => {
             <Box  sx={{ maxWidth: 1920, margin: 'auto' }}  display={"flex"} alignItems={"center"} justifyContent={"center"} flexDirection={"column"}>
 
                 < Box width={"87%"} >
-                    <Box marginTop={7} >
-                        <Typography  marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}>Latest Blog</Typography>
+                    <Box className="blog-pading-top" >
+                        <Typography id="heading-child" variant='h4' >Latest Blog</Typography>
 
                         <Box  className="flex-between-wrap">
 
@@ -75,8 +75,8 @@ const LatestBlog = () => {
 
                     </Box >
 
-                    <Box marginTop={7}>
-                        <Typography marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}>Laraval Blog</Typography>
+                    <Box className="blog-pading-top">
+                        <Typography id="heading-child" >Laraval Blog</Typography>
 
                         <Box className="flex-between-wrap" >
 
@@ -138,8 +138,8 @@ const LatestBlog = () => {
 
                     </Box>
 
-                    <Box marginTop={7}>
-                        <Typography marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}>Fastival Blog</Typography>
+                    <Box className="blog-pading-top">
+                        <Typography id="heading-child" >Fastival Blog</Typography>
 
                         <Box className="flex-between-wrap">
 
@@ -202,7 +202,7 @@ const LatestBlog = () => {
                     </Box>
 
                     <Box marginTop={7}>
-                        <Typography marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}> Wordpress Blog</Typography>
+                        <Typography id="heading-child" > Wordpress Blog</Typography>
 
                         <Box className="flex-between-wrap" >
 
@@ -263,8 +263,8 @@ const LatestBlog = () => {
                         </Box>
                     </Box>
 
-                    <Box marginTop={7}>
-                        <Typography marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}>Php Blog</Typography>
+                    <Box className="blog-pading-top">
+                        <Typography id="heading-child" >Php Blog</Typography>
                         <Box className="flex-between-wrap">
 
                             {/* 1 */}
@@ -324,8 +324,8 @@ const LatestBlog = () => {
                         </Box>
                     </Box>
 
-                    <Box marginTop={7}>
-                        <Typography marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}>React Blog</Typography>
+                    <Box className="blog-pading-top">
+                        <Typography id="heading-child" >React Blog</Typography>
                         <Box className="flex-between-wrap" >
 
                             {/* 1 */}
@@ -385,8 +385,8 @@ const LatestBlog = () => {
                         </Box>
                     </Box>
 
-                    <Box marginTop={7}>
-                        <Typography marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}>Shopify Blog</Typography>
+                    <Box className="blog-pading-top">
+                        <Typography id="heading-child" >Shopify Blog</Typography>
                         <Box className="flex-between-wrap" >
 
                             {/* 1 */}
@@ -446,8 +446,8 @@ const LatestBlog = () => {
                         </Box>
                     </Box>
 
-                    <Box marginTop={7}>
-                        <Typography marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}>Web Development Blog</Typography>
+                    <Box className="blog-pading-top">
+                        <Typography id="heading-child" >Web Development Blog</Typography>
                         <Box className="flex-between-wrap" >
 
                             {/* 1 */}
@@ -507,8 +507,8 @@ const LatestBlog = () => {
                         </Box>
                     </Box>
 
-                    <Box marginTop={7}>
-                        <Typography marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}>Woo Commerce Blog</Typography>
+                    <Box className="blog-pading-top">
+                        <Typography id="heading-child" >Woo Commerce Blog</Typography>
                         <Box className="flex-between-wrap">
 
                             {/* 1 */}
@@ -568,8 +568,8 @@ const LatestBlog = () => {
                         </Box>
                     </Box>
 
-                    <Box marginTop={7}>
-                        <Typography marginLeft={4} marginBottom={7} variant='h4' color={"#053480"} fontWeight={700}>Wordpress Plugins Blog</Typography>
+                    <Box className="blog-pading-top">
+                        <Typography id="heading-child" >Wordpress Plugins Blog</Typography>
                         <Box className="flex-between-wrap" >
 
                             {/* 1 */}
@@ -629,8 +629,8 @@ const LatestBlog = () => {
                         </Box>
                     </Box>
 
-                    <Box marginY={7} >
-                        <Typography marginLeft={4} marginBottom={7} variant='h4'  color={"#053480"} fontWeight={700}>All Blog</Typography>
+                    <Box className="blog-pading-top">
+                        <Typography id="heading-child" >All Blog</Typography>
                         <Box className="flex-between-wrap" >
 
                             {/* 1 */}

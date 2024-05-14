@@ -15,13 +15,12 @@ function Careertoggle1() {
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary   >
                     <Box width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} paddingY={1.5}>
-                        <Typography variant='h5' fontSize={"32px"} paddingLeft={1.5} fontWeight={550} > HR Executive (Any Graduate can apply) </Typography>
+                        <Typography variant='h5' id="Hr-excutive" paddingLeft={1.5}  > HR Executive (Any Graduate can apply) </Typography>
                         <AddIcon fontSize='large' sx={{ color: "#0160E7" }} />
                     </Box>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Box paddingX={1.5} >
-
                         <Box display={'flex'}>
                             <Typography fontSize={22} fontWeight={600}>Experience :</Typography>
                             <Typography id="Typography-gray-career" >0-1 year</Typography>
@@ -170,7 +169,7 @@ function Careertoggle1() {
                             </Box>
                         </Box>
                     </Box>
-                </AccordionDetails>
+                </AccordionDetails >
 
 
                 <CareerButton />

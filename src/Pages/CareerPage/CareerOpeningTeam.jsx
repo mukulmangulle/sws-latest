@@ -11,11 +11,11 @@ const CareerOpeningTeam = () => {
     return (
         <>
       
-           <Box maxWidth={"1920px"} margin={"auto"} bgcolor={"#E6EBF3"} width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"} flexDirection={"column"}>
-                <Typography id='Heading-h2' variant='h2' marginY={5}   >Current opnings in Team</Typography>
+           <Box maxWidth={"1920px"} className="padding-top-bottom" margin={"auto"} bgcolor={"#E6EBF3"} width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"center"} flexDirection={"column"}>
+                <Typography id='Heading-h2' variant='h2'    >Current opnings in Team</Typography>
 
 
-                <Box    marginBottom={5}  width={"85%"} >
+                <Box    marginTop={5}  width={"85%"} >
                     
                 <Careertoggle1 />
                 <Careertoggle2/>

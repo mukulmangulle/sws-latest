@@ -23,26 +23,26 @@ const Navbar = () => {
            sx={{ display: { xs: 'none', md: 'flex' } }}>
 
             <Box className="ul-box">
-              <Typography className='ul-list'>Company</Typography>
+              <Typography className='fontSize16'>Company</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
             <Box className="ul-box">
-              <Typography className='ul-list' >Service</Typography>
+              <Typography className='fontSize16' >Service</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
 
             <Box className="ul-box" >
-              <Typography className='ul-list'>Soltions</Typography>
+              <Typography className='fontSize16'>Soltions</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
 
             <Box className="ul-box">
-              <Typography className='ul-list'>Hire Developers</Typography>
+              <Typography className='fontSize16'>Hire Developers</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
 
             <Box className="ul-box">
-              <Typography className='ul-list'>work</Typography>
+              <Typography className='fontSize16'>work</Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
 

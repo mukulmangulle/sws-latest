@@ -61,8 +61,8 @@ function OurCustomer() {
 
     return (
 
-        <Box  sx={{ maxWidth: 1920, margin: 'auto' }} padding={5} bgcolor={"#e6f0fd"} display={'flex'} alignItems={'center'} justifyContent={'space-around'} flexDirection={'column'} >
-            <Box display={'flex'} alignItems={'center'} flexDirection={'column'} textAlign={'center'}>
+        <Box className="padding-top-bottom custom-man"  >
+            <Box className="customer-child">
                 <Typography id='Heading-h2' variant='h2' >
                     {contents.ourCustomers.heading}
                 </Typography>
@@ -72,32 +72,32 @@ function OurCustomer() {
 
             </Box>
             <Slider {...settings}>
-                <Box bgcolor="white"  margin={3}>
+                <Box  className="box-white">
                     <Box className="box" style={boxStyle}>
                         <img src={Our1} alt="Our 1" style={imageStyle} />
                     </Box>
                 </Box>
-                <Box bgcolor="white" borderRadius={5} margin={3}>
+                <Box className="box-white">
                     <Box className="box" style={boxStyle}>
                         <img src={Our2} alt="Our 2" style={imageStyle} />
                     </Box>
                 </Box>
-                <Box bgcolor="white" borderRadius={5} margin={3}>
+                <Box  className="box-white">
                     <Box className="box" style={boxStyle}>
                         <img src={Our3} alt="Our 3" style={imageStyle} />
                     </Box>
                 </Box>
-                <Box bgcolor="white"  borderRadius={5} margin={3}>
+                <Box  className="box-white">
                     <Box className="box" style={boxStyle}>
                         <img src={Our4} alt="Our 4" style={imageStyle} />
                     </Box>
                 </Box>
-                <Box bgcolor="white" borderRadius={5} margin={3}>
+                <Box  className="box-white">
                     <Box className="box" style={boxStyle}>
                         <img src={Our5} alt="Our 5" style={imageStyle} />
                     </Box>
                 </Box>
-                <Box bgcolor="white"  borderRadius={5} margin={3} >
+                <Box className="box-white"  >
                     <Box className="box" style={boxStyle}>
                         <img src={Our6} alt="Our 6" style={imageStyle} />
                     </Box>

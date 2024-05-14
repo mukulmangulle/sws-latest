@@ -22,7 +22,7 @@ const ContactInformtion = () => {
   };
   return (
     <>
-      <Box padding={6} sx={{ maxWidth: 1920, margin: 'auto' }}>
+      <Box className="padding-top-bottom" sx={{ maxWidth: 1920, margin: 'auto' }}>
         <Typography id='Heading-h2' variant='h2'>{contents.contactinformation.heading}</Typography>
         <Typography margin={2} fontSize={21} textAlign={'center'}>{contents.contactinformation.subheading}</Typography>
 
