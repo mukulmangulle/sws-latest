@@ -134,29 +134,142 @@ const contentSlice = createSlice({
           description2: "lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, Curabitur elit risus, mattis a tincidunt quis, aliquet sit amet mauris. Cras nec massa enim. Aliquam congue imperdiet vestibulum.Quisque varius lectus eget est aliquet blandit. Sed et ante non neque volutpat gravida. Nulla dictum eros ac est consectetur sit amet tristique lectus ultrices.",
           title3: "Ludo Earn",
           description3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit  Curabitur elit risus, mattis a tincidunt quis, aliquet sit amet mauris. Cras nec massa enim. Aliquam congue imperdiet vestibulum.Quisque varius lectus eget est aliquet blandit. Sed et ante non neque volutpat gravida. Nulla dictum eros ac est consectetur sit amet tristique lectus ultrices.",
+        }
+      },
+
+      blogpages: {
+        head: "Latest Blog",
+        latestblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
         },
+        laravalblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        },
+
+        Fastivalblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        },
+        Wordpressblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        },
+
+        phpblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        },
+
+        Reactblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        },
+        shopifyblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        },
+        developmentblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        },
+        woocommerceblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        },
+        wordpressplugin: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        }
+        ,
+        Allblog: {
+          title1: "Unlocking the Potential: Add Me to Search Strategies",
+          pregraph1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+          title2: "Shopify vs Squarespace – Which is Better?",
+          pregraph2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+          title3: "Top 10 UI/UX Design Trends Every Designer Must Know",
+          pregraph3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…",
+        }
+        
       },
-      contactinformation: {
-        heading: "CONTACT INFORMATIION",
-        subheading: "Our some of these projects may seem interesting to you",
-        content: "Readay To work with us ? Tell us More about your Project Requirement",
-        text1: "Select Your Requirement",
-        text2: "Select Your Requirement",
-      },
-      cheakbox1: {
-        text1: "Enterprice Web Solution ",
-        text2: "Mobile Apps Development",
-        text3: "Hire Dedicated Resoures ",
-        text4: "Enterprice Solution",
-        text5: "CMS Development",
-        text6: "Other",
-      },
-      cheakbox2: {
-        text1: "UI/UX Services",
-        text2: "Application Services",
-        text3: "Framework Development",
-        text4: "IT Consultancy",
-        text5: " Digital Maketing",
+
+
+
+
+
+
+      "singleblog": {
+        title1: "Unlocking the Potential: Add Me to Search Strategies",
+        content1: "Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive guide demystifies the ‘Add Me to Search‘ process offering insights and practical tips to elevate your online visibility game. Table Of Contents Introduction: What is add me on Google? Understanding the Significance of 'Add Me to Search' How To Create Your Google People Card? Where is my…",
+
+
+        content2: "In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the intricacies…",
+
+        title2: "Top 10 UI/UX Design Trends Every Designer Must Know",
+        content3: "In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every designer must know to…"
       }
     },
   },
