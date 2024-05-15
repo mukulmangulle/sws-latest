@@ -9,7 +9,7 @@ import Month from "../assets/Month1.svg"
 
 const Header = () => {
     return (
-        <Box sx={{ maxWidth: 1920, margin: 'auto' }} className='header'>
+        <Box sx={{ maxWidth: 1920, margin: 'auto'}} className='header'>
             <AppBar position="static">
                 <Box className="flex-center">
                     <Box className="header-responsive" width={"85%"} >

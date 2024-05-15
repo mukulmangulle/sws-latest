@@ -38,8 +38,9 @@
         height: 220px;
         font-size: 25px;
     }
-    #send-us-message{
-font-size: 40px;
+
+    #send-us-message {
+        font-size: 40px;
     }
 }
 
@@ -57,69 +58,71 @@ font-size: 40px;
     .GETINTOUCH2 {
         border-radius: 17px;
     }
+
     .categories-box {
         width: 200px;
         height: 180px;
         font-size: 25px;
     }
-    #send-us-message{
+
+    #send-us-message {
         font-size: 35px;
-            }
+    }
 }
 
 
 @media (max-width:610px) {
     #boxShadow {
         box-shadow: none !important;
+        width: 100%;
     }
 }
+
 @media (max-width:576px) {
     .GETINTOUCH {
         width: 80% !important;
-        margin:auto;
+        margin: auto;
     }
-    .css-1cu5i81{
-        padding: 0%!important;
+
+    .css-1cu5i81 {
+        padding: 0% !important;
     }
+
     .GETINTOUCH2 {
-       margin-top: 20px;
+        margin-top: 20px;
 
     }
 }
-
-
-
 
 @media (max-width:480px) {
     .GETINTOUCH {
         width: 100%;
     }
 
-    .GETINTOUCH1 {
-        width: 100%;
+    .GETINTOUCH2 {
+        width: 480px !important;
     }
 
-    .GETINTOUCH2 {
-        width: 100% !;
-      
-
+    .css-hzj0qs {
+        padding: 10% !important;
     }
 
     .css-1evx3p9 {
         width: 480px !important;
     }
-    #categories{
-       
+
+    #categories {
+
         display: flex;
         align-items: center;
         justify-content: center;
     }
-     
-.categories-box {
-    width:250px;
-   height: 250px;
-   
-}
+
+    .categories-box {
+        width: 250px;
+        height: 250px;
+
+    }
 }
 
 @media (max-width:420px) {
@@ -131,11 +134,7 @@ font-size: 40px;
         width: 100%;
     }
 
-    .GETINTOUCH2 {
-        width: 100% !;
-      
 
-    }
 
     .css-1evx3p9 {
         width: 100% !important;
@@ -149,42 +148,22 @@ font-size: 40px;
 
     .GETINTOUCH1 {
         width: 100%;
-    }
 
-    .GETINTOUCH2 {
-        width: 100% !;
-     
-
-    }
-
-    .css-1evx3p9 {
-        width: 100% !important;
     }
 
 }
 
 @media (max-width:320px) {
-    .css-jlj68f{
-        width: 50%;
+
+    .css-jlj68f {
+        width: 100% !important;
     }
+
     .GETINTOUCH {
-        width: 50%;
-       
-      
+        width: 100%;
     }
 
-    .GETINTOUCH1 {
-        width: 50%;
-    }
 
-    .GETINTOUCH2 {
-        width: 50% !;
-    
 
-    }
 
-    .css-1evx3p9 {
-        width: 50% !important;
-    }
- 
 }
