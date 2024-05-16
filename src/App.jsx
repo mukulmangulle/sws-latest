@@ -14,7 +14,8 @@ import Mnavbar from "./Component/M-navbar";
 import PhpDevelopment from "./Pages/Phpdevelopment/PhpDevelopment";
 import Service from "./Pages/ServicePage/Service";
 import PhpDepartment from "./Pages/PhpDepartmentPage/PhpDepartment";
-import { Container } from "@mui/material";
+
+import Blogsmain from "./Pages/Blogs/Blogsmain";
 
 
 
@@ -22,24 +23,23 @@ function App() {
   return (
     <>
       <Router>
-        <Mnavbar/>
-       
-       <Header />
-    
+        
+        <Mnavbar />
+        <Header />
         <Navbar />
 
         <Routes>
           <Route path="/" element={<HomeSection />} />
-          <Route path="/about" element={<Aboutmain/>} />
+          <Route path="/about" element={<Aboutmain />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogs" element={<Blog />} />
           <Route path="/categories" element={<CategoriesPhpBlog />} />
           <Route path="/singleblog" element={<SingleBlogs />} />
-          <Route path="/careermain" element={<Careermain/>} />
-          <Route path="/PhpDevelopment" element={<PhpDevelopment/>} />
-          <Route path="/Service" element={<Service/>} />
-          <Route path="/phpdepartment" element={<PhpDepartment/>} />
-
+          <Route path="/careermain" element={<Careermain />} />
+          <Route path="/PhpDevelopment" element={<PhpDevelopment />} />
+          <Route path="/Service" element={<Service />} />
+          <Route path="/phpdepartment" element={<PhpDepartment />} />
+          <Route path="/Blog" element={<Blogsmain />} />
 
         </Routes>
         < Footer />

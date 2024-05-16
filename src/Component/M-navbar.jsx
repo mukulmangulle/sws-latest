@@ -9,7 +9,7 @@ export default function Mnavbar() {
     <Box bgcolor={"lightsteelblue"} position={'sticky'} top={0} color={'white'} width={"100%"} display={'flex'} flexWrap={"wrap"} padding={3} alignItems={"center"} justifyContent={"space-evenly"}>
            <Link to="/">Home</Link>
            <Link to="/about">About</Link>
-           <Link to="/blog"> blog</Link>
+           <Link to="/blogs"> blog</Link>
           
            <Link to="/singleblog"> single blog</Link>
            <Link to="/contact" >Contact</Link>
@@ -18,6 +18,9 @@ export default function Mnavbar() {
            <Link to="/PhpDevelopment">Php Development</Link>
            <Link to="/Service">Service</Link>
            <Link to="/phpdepartment">Php department</Link>
+           <Link to="/Blog">All Blog</Link>
+           
+           
     </Box>
   );
 }

@@ -6,8 +6,7 @@ import contentSlice from '../../features/content/contentSlice';
 import { useSelector } from 'react-redux';
 
 const ContactInformtion = () => {
-  const { contents } = useSelector((state) => state.content);
-
+ 
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -23,22 +22,22 @@ const ContactInformtion = () => {
   return (
     <>
       <Box className="padding-top-bottom" sx={{ maxWidth: 1920, margin: 'auto' }}>
-        <Typography id='Heading-h2' variant='h2'>{contents.contactinformation.heading}</Typography>
-        <Typography margin={2} fontSize={21} textAlign={'center'}>{contents.contactinformation.subheading}</Typography>
+        <Typography id='Heading-h2' variant='h2'>CONTACT INFORMATIION</Typography>
+        <Typography margin={2} fontSize={21} textAlign={'center'}>Our some of these projects may seem interesting to you</Typography>
 
 
         <Box width={"100"} display={'flex'} alignItems={'center'} justifyContent={'space-between'} flexDirection={'column'}>
 
           <Box id="form-control" style={boxShadowStyle} paddingTop={5} paddingBottom={1} paddingX={7} width={"80%"} borderRadius={3} marginTop={3} >
             <Box width={"100%"}  >
-              <Typography variant='h3' fontSize={'30px'} fontWeight={600} color={"#053480"}>{contents.contactinformation.content} </Typography>
+              <Typography variant='h3' fontSize={'30px'} fontWeight={600} color={"#053480"}>Readay To work with us ? Tell us More about your Project Requirement </Typography>
               <Typography variant="h3" fontSize={"30px"} fontWeight={600} color={"#053480"} gutterBottom>
              
               </Typography>
             </Box>
             <Box display={'flex'} justifyContent={"space-between"} width={'100%'} flexWrap={'wrap'} >
               <Box className="contact-1" padding={0}  paddingTop={1.5}>
-                <Typography variant='h4' fontSize={22} component="legend">{contents.contactinformation.text1}</Typography>
+                <Typography variant='h4' fontSize={22} component="legend">Select Your Requirement</Typography>
                 {/* <TextField
                   fullWidth
                   id="name"
@@ -57,7 +56,7 @@ const ContactInformtion = () => {
                 <Input1 name="number" label="Number" />
 
                 <FormControl fullWidth margin="normal" required  >
-                  <InputLabel fontSize={22} id="requirement-label">{contents.contactinformation.text1}</InputLabel>
+                  <InputLabel fontSize={22} id="requirement-label">Select Your Requirement</InputLabel>
                   <Select
                     labelId="requirement-label"
                     id="requirement"
