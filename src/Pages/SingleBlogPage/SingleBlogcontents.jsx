@@ -16,23 +16,26 @@ import Blckt from "../../assets/single blog page/blact.svg"
 import Youtuve from "../../assets/single blog page/youtuve.svg"
 import Wordpress from "../../assets/single blog page/wordpress.svg"
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchcontents } from '../../features/content/contentSlice'
+import { fetchblogcontents } from '../../features/blog/blogsSlice'
+
+
 
 const SingleBlogcontents = () => {
 
   const dispatch = useDispatch()
-  const { contents } = useSelector((state) => state.content);
-
+  const { blogcontents } = useSelector((state) => state.blogs);
 
   useEffect(() => {
-    dispatch(fetchcontents())
+    dispatch(fetchblogcontents())
   }, [dispatch]);
+
+
 
   return (
     <>
       <Box maxWidth={"1920px"} margin={'auto'} className="flex-center" marginY={5} >
         <Box className="singleblogpage-man" width={"85%"} display={"flex"} alignItems={"start"} justifyContent={"start"} flexWrap={'wrap'}  >
-          <Box className="singleblogpage-man1" width={"720px"} paddingX={5} marginTop={3} >
+          <Box className="singleblogpage-man1" width={"720px"} paddingX={5} marginTop={3}>
             <Typography id="unlocking">Blog Heading</Typography>
             <Box className="singleblogpage-man11">
               <Box marginY={1} color={"#053480"} display={'flex'} height={500} alignItems={"start"} justifyContent={'space-evenly'} flexDirection={"column"}>
@@ -116,17 +119,28 @@ const SingleBlogcontents = () => {
             <img className='singleblogpage-img' src={BLOGMAN} alt="" />
 
             <Box className="singlepage-section2" width={"100%"}>
-              <Typography id="unlocking" marginY={3} marginTop={6} lineHeight={1} variant='h4' fontSize={32} fontWeight={600} color={'#053480'}>{
-                contents.singleblog.title1}</Typography>
-
-              <Typography flexWrap={'wrap'} id='pregraph' marginY={3} lineHeight={1.8}>{contents.singleblog.content1}</Typography>
-
-              <Typography id='pregraph' marginY={4} lineHeight={1.8}>{contents.singleblog.content2}</Typography>
+              <Typography id="unlocking" marginY={3} marginTop={6} lineHeight={1} variant='h4' fontSize={32} fontWeight={600} color={'#053480'}>   
+                {blogcontents[0] && blogcontents[0].title && blogcontents[0].title.rendered}
+   
+              </Typography>
 
 
-              <Typography id="unlocking" marginY={3} marginTop={6} lineHeight={1} variant='h5' fontSize={26} fontWeight={600} color={'#053480'}>{contents.singleblog.title2}</Typography>
+              <Typography flexWrap={'wrap'} id='pregraph' marginY={3} style={{ lineHeight: '1.8' }}
+                dangerouslySetInnerHTML={{ __html: blogcontents[0] && blogcontents[0].content && blogcontents[0].content.rendered} }
+              />
 
-              <Typography id='pregraph' marginY={3} lineHeight={1.8}>{contents.singleblog.content3}</Typography>
+
+{/* 
+              <Typography id='pregraph' marginY={4} lineHeight={1.8}>dynamic digital landscape standing out is crucial. This comprehensive  guide Demystifying the ‘Add Me to Search‘ process”
+                offering insights and practical tipsto elevate your online visibility game.
+                Table Of Contents Introduction:What is add me on Google?Understanding the Significanceof "Add Me to Search"How To Create Your Google People Card?Where is my…</Typography> */}
+
+
+              {/* <Typography id="unlocking" marginY={3} marginTop={6} lineHeight={1} variant='h5' fontSize={26} fontWeight={600} color={'#053480'}>Unlocking the Potential: Add Me to Search Strategies</Typography> */}
+
+              {/* <Typography id='pregraph' marginY={3} lineHeight={1.8}>Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive  guide Demystifying the ‘Add Me to Search‘ process”
+                offering insights and practical tipsto elevate your online visibility game.
+                Table Of Contents Introduction:What is add me on Google?Understanding the Significanceof "Add Me to Search"How To Create Your Google People Card?Where is my… </Typography> */}
 
               <Box display={'flex'} alignItems={'center'} justifyContent={'space-between'}>
                 <Box display={'flex'} alignItems={'center'} >
