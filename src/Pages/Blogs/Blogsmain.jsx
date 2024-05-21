@@ -17,6 +17,7 @@ const Blogsmain = () => {
     useEffect(() => {
         const fetchData = () => {
             dispatch(fetchblogcontents());
+          
         };
         fetchData();
 
@@ -47,11 +48,13 @@ const Blogsmain = () => {
 
                 <Box width={"85%"} display={'flex'} alignItems={"center"} justifyContent={"space-between"} flexWrap={"wrap"}>
 
-                    {
-                    blogcontents.map((blogcontent) => (
+                   {
+                        blogcontents.map((blogcontent) => (
                         <AllBlogs key={blogcontent.id} blogcontent={blogcontent} />))
-                    }
+                    } 
+
                 </Box>
+        
             </Box>
         </>
     )

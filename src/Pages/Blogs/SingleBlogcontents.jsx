@@ -1,5 +1,6 @@
+
 import { Box, Typography } from '@mui/material'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Blog1 from "../../assets/single blog page/blog1.png"
 import Blog2 from "../../assets/single blog page/blog2.png"
 import Blog4 from "../../assets/single blog page/blog4.png"
@@ -16,24 +17,48 @@ import Blckt from "../../assets/single blog page/blact.svg"
 import Youtuve from "../../assets/single blog page/youtuve.svg"
 import Wordpress from "../../assets/single blog page/wordpress.svg"
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchblogcontents } from '../../features/blog/blogsSlice'
+import { useParams } from 'react-router'
 
 
+
+
+
+var API = "https://sohamsolution.com/wp-json/wp/v2/posts/"
 
 const SingleBlogcontents = () => {
-
-  const dispatch = useDispatch()
-  const { blogcontents } = useSelector((state) => state.blogs);
+  const [blogData, setBlogData] = useState(null);
+  const params = useParams();
+  // console.log(params.SingleBlogcontentsId)
 
   useEffect(() => {
-    dispatch(fetchblogcontents())
-  }, [dispatch]);
+    const fetchBlogData = async () => {
+      try {
+        const response = await fetch(`${API}${params.SingleBlogcontentsId}`, {
+          method: 'GET'
+        });
+        console.log('new',response)
+        if (!response.ok) {
+          throw new Error('Failed to fetch blog data');
+          // console.log(response)
+        }
+        const data = await response.json();
+        // console.log('Fetched data:', data); // Log the fetched data
+        setBlogData(data);
+      } catch (error) {
+        // console.error('Error fetching data:', error); // Log any errors
+      }
+    };
 
-
-
+    if (params.SingleBlogcontentsId) {
+      fetchBlogData();
+    }
+  }, []);
   return (
     <>
-      <Box maxWidth={"1920px"} margin={'auto'} className="flex-center" marginY={5} >
+      <Box maxWidth={"1920px"} margin={'auto'} className="flex-center" marginY={5} flexDirection={"column"} >
+        <Box id="about-background" >
+          <Typography id='Heading-h2' variant='h2' padding={7} >Single Blog</Typography>
+        </Box>
         <Box className="singleblogpage-man" width={"85%"} display={"flex"} alignItems={"start"} justifyContent={"start"} flexWrap={'wrap'}  >
           <Box className="singleblogpage-man1" width={"720px"} paddingX={5} marginTop={3}>
             <Typography id="unlocking">Blog Heading</Typography>
@@ -116,31 +141,21 @@ const SingleBlogcontents = () => {
           </Box>
 
           <Box className="singleblogpage-man2" width={"815px"} display={"flex"} alignItems={'START'} padding={3} flexDirection={'COLUMN'} >
-            <img className='singleblogpage-img' src={BLOGMAN} alt="" />
+            <img className='singleblogpage-img' height={"100%"} width={"100%"} src=
+              {blogData && blogData?.jetpack_featured_media_url} alt="" />
+
 
             <Box className="singlepage-section2" width={"100%"}>
-              <Typography id="unlocking" marginY={3} marginTop={6} lineHeight={1} variant='h4' fontSize={32} fontWeight={600} color={'#053480'}>   
-                {blogcontents[0] && blogcontents[0].title && blogcontents[0].title.rendered}
-   
+              <Typography id="unlocking" marginY={3} marginTop={6} lineHeight={1} variant='h4' fontSize={32} fontWeight={600} color={'#053480'}>
+                {blogData?.title?.rendered}
               </Typography>
 
 
               <Typography flexWrap={'wrap'} id='pregraph' marginY={3} style={{ lineHeight: '1.8' }}
-                dangerouslySetInnerHTML={{ __html: blogcontents[0] && blogcontents[0].content && blogcontents[0].content.rendered} }
-              />
+                dangerouslySetInnerHTML={{ __html: blogData?.content?.rendered}}
+                />
+              
 
-
-{/* 
-              <Typography id='pregraph' marginY={4} lineHeight={1.8}>dynamic digital landscape standing out is crucial. This comprehensive  guide Demystifying the ‘Add Me to Search‘ process”
-                offering insights and practical tipsto elevate your online visibility game.
-                Table Of Contents Introduction:What is add me on Google?Understanding the Significanceof "Add Me to Search"How To Create Your Google People Card?Where is my…</Typography> */}
-
-
-              {/* <Typography id="unlocking" marginY={3} marginTop={6} lineHeight={1} variant='h5' fontSize={26} fontWeight={600} color={'#053480'}>Unlocking the Potential: Add Me to Search Strategies</Typography> */}
-
-              {/* <Typography id='pregraph' marginY={3} lineHeight={1.8}>Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive  guide Demystifying the ‘Add Me to Search‘ process”
-                offering insights and practical tipsto elevate your online visibility game.
-                Table Of Contents Introduction:What is add me on Google?Understanding the Significanceof "Add Me to Search"How To Create Your Google People Card?Where is my… </Typography> */}
 
               <Box display={'flex'} alignItems={'center'} justifyContent={'space-between'}>
                 <Box display={'flex'} alignItems={'center'} >

@@ -59,11 +59,16 @@ const blogcontentSlice = createSlice({
   },
 });
 
-export default blogcontentSlice.reducer;
 
+
+// const response = await fetch(`${API}${params.SingleBlogcontentsId}`, {
+
+export default blogcontentSlice.reducer;
+const apiUrl = "https://sohamsolution.com/wp-json/wp/v2/posts/";
 export const fetchblogcontents = createAsyncThunk("FETCH/BLOGCONTENT", async () => {
-  const response = await fetch("https://sohamsolution.com/wp-json/wp/v2/posts/");
+  const response = await fetch(apiUrl);
   const data = await response.json();
   return data;
   // console.log(data)
 });
+

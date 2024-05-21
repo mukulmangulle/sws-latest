@@ -11,7 +11,7 @@ export default function Mnavbar() {
            <Link to="/about">About</Link>
            <Link to="/blogs"> blog</Link>
           
-           <Link to="/singleblog"> single blog</Link>
+           <Link to="/singleblog/:singleblogId"> single blog</Link>
            <Link to="/contact" >Contact</Link>
            <Link to="/categories">categories</Link>
            <Link to="/careermain">career</Link>

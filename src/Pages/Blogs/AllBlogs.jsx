@@ -2,10 +2,13 @@ import { Box, Container, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import { Link } from 'react-router-dom';
+
+import SingleBlogcontents from './SingleBlogcontents';
 
 
 const AllBlogs = ({ blogcontent }) => {
-
+    // console.log(blogcontent)
     return (
         <>
             <Card id='blog-card'  >
@@ -13,12 +16,15 @@ const AllBlogs = ({ blogcontent }) => {
                 <img className='blogsimg' src={blogcontent.jetpack_featured_media_url} alt="" />
 
                 <CardContent  >
-                    <Typography   gutterBottom variant="h6" className='card-heading'>
-                        {blogcontent.title.rendered}
-                    </Typography>
-                    <Typography className='card-typography' >
-                        {blogcontent.excerpt.rendered}
-                    </Typography>
+                    {/* to={`/singleblog/${singleblog.Id}` */}
+                    <Link to={`/singleblog/${blogcontent.id}`} style={{ textDecoration: "none" }} >
+                        <Typography className='card-heading'>
+                            {blogcontent.title.rendered}
+                        </Typography>
+                    </Link>
+                    <Typography className='card-typography'
+                        dangerouslySetInnerHTML={{ __html: blogcontent.excerpt.rendered }}
+                    />
                 </CardContent>
             </Card>
         </>)
