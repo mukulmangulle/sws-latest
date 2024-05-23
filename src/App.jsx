@@ -15,12 +15,14 @@ import Service from "./Pages/ServicePage/Service";
 import PhpDepartment from "./Pages/PhpDepartmentPage/PhpDepartment";
 import Blogsmain from "./Pages/Blogs/Blogsmain";
 import SingleBlogcontents from "./Pages/Blogs/SingleBlogcontents";
+import Categoriessingle from "./Pages/CategoriesPhpBlogPage/Categoriessingle";
 
 
 
 function App() {
   return (
     <>
+    
       <Router>
         
         <Mnavbar />
@@ -32,8 +34,9 @@ function App() {
           <Route path="/about" element={<Aboutmain />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blog />} />
-          <Route path="/categories" element={<CategoriesPhpBlog />} />
+          <Route path="/categories/:CategoriesId" element={<CategoriesPhpBlog />} />
           <Route path="/singleblog/:SingleBlogcontentsId" element={<SingleBlogcontents />} />
+          <Route path="/Categoriessingle/:CategoriessingleId" element={<Categoriessingle />} />
           <Route path="/careermain" element={<Careermain />} />
           <Route path="/PhpDevelopment" element={<PhpDevelopment />} />
           <Route path="/Service" element={<Service />} />

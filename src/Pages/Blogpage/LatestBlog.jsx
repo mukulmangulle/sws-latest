@@ -23,19 +23,21 @@ const LatestBlog = () => {
         <>
             <Box sx={{ maxWidth: 1920, margin: 'auto' }} display={"flex"} alignItems={"center"} justifyContent={"center"} flexDirection={"column"}>
 
-                < Box width={"87%"} >
+                < Box  width={"84%"} >
                     <Box className="blog-pading-top" >
                         <Typography id="heading-child" variant='h4' >Latest Blog</Typography>
-                        <Box className="flex-between-wrap">
+                        <Box
+                         id="blog480-center"
+                          className="flex-between-wrap">
 
                             {/* 1 */}
                             <Card id='blog-card'>
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                         {contents.blogpages.latestblog.title1}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.latestblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -47,10 +49,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.latestblog.title2}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.latestblog.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -61,10 +63,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.latestblog.title3}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.latestblog.pregraph3}
                                     </Typography>
                                 </CardContent>
@@ -75,16 +77,16 @@ const LatestBlog = () => {
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" >Laraval Blog</Typography>
 
-                        <Box className="flex-between-wrap" >
+                        <Box  id="blog480-center" className="flex-between-wrap" >
 
                             {/* 1 */}
                             <Card id='blog-card'>
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                         {contents.blogpages.laravalblog.title1}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.laravalblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -96,10 +98,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.laravalblog.title2}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.laravalblog.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -110,10 +112,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.laravalblog.title3}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.laravalblog.pregraph3}
                                     </Typography>
                                 </CardContent>
@@ -128,15 +130,15 @@ const LatestBlog = () => {
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" >Fastival Blog</Typography>
 
-                        <Box className="flex-between-wrap">
+                        <Box  id="blog480-center" className="flex-between-wrap">
 
                             {/* 1 */}
                             <Card id='blog-card' >
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >   {contents.blogpages.Fastivalblog.title1}
+                                    <Typography gutterBottom variant="h6" id="card-heading" >   {contents.blogpages.Fastivalblog.title1}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.Fastivalblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -148,10 +150,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.Fastivalblog.title2}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.Fastivalblog.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -162,10 +164,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.Fastivalblog.title3}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.Fastivalblog.pregraph3}
                                     </Typography>
                                 </CardContent>
@@ -181,15 +183,15 @@ const LatestBlog = () => {
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" > Wordpress Blog</Typography>
 
-                        <Box className="flex-between-wrap" >
+                        <Box  id="blog480-center" className="flex-between-wrap" >
 
                             {/* 1 */}
                             <Card id='blog-card' >
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                         {contents.blogpages.Wordpressblog.title1}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.Wordpressblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -201,9 +203,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.Wordpressblog.title2}                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.Wordpressblog.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -214,9 +216,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.Wordpressblog.title3}                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.Wordpressblog.pregraph3}
                                     </Typography>
                                 </CardContent>
@@ -230,16 +232,16 @@ const LatestBlog = () => {
 
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" >Php Blog</Typography>
-                        <Box className="flex-between-wrap">
+                        <Box  id="blog480-center" className="flex-between-wrap">
 
                             {/* 1 */}
                             <Card id='blog-card' >
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                         {contents.blogpages.phpblog.title1}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.phpblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -251,9 +253,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.phpblog.title2}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.phpblog.pregraph2}
 
                                     </Typography>
@@ -265,9 +267,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.phpblog.title3}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.phpblog.pregraph3}
 
                                     </Typography>
@@ -282,15 +284,15 @@ const LatestBlog = () => {
 
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" >React Blog</Typography>
-                        <Box className="flex-between-wrap" >
+                        <Box  id="blog480-center" className="flex-between-wrap" >
 
                             {/* 1 */}
                             <Card id='blog-card' >
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                         {contents.blogpages.Reactblog.title1}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.Reactblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -302,9 +304,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.Reactblog.title2}                                       </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.Reactblog.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -315,9 +317,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                         {contents.blogpages.Reactblog.title3}                                       </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                         {contents.blogpages.Reactblog.pregraph3}
                                     </Typography>
                                 </CardContent>
@@ -331,15 +333,15 @@ const LatestBlog = () => {
 
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" >Shopify Blog</Typography>
-                        <Box className="flex-between-wrap" >
+                        <Box  id="blog480-center" className="flex-between-wrap" >
 
                             {/* 1 */}
                             <Card id='blog-card'>
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                     {contents.blogpages.shopifyblog.title1}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.shopifyblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -351,10 +353,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.shopifyblog.title2} 
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.shopifyblog.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -365,9 +367,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.shopifyblog.title3}                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.shopifyblog.pregraph3}
                                     </Typography>
                                 </CardContent>
@@ -381,15 +383,15 @@ const LatestBlog = () => {
 
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" >Web Development Blog</Typography>
-                        <Box className="flex-between-wrap" >
+                        <Box  id="blog480-center" className="flex-between-wrap" >
 
                             {/* 1 */}
                             <Card id='blog-card' >
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                     {contents.blogpages.developmentblog.title1}                                      </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.developmentblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -401,9 +403,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.developmentblog.title2}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.developmentblog.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -414,9 +416,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.developmentblog.title3}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.developmentblog.pregraph3}
                                     </Typography>
                                 </CardContent>
@@ -430,16 +432,16 @@ const LatestBlog = () => {
 
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" >Woo Commerce Blog</Typography>
-                        <Box className="flex-between-wrap">
+                        <Box  id="blog480-center" className="flex-between-wrap">
 
                             {/* 1 */}
                             <Card id='blog-card' >
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                     {contents.blogpages.woocommerceblog.title1}     
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.woocommerceblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -451,10 +453,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.woocommerceblog.title2}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.woocommerceblog.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -465,9 +467,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.woocommerceblog.title3}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.woocommerceblog.pregraph3}
                                     </Typography>
                                 </CardContent>
@@ -481,16 +483,16 @@ const LatestBlog = () => {
 
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" >Wordpress Plugins Blog</Typography>
-                        <Box className="flex-between-wrap" >
+                        <Box  id="blog480-center" className="flex-between-wrap" >
 
                             {/* 1 */}
                             <Card id='blog-card' >
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                     {contents.blogpages.wordpressplugin.title1}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.wordpressplugin.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -502,10 +504,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.wordpressplugin.title2}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.wordpressplugin.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -516,9 +518,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.wordpressplugin.title3}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.wordpressplugin.pregraph3}
                                     </Typography>
                                 </CardContent>
@@ -532,16 +534,16 @@ const LatestBlog = () => {
 
                     <Box className="blog-pading-top">
                         <Typography id="heading-child" >All Blog</Typography>
-                        <Box className="flex-between-wrap" >
+                        <Box  id="blog480-center" className="flex-between-wrap" >
 
                             {/* 1 */}
                             <Card id='blog-card'>
                                 <img className='blogsimg' src={Blog1} alt="" />
                                 <CardContent  >
-                                    <Typography gutterBottom variant="h6" className='card-heading' >
+                                    <Typography gutterBottom variant="h6" id="card-heading" >
                                     {contents.blogpages.Allblog.title1}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.Allblog.pregraph1}
                                     </Typography>
                                 </CardContent>
@@ -553,9 +555,9 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog2} alt="" />
                                 <CardContent  >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.Allblog.title2}                                    </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.Allblog.pregraph2}
                                     </Typography>
                                 </CardContent>
@@ -566,10 +568,10 @@ const LatestBlog = () => {
                                 <img className='blogsimg' src={Blog3} alt="" />
                                 <CardContent >
 
-                                    <Typography gutterBottom variant="h6" className='card-heading'  >
+                                    <Typography gutterBottom variant="h6" id="card-heading"  >
                                     {contents.blogpages.Allblog.title3}
                                     </Typography>
-                                    <Typography className='card-typography' >
+                                    <Typography id="card-typography" >
                                     {contents.blogpages.Allblog.pregraph3}
                                     </Typography>
                                 </CardContent>

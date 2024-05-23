@@ -4,7 +4,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Link } from 'react-router-dom';
 
-import SingleBlogcontents from './SingleBlogcontents';
 
 
 const AllBlogs = ({ blogcontent }) => {
@@ -12,19 +11,19 @@ const AllBlogs = ({ blogcontent }) => {
     return (
         <>
             <Card id='blog-card'  >
-                {/* <img className='blogsimg' src={Blog1} alt="" /> */}
-                <img className='blogsimg' src={blogcontent.jetpack_featured_media_url} alt="" />
+                <img className='blogsimg'
+                    src={blogcontent.jetpack_featured_media_url} alt=""
+                />
 
                 <CardContent  >
-                    {/* to={`/singleblog/${singleblog.Id}` */}
-                    <Link to={`/singleblog/${blogcontent.id}`} style={{ textDecoration: "none" }} >
-                        <Typography className='card-heading'>
+
+                    <Link to={`/singleblog/${blogcontent.slug}`} state={{ id: blogcontent.id }} style={{ textDecoration: "none" }} >
+                        <Typography id='card-heading'>
                             {blogcontent.title.rendered}
                         </Typography>
                     </Link>
-                    <Typography className='card-typography'
-                        dangerouslySetInnerHTML={{ __html: blogcontent.excerpt.rendered }}
-                    />
+                    <Typography id='card-typography'
+                        dangerouslySetInnerHTML={{ __html: blogcontent.excerpt.rendered }} />
                 </CardContent>
             </Card>
         </>)

@@ -14,17 +14,17 @@ const PhpDevelopment2 = () => {
                 <Box width={"84%"}className="padding-top-bottom">
                     <Typography id="heading-child">Php Blog</Typography>
 
-                    <Box  display={"flex"} alignItems={'start'} justifyContent={"space-between"} flexWrap={'wrap'} >
+                    <Box id="blog480-center"  display={"flex"} alignItems={'start'} justifyContent={"space-between"} flexWrap={'wrap'} >
 
 
                         {/* 1 */}
                         <Card id='blog-card'>
                             <img className='blogsimg' src={Blog1} alt="" />
                             <CardContent  >
-                                <Typography gutterBottom variant="h6" className='card-heading' >
+                                <Typography gutterBottom variant="h6" id='card-heading' >
                                     Unlocking the Potential: Add Me to Search Strategies
                                 </Typography>
-                                <Typography className='card-typography' >
+                                <Typography id='card-typography' >
                                     Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive  guide Demystifying the
                                     ‘Add Me to Search‘ process”offering insights and practical tipsto elevate your online visibility game.Table Of
                                     Contents Introduction:What is add me on Google?Understanding the Significanceof "Add Me to Search"How To Create
@@ -39,10 +39,10 @@ const PhpDevelopment2 = () => {
                             <img className='blogsimg' src={Blog2} alt="" />
                             <CardContent  >
 
-                                <Typography gutterBottom variant="h6" className='card-heading'  >
+                                <Typography gutterBottom variant="h6" id='card-heading'  >
                                     Shopify vs Squarespace – Which is Better?
                                 </Typography>
-                                <Typography className='card-typography' >
+                                <Typography id='card-typography' >
                                     In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish
                                     an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making
                                     the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the
@@ -56,10 +56,10 @@ const PhpDevelopment2 = () => {
                             <img className='blogsimg' src={Blog3} alt="" />
                             <CardContent >
 
-                                <Typography gutterBottom variant="h6" className='card-heading'  >
+                                <Typography gutterBottom variant="h6" id='card-heading'  >
                                     Top 10 UI/UX Design Trends Every Designer Must Know
                                 </Typography>
-                                <Typography className='card-typography' >
+                                <Typography id='card-typography' >
                                     In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role
                                     in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create
                                     compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every
@@ -77,10 +77,10 @@ const PhpDevelopment2 = () => {
                         <Card id='blog-card'>
                             <img className='blogsimg' src={Blog1} alt="" />
                             <CardContent  >
-                                <Typography gutterBottom variant="h6" className='card-heading' >
+                                <Typography gutterBottom variant="h6" id='card-heading' >
                                     Unlocking the Potential: Add Me to Search Strategies
                                 </Typography>
-                                <Typography className='card-typography' >
+                                <Typography id='card-typography' >
                                     Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive  guide Demystifying the
                                     ‘Add Me to Search‘ process”offering insights and practical tipsto elevate your online visibility game.Table Of
                                     Contents Introduction:What is add me on Google?Understanding the Significanceof "Add Me to Search"How To Create
@@ -95,10 +95,10 @@ const PhpDevelopment2 = () => {
                             <img className='blogsimg' src={Blog2} alt="" />
                             <CardContent  >
 
-                                <Typography gutterBottom variant="h6" className='card-heading'  >
+                                <Typography gutterBottom variant="h6" id="card-heading"  >
                                     Shopify vs Squarespace – Which is Better?
                                 </Typography>
-                                <Typography className='card-typography' >
+                                <Typography id="card-typography" >
                                     In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish
                                     an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making
                                     the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the
@@ -112,10 +112,10 @@ const PhpDevelopment2 = () => {
                             <img className='blogsimg' src={Blog3} alt="" />
                             <CardContent >
 
-                                <Typography gutterBottom variant="h6" className='card-heading'  >
+                                <Typography gutterBottom variant="h6" id="card-heading"  >
                                     Top 10 UI/UX Design Trends Every Designer Must Know
                                 </Typography>
-                                <Typography className='card-typography' >
+                                <Typography id="card-typography" >
                                     In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role
                                     in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create
                                     compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every
@@ -129,10 +129,10 @@ const PhpDevelopment2 = () => {
                         <Card id='blog-card'>
                             <img className='blogsimg' src={Blog1} alt="" />
                             <CardContent  >
-                                <Typography gutterBottom variant="h6" className='card-heading' >
+                                <Typography gutterBottom variant="h6" id="card-heading" >
                                     Unlocking the Potential: Add Me to Search Strategies
                                 </Typography>
-                                <Typography className='card-typography' >
+                                <Typography id="card-typography" >
                                     Introduction: In the dynamic digital landscape standing out is crucial. This comprehensive  guide Demystifying the
                                     ‘Add Me to Search‘ process”offering insights and practical tipsto elevate your online visibility game.Table Of
                                     Contents Introduction:What is add me on Google?Understanding the Significanceof "Add Me to Search"How To Create
@@ -147,10 +147,10 @@ const PhpDevelopment2 = () => {
                             <img className='blogsimg' src={Blog2} alt="" />
                             <CardContent  >
 
-                                <Typography gutterBottom variant="h6" className='card-heading'  >
+                                <Typography gutterBottom variant="h6" id="card-heading"  >
                                     Shopify vs Squarespace – Which is Better?
                                 </Typography>
-                                <Typography className='card-typography' >
+                                <Typography id="card-typography" >
                                     In the vast landscape of e-commerce, two platforms stand out as popular choices for entrepreneurs looking to establish
                                     an online presence: Shopify vs Squarespace. Each platform comes with its unique set of features and advantages, making
                                     the decision-making process challenging but crucial for the success of your online venture. Today, we delve into the
@@ -164,10 +164,10 @@ const PhpDevelopment2 = () => {
                             <img className='blogsimg' src={Blog3} alt="" />
                             <CardContent >
 
-                                <Typography gutterBottom variant="h6" className='card-heading'  >
+                                <Typography gutterBottom variant="h6" id="card-heading"  >
                                     Top 10 UI/UX Design Trends Every Designer Must Know
                                 </Typography>
-                                <Typography className='card-typography' >
+                                <Typography id="card-typography" >
                                     In the ever-evolving world of technology, User Interface (UI) and User Experience (UX) design play a pivotal role
                                     in shaping the digital landscape. Designers must constantly adapt to new trends and technologies to create
                                     compelling and user-friendly interfaces. In this article, we’ll delve into the top 10 UI/UX design trends every

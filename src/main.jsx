@@ -20,6 +20,7 @@ import "./Css/SingleBlogpage.css"
 import "./Css/Career.css"
 import "./Css/Service.css"
 import "./Css/Phpdepartment.css"
+import "./Css/categories.css"
 import { Provider } from 'react-redux'
 import store from './features/store.js'
 

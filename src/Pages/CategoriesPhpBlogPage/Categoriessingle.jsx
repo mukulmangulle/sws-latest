@@ -11,15 +11,13 @@ import Blckt from "../../assets/single blog page/blact.svg"
 import Youtuve from "../../assets/single blog page/youtuve.svg"
 import Wordpress from "../../assets/single blog page/wordpress.svg"
 import { useLocation, useParams } from 'react-router'
-import Blogcontent2 from './Blogcontent2'
 
 
 
 
+var API = "https://sohamsolution.com/wp-json/wp/v2/categories/38"
 
-var API = "https://sohamsolution.com/wp-json/wp/v2/posts/"
-
-const SingleBlogcontents = () => {
+const Categoriessingle = () => {
   const [blogData, setBlogData] = useState(null);
   const params = useParams();
   const location = useLocation()
@@ -31,7 +29,7 @@ const SingleBlogcontents = () => {
         const response = await fetch(`${API}${id}`, {
           method: 'GET'
         });
-        // console.log('new', response)
+        console.log('new', response)
         if (!response.ok) {
           throw new Error('Failed to fetch blog data');
           console.log(response)
@@ -44,7 +42,7 @@ const SingleBlogcontents = () => {
       }
     };
 
-    if (params.SingleBlogcontentsId) {
+    if (params.CategoriessingleId) {
       fetchBlogData();
     }
   }, []);
@@ -58,11 +56,12 @@ const SingleBlogcontents = () => {
 
           <Box className="all-pg420" >
             <img className='singleblogpage-img' src=
-              {blogData?.jetpack_featured_media_url} alt="" />
+              {blogData?.jetpack_featured_media_url} alt="" 
+              />
 
             <Box className="singlepage-section2" width={"100%"}>
               <Typography flexWrap={'wrap'} id='pregraph' marginY={3} style={{ lineHeight: '1.8' }}
-                dangerouslySetInnerHTML={{ __html: blogData?.content?.rendered }}
+                // dangerouslySetInnerHTML={{ __html: blogData?.content?.rendered }}
               />
 
               <Box display={'flex'} alignItems={'center'} justifyContent={'space-between'}>
@@ -88,7 +87,7 @@ const SingleBlogcontents = () => {
             </Box>
           </Box>
 
-       <Blogcontent2/>
+   
 
         </Box>
       </Box>
@@ -96,4 +95,4 @@ const SingleBlogcontents = () => {
   )
 }
 
-export default SingleBlogcontents
+export default Categoriessingle;

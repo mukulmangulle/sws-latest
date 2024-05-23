@@ -3,6 +3,8 @@ import { Box, Typography, keyframes } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux';
 import AllBlogs from './AllBlogs';
 import { fetchblogcontents } from '../../features/blog/blogsSlice';
+import { SingleBed } from '@mui/icons-material';
+
 
 const Blogsmain = () => {
     const dispatch = useDispatch();
@@ -17,7 +19,7 @@ const Blogsmain = () => {
     useEffect(() => {
         const fetchData = () => {
             dispatch(fetchblogcontents());
-          
+
         };
         fetchData();
 
@@ -46,15 +48,15 @@ const Blogsmain = () => {
 
             <Box sx={{ maxWidth: 1920, margin: 'auto' }} className="padding-top-bottom" display={"flex"} alignItems={"center"} justifyContent={"center"} >
 
-                <Box width={"85%"} display={'flex'} alignItems={"center"} justifyContent={"space-between"} flexWrap={"wrap"}>
+                <Box id="blog480-center" width={"84%"} display={'flex'} alignItems={"center"} justifyContent={"space-between"} flexWrap={"wrap"}>
 
-                   {
+                    {
                         blogcontents.map((blogcontent) => (
-                        <AllBlogs key={blogcontent.id} blogcontent={blogcontent} />))
-                    } 
+                            <AllBlogs key={blogcontent.id} blogcontent={blogcontent} />))
+                    }
 
                 </Box>
-        
+
             </Box>
         </>
     )
