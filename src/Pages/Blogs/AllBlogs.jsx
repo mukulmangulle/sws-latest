@@ -3,11 +3,12 @@ import React, { useEffect } from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 
 
 const AllBlogs = ({ blogcontent }) => {
-    // console.log(blogcontent)
+    const dispatch = useDispatch();
     return (
         <>
             <Card id='blog-card'  >
@@ -20,6 +21,7 @@ const AllBlogs = ({ blogcontent }) => {
                     <Link to={`/singleblog/${blogcontent.slug}`} state={{ id: blogcontent.id }} style={{ textDecoration: "none" }} >
                         <Typography id='card-heading'>
                             {blogcontent.title.rendered}
+                           
                         </Typography>
                     </Link>
                     <Typography id='card-typography'

@@ -20,29 +20,31 @@ import Categoriessingle from "./Pages/CategoriesPhpBlogPage/Categoriessingle";
 
 
 function App() {
+
+  const Api_url = "https://sohamsolution.com/wp-json/wp/v2/"
   return (
     <>
-    
+
       <Router>
-        
         <Mnavbar />
         <Header />
         <Navbar />
-      
+
         <Routes>
           <Route path="/" element={<HomeSection />} />
           <Route path="/about" element={<Aboutmain />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blog />} />
-          <Route path="/categories/:CategoriesId" element={<CategoriesPhpBlog />} />
-          <Route path="/singleblog/:SingleBlogcontentsId" element={<SingleBlogcontents />} />
-          <Route path="/Categoriessingle/:CategoriessingleId" element={<Categoriessingle />} />
+          <Route path="/categories/:CategoriesId" element={<CategoriesPhpBlog />} 
+           />
+          <Route path="/singleblog/:SingleBlogcontentsId" element={<SingleBlogcontents  />} />
+          <Route path="/Categoriessingle/:CategoriessingleId" element={<Categoriessingle Api_url={`${Api_url}posts/`}/>} />
           <Route path="/careermain" element={<Careermain />} />
           <Route path="/PhpDevelopment" element={<PhpDevelopment />} />
           <Route path="/Service" element={<Service />} />
           <Route path="/phpdepartment" element={<PhpDepartment />} />
           <Route path="/Blog" element={<Blogsmain />} />
-             
+
         </Routes>
         < Footer />
       </Router>
