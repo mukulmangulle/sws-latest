@@ -14,7 +14,7 @@ import PhpDevelopment from "./Pages/Phpdevelopment/PhpDevelopment";
 import Service from "./Pages/ServicePage/Service";
 import PhpDepartment from "./Pages/PhpDepartmentPage/PhpDepartment";
 import Blogsmain from "./Pages/Blogs/Blogsmain";
-import SingleBlogcontents from "./Pages/Blogs/SingleBlogcontents";
+import SingleBlogcontents from "./Pages/Blogs/SingleBlog";
 import Categoriessingle from "./Pages/CategoriesPhpBlogPage/Categoriessingle";
 
 

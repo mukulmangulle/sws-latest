@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-
-
 import "./Css/index.css"
 import "./Css/Homepage/Header.css"
 import "./Css/Homepage/Navbar.css"

@@ -11,17 +11,19 @@
     font-weight: 600;
     font-size: 35px;
     margin: 20px 0px;
+    width: 400px;
+
 }
 
 #pregraph {
     font-weight: 600;
     color: #053480;
     font-size: 22px;
-
 }
 
 .singleblogpage-man1 {
     width: 100%;
+
 }
 
 .singleblogpage-man {
@@ -40,15 +42,15 @@
     align-items: start;
     flex-direction: column;
     padding: 3rem;
-
-
-}
+   }
 
 .singleblogpage-man11 {
-    width: 70%;
+    width: 100%;
     display: flex;
     align-items: start;
-    justify-content: space-between;
+    justify-content: space-between !important;
+   
+  
 
 }
 
@@ -62,9 +64,11 @@
     color: #053480;
     display: flex;
     height: 490px;
+    width: 500px;
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
+  
 }
 
 
@@ -80,6 +84,7 @@
 
     #unlocking {
         font-size: 28px;
+        width: 300px;
     }
 
     #pregraph {
@@ -143,7 +148,7 @@
 
     #heading-1 {
         font-size: 22px;
-        width: 100%;
+        width: 80%;
 
     }
 
@@ -184,11 +189,18 @@
         padding: 0%;
     }
 
+ 
     #unlocking {
+        width: 380px;
         font-size: 20px;
     }
 
+    #unlocking-child {
+        width: 380px;
+    } 
+
     #pregraph {
+
         font-size: 14px;
         word-break: break-all;
     }
@@ -232,6 +244,13 @@
 
         width: 100%;
     }
+    .unlocking {
+        width: 250px !important;
+    }
+
+    .unlocking-child {
+        width: 240px;
+             } 
 }
 
 

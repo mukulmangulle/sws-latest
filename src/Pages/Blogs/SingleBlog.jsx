@@ -11,7 +11,7 @@ import Blckt from "../../assets/single blog page/blact.svg"
 import Youtuve from "../../assets/single blog page/youtuve.svg"
 import Wordpress from "../../assets/single blog page/wordpress.svg"
 import { useLocation, useParams } from 'react-router'
-import Blogcontent2 from './Blogcontent2'
+import Blogcontent2 from './Categories2Date'
 
 
 
