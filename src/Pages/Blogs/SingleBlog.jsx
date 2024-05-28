@@ -19,7 +19,7 @@ import Blogcontent2 from './Categories2Date'
 
 var API = "https://sohamsolution.com/wp-json/wp/v2/posts/"
 
-const SingleBlogcontents = () => {
+const SingleBlogcontents = ({Api_url}) => {
   const [blogData, setBlogData] = useState(null);
   const params = useParams();
   const location = useLocation()
@@ -28,7 +28,7 @@ const SingleBlogcontents = () => {
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
-        const response = await fetch(`${API}${id}`, {
+        const response = await fetch(`${Api_url}posts/${id}`, {
           method: 'GET'
         });
         // console.log('new', response)
@@ -37,7 +37,6 @@ const SingleBlogcontents = () => {
           console.log(response)
         }
         const data = await response.json();
-        // console.log('Fetched data:', data); // Log the fetched data
         setBlogData(data);
       } catch (error) {
         // console.error('Error fetching data:', error); // Log any errors

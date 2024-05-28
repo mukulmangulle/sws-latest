@@ -1,8 +1,8 @@
 import { Box, Typography } from '@mui/material'
-import CategoriesBlog from './CategoriesBlog'
+import CategoriesChild from './CategoriesChild'
 
 
-const CategoriesPhpBlog = ({Api_url}) => {
+const CategoriesChildMan = ({Api_url,slug}) => {
  
 
 
@@ -12,10 +12,10 @@ const CategoriesPhpBlog = ({Api_url}) => {
         <Typography id='Heading-h2'  variant='h2' paddingY={10}>Categories : PHP</Typography>
       </Box>
 
-      <CategoriesBlog Api_url={Api_url}/>
+      <CategoriesChild slug={slug} Api_url={Api_url}/>
       {/* <PhpCategories /> */}
     </>
   )
 }
 
-export default CategoriesPhpBlog
+export default CategoriesChildMan

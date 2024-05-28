@@ -45,7 +45,7 @@
    }
 
 .singleblogpage-man11 {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: start;
     justify-content: space-between !important;
@@ -55,8 +55,8 @@
 }
 
 .singleblogpage-img {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    
 }
 
 .categories {
@@ -69,6 +69,9 @@
     justify-content: space-between;
     flex-direction: column;
   
+}
+#unlocking-img{
+      width: 60%;
 }
 
 
@@ -97,7 +100,7 @@
 
 @media (max-width:1200px) {
     .singleblogpage-man11 {
-        width: 100%;
+        width: 80%;
     }
 
     #heading-1 {
@@ -106,10 +109,12 @@
 
     }
 
-    #unlocking {
-        font-size: 25px;
-    }
+   
 
+    .categories{
+        width: 200px;
+           }
+    
     #pregraph {
         font-size: 18px;
     }
@@ -120,7 +125,7 @@
 
 @media (max-width:1080px) {
     .singleblogpage-man11 {
-        width: 100%;
+        width: 80%;
     }
 
     #heading-1 {
@@ -128,10 +133,15 @@
         width: 100%;
 
     }
+    #unlocking-child{
 
-    #unlocking {
-        font-size: 22px;
     }
+    #date-title{
+
+    }
+  
+
+  
 
     #pregraph {
         font-size: 16px;
@@ -142,8 +152,11 @@
 
 @media (max-width:768px) {
     .singleblogpage-man11 {
-        width: 100%;
-
+        width: 70%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
     }
 
     #heading-1 {
@@ -163,7 +176,7 @@
 
     .categories {
         height: 400px;
-        width: 300px;
+        width: 200px;
     }
 
 }
@@ -171,16 +184,11 @@
 
 @media (max-width:576px) {
     .singleblogpage-man11 {
-        width: 100%;
+        width: 70%;
         display: flex;
         align-items: start;
         justify-content: center;
         flex-direction: column;
-    }
-
-    .singleblogpage-man11 {
-        width: 100%;
-
     }
 
     #heading-1 {
@@ -188,26 +196,30 @@
         width: 100%;
         padding: 0%;
     }
-
  
     #unlocking {
-        width: 380px;
+       
         font-size: 20px;
     }
 
-    #unlocking-child {
-        width: 380px;
-    } 
-
     #pregraph {
-
-        font-size: 14px;
+        font-size: 12px;
         word-break: break-all;
+       
     }
+  
+    #date-title{
+        background-color: coral;
+        font-size: 12px;
+    }
+  
+
+  
+
 
     .categories {
         height: 350px;
-        width: 300px;
+        width: 200px;
     }
     .all-pg420 {
 
@@ -244,13 +256,7 @@
 
         width: 100%;
     }
-    .unlocking {
-        width: 250px !important;
-    }
-
-    .unlocking-child {
-        width: 240px;
-             } 
+ 
 }
 
 

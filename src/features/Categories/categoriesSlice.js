@@ -24,7 +24,7 @@ const categoriesSlice = createSlice({
                 state.isLoading = false;
                 state.categoriescontents = action.payload;
             })
-            .addCase(fetchcategories.rejected, (state, action) => {
+            .addCase(fetchcategories.rejected, (state) => {
                 state.isLoading = false;
                 state.isSuccess = false;
                 state.isError = true;
@@ -37,10 +37,23 @@ export default categoriesSlice.reducer;
 
 
 const apiUrl = "https://sohamsolution.com/wp-json/wp/v2/categories";
-export const fetchcategories = createAsyncThunk("FETCH/CATEGORIES", async () => {
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-    return data;
-    //   console.log(data)
-});
+// export const fetchcategories = createAsyncThunk("FETCH/CATEGORIES", async () => {
+//     const response = await fetch(apiUrl);
+//     const data = await response.json();
+//     return data;
+//     //   console.log(data)
+// });
 
+export const fetchcategories = createAsyncThunk("FETCH/CATEGORIES", async () => {
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+            throw new Error('Failed to fetch categories');
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+       
+        throw error; 
+    }
+});

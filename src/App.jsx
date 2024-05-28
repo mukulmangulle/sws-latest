@@ -6,7 +6,6 @@ import Footer from "./Component/Footer";
 import HomeSection from "./Component/HomeSection";
 import Contact from "./Pages/ContactPage/Contact";
 import Blog from "./Pages/Blogpage/Blog";
-import CategoriesPhpBlog from "./Pages/CategoriesPhpBlogPage/CategoriesPhpBlog";
 import Aboutmain from "./Pages/Aboutpage/Aboutmain";
 import Careermain from "./Pages/CareerPage/Careermain";
 import Mnavbar from "./Component/M-navbar";
@@ -15,13 +14,14 @@ import Service from "./Pages/ServicePage/Service";
 import PhpDepartment from "./Pages/PhpDepartmentPage/PhpDepartment";
 import Blogsmain from "./Pages/Blogs/Blogsmain";
 import SingleBlogcontents from "./Pages/Blogs/SingleBlog";
-import Categoriessingle from "./Pages/CategoriesPhpBlogPage/Categoriessingle";
+import Categoriessingle from "./Pages/Blogs/Categoriessingle";
+import CategoriesChildMan from "./Pages/Blogs/Categories-Child-Man";
 
 
 
 function App() {
-
-  const Api_url = "https://sohamsolution.com/wp-json/wp/v2/"
+  const slug="https://sohamsolution.com"
+  let Api_url = "https://sohamsolution.com/wp-json/wp/v2/"
   return (
     <>
 
@@ -31,19 +31,21 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<HomeSection />} />
+          <Route path="/" element={<HomeSection  />} />
           <Route path="/about" element={<Aboutmain />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blog />} />
-          <Route path="/categories/:CategoriesId" element={<CategoriesPhpBlog />} 
+
+          <Route path="/Blog" element={<Blogsmain slug={slug} />} />
+          <Route path="/categories/:CategoriesId" element={<CategoriesChildMan slug={slug} />} 
            />
-          <Route path="/singleblog/:SingleBlogcontentsId" element={<SingleBlogcontents  />} />
-          <Route path="/Categoriessingle/:CategoriessingleId" element={<Categoriessingle Api_url={`${Api_url}posts/`}/>} />
+          <Route path="/https://sohamsolution.com/:SingleBlogcontentsId" element={<SingleBlogcontents Api_url={Api_url}  />} />
+          <Route path="/https://sohamsolution.com/:CategoriessingleId" element={<Categoriessingle Api_url={`${Api_url}posts/`}/>} />
           <Route path="/careermain" element={<Careermain />} />
           <Route path="/PhpDevelopment" element={<PhpDevelopment />} />
           <Route path="/Service" element={<Service />} />
           <Route path="/phpdepartment" element={<PhpDepartment />} />
-          <Route path="/Blog" element={<Blogsmain />} />
+       
 
         </Routes>
         < Footer />

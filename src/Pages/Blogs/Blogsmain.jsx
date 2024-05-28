@@ -6,7 +6,7 @@ import { fetchblogcontents } from '../../features/blog/blogsSlice';
 import { SingleBed } from '@mui/icons-material';
 
 
-const Blogsmain = () => {
+const Blogsmain = ({ slug }) => {
     const dispatch = useDispatch();
     const { blogcontents, isLoading } = useSelector((state) => state.blogs);
     // const blogs = [];
@@ -52,7 +52,7 @@ const Blogsmain = () => {
 
                     {
                         blogcontents.map((blogcontent) => (
-                            <AllBlogs key={blogcontent.id} blogcontent={blogcontent} />))
+                            <AllBlogs key={blogcontent?.id} blogcontent={blogcontent} slug={slug} />))
                     }
 
                 </Box>

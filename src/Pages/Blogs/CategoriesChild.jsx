@@ -6,9 +6,10 @@ import CardContent from '@mui/material/CardContent';
 import { useLocation, useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import PhpCategories from './boxCategories';
+import { Key } from '@mui/icons-material';
 
 
-const CategoriesBlog = () => {
+const CategoriesChild = ({ slug }) => {
 
   const [blogData, setBlogData] = useState(null);
   const params = useParams();
@@ -19,7 +20,7 @@ const CategoriesBlog = () => {
     const fetchBlogData = async () => {
       try {
         // const response = await fetch(`https://sohamsolution.com/wp-json/wp/v2/posts?categories=${id}`, {
-          const response = await fetch(`https://sohamsolution.com/wp-json/wp/v2/posts?categories=${id}`, {
+        const response = await fetch(`https://sohamsolution.com/wp-json/wp/v2/posts?categories=${id}`, {
           method: 'GET'
         });
         // console.log('new', response)
@@ -48,12 +49,12 @@ const CategoriesBlog = () => {
 
         <Box id="blog480-center" width={"84%"} display={'flex'} alignItems={"center"} justifyContent={"space-between"} flexWrap={"wrap"}>
           {blogData?.map((item) => (
-            <Card id='blog-card'  >
+            <Card id='blog-card' key={item?.id} >
               <img className='blogsimg' src={item?.jetpack_featured_media_url} alt="" />
 
               <CardContent  >
 
-                <Link to={`/Categoriessingle/${item.slug}`} state={{ id: item.id }} style={{ textDecoration: "none" }}  >
+                <Link to={`${slug}/${item.slug}`} state={{ id: item.id }} style={{ textDecoration: "none" }}  >
                   <Typography id='card-heading'>
 
                     {item?.title?.rendered}
@@ -63,6 +64,7 @@ const CategoriesBlog = () => {
                   dangerouslySetInnerHTML={{ __html: item?.content?.rendered }} />
               </CardContent>
             </Card>
+
           ))}
 
 
@@ -74,4 +76,4 @@ const CategoriesBlog = () => {
   )
 }
 
-export default CategoriesBlog;
+export default CategoriesChild;
