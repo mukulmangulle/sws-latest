@@ -9,7 +9,6 @@ import Blog from "./Pages/Blogpage/Blog";
 import Aboutmain from "./Pages/Aboutpage/Aboutmain";
 import Careermain from "./Pages/CareerPage/Careermain";
 import Mnavbar from "./Component/M-navbar";
-import PhpDevelopment from "./Pages/Phpdevelopment/PhpDevelopment";
 import Service from "./Pages/ServicePage/Service";
 import PhpDepartment from "./Pages/PhpDepartmentPage/PhpDepartment";
 import Blogsmain from "./Pages/Blogs/Blogsmain";
@@ -26,7 +25,7 @@ function App() {
     <>
 
       <Router>
-        <Mnavbar />
+        <Mnavbar slug={slug} />
         <Header />
         <Navbar />
 
@@ -39,10 +38,10 @@ function App() {
           <Route path="/Blog" element={<Blogsmain slug={slug} />} />
           <Route path="/categories/:CategoriesId" element={<CategoriesChildMan slug={slug} />} 
            />
-          <Route path="/https://sohamsolution.com/:SingleBlogcontentsId" element={<SingleBlogcontents Api_url={Api_url}  />} />
-          <Route path="/https://sohamsolution.com/:CategoriessingleId" element={<Categoriessingle Api_url={`${Api_url}posts/`}/>} />
-          <Route path="/careermain" element={<Careermain />} />
-          <Route path="/PhpDevelopment" element={<PhpDevelopment />} />
+          <Route path="https://sohamsolution.com/:SingleBlogcontentsId" element={<SingleBlogcontents Api_url={Api_url}  />} />
+          <Route path="https://sohamsolution.com/:CategoriessingleId" element={<Categoriessingle Api_url={`${Api_url}posts/`}/>} />
+          <Route path="/career" element={<Careermain />} />
+  
           <Route path="/Service" element={<Service />} />
           <Route path="/phpdepartment" element={<PhpDepartment />} />
        

@@ -19,7 +19,7 @@ const CategoriesChild = ({ slug }) => {
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
-        // const response = await fetch(`https://sohamsolution.com/wp-json/wp/v2/posts?categories=${id}`, {
+          
         const response = await fetch(`https://sohamsolution.com/wp-json/wp/v2/posts?categories=${id}`, {
           method: 'GET'
         });

@@ -12,6 +12,7 @@ import Location from "../assets/footer/location.svg"
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
 import { fetchcontents } from "../features/content/contentSlice"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     const dispatch = useDispatch()
@@ -43,18 +44,18 @@ const Footer = () => {
                     </Box>
 
                     <Box width={240} margin={1} >
-                        <Typography color={'#FFFFFF'} variant="h3" fontSize={{  xl: 32, lg: 25, md: 25, sm: 22, xs: 25  }} fontWeight={600} marginBottom={1} > {contents.footerData.quickLinks.heading}</Typography>
-                        <Box marginTop={2}>
-                            <Typography id="typography">{contents.footerData.quickLinks.text1}</Typography>
-                            <Typography id="typography">{contents.footerData.quickLinks.text2}</Typography>
-                            <Typography id="typography">{contents.footerData.quickLinks.text3}</Typography>
-                            <Typography id="typography">{contents.footerData.quickLinks.text4}</Typography>
-                            <Typography id="typography">{contents.footerData.quickLinks.text5}</Typography>
+                        <Typography color={'#FFFFFF'} variant="h3" fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1} > {contents.footerData.quickLinks.heading}</Typography>
+                        <Box marginTop={2} display={'flex'} alignItems={"start"} flexDirection={"column"}>
+                            <Link to="/about" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text1}</Link>
+                            <Link to="/Service" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text2}</Link>
+                            <Link to="/career" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text3}</Link>
+                            <Link to="/contact" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text4}</Link>
+                            <Link to="/blogs" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text5}</Link>
                         </Box>
                     </Box>
 
                     <Box width={290} margin={1} >
-                        <Typography color={'#FFFFFF'} variant="h3"  fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1}>{contents.footerData.policyLinks.heading}</Typography>
+                        <Typography color={'#FFFFFF'} variant="h3" fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1}>{contents.footerData.policyLinks.heading}</Typography>
                         <Box marginTop={2} fontSize={50} >
                             <Typography id="typography">{contents.footerData.policyLinks.text1}</Typography>
                             <Typography id="typography">{contents.footerData.policyLinks.text2}</Typography>
@@ -66,7 +67,7 @@ const Footer = () => {
                     </Box>
 
                     <Box width={350} margin={1} >
-                        <Typography color={'#FFFFFF'}  fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} variant="h3" fontWeight={600} marginBottom={1} width={'100%'} >
+                        <Typography color={'#FFFFFF'} fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} variant="h3" fontWeight={600} marginBottom={1} width={'100%'} >
                             {contents.footerData.contactDetails.heading}</Typography>
                         <Box marginTop={2}>
                             <Box display={'flex'} margin={0.5}  >

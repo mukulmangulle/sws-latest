@@ -17,8 +17,8 @@ const AllBlogs = ({ blogcontent ,slug}) => {
                 />
 
                 <CardContent  >
-
-                    <Link to={`/${slug}/${blogcontent.slug}`} state={{ id: blogcontent.id }} style={{ textDecoration: "none" }} >
+            
+                    <Link to={`${slug}/${blogcontent.slug}`} state={{ id: blogcontent.id }} style={{ textDecoration: "none" }} >
                         <Typography id='card-heading'>
                             {blogcontent.title.rendered}
                            

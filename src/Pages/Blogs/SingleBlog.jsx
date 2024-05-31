@@ -11,13 +11,9 @@ import Blckt from "../../assets/single blog page/blact.svg"
 import Youtuve from "../../assets/single blog page/youtuve.svg"
 import Wordpress from "../../assets/single blog page/wordpress.svg"
 import { useLocation, useParams } from 'react-router'
-import Blogcontent2 from './Categories2Date'
+import Categories from './Categories'
 
 
-
-
-
-var API = "https://sohamsolution.com/wp-json/wp/v2/posts/"
 
 const SingleBlogcontents = ({Api_url}) => {
   const [blogData, setBlogData] = useState(null);
@@ -87,7 +83,7 @@ const SingleBlogcontents = ({Api_url}) => {
             </Box>
           </Box>
 
-       <Blogcontent2/>
+       <Categories/>
 
         </Box>
       </Box>

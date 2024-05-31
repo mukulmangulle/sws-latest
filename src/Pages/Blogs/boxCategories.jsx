@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const boxCategories = () => {
 
-    const { categoriescontents, isLoading } = useSelector((state) => state.categorie)
+    const { categoriescontents } = useSelector((state) => state.categorie)
 
     return (
         <>
@@ -23,8 +23,6 @@ const boxCategories = () => {
                             </Box>
                         ))}
                     </Box >
-
-
                 </Box>
             </Box>
         </>

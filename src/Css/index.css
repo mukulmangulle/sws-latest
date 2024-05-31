@@ -13,10 +13,12 @@
 
 /* Heading */
 #Heading-h2 {
-    color: #053480;
-    font-size: 60px;
+      font-size: 60px;
     font-weight: 600;
     text-align: center;
+    background: linear-gradient(90deg, #0160E7 10.17%, #053480 70%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .fontSize14 {
@@ -67,6 +69,7 @@
 
 #h4 {
     font-size: 32px;
+    
 }
 
 
@@ -174,7 +177,7 @@
 }
 
 @media (max-width:480px) {
-   
+
 
     #Typography-gray {
         font-size: 16px;
@@ -199,6 +202,7 @@
     #h4 {
         font-size: 20px;
     }
+
     #typography {
         font-size: 12px;
     }
