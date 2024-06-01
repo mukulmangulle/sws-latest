@@ -11,7 +11,7 @@ import Blckt from "../../assets/single blog page/blact.svg"
 import Youtuve from "../../assets/single blog page/youtuve.svg"
 import Wordpress from "../../assets/single blog page/wordpress.svg"
 import { useLocation, useParams } from 'react-router'
-import Categories from './Categories'
+import Categories from './Categories_name'
 
 
 
@@ -56,7 +56,7 @@ const SingleBlogcontents = ({Api_url}) => {
               {blogData?.jetpack_featured_media_url} alt="" />
 
             <Box className="singlepage-section2" width={"100%"}>
-              <Typography flexWrap={'wrap'} id='pregraph' marginY={3} style={{ lineHeight: '1.8' }}
+              <Typography flexWrap={'wrap'} id='pregraph' marginY={3}  
                 dangerouslySetInnerHTML={{ __html: blogData?.content?.rendered }}
               />
 
@@ -66,7 +66,7 @@ const SingleBlogcontents = ({Api_url}) => {
                   <Typography id='pregraph' margin={1}>Previous</Typography>
                 </Box>
                 <Box display={'flex'} alignItems={'center'} >
-                  <Typography id='pregraph' fontSize={22} margin={1}>Next</Typography>
+                  <Typography id='pregraph'  margin={1}>Next</Typography>
                   <img height={30} src={Errowright} alt="" />
                 </Box>
               </Box>

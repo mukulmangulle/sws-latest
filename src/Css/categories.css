@@ -1,10 +1,9 @@
-
 #heading-child {
   color: #053480;
   margin-bottom: 30px;
   font-weight: 600;
   font-size: 35px;
-} 
+}
 
 #blog-pading-top {
   padding-top: 10px;
@@ -12,94 +11,105 @@
 
 .categories-box {
   width: 23%;
-  height:350px;
+  height: 350px;
   margin: 1rem 0px;
   border: 3px solid #053480;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
- 
- }
 
- #categories-box-typo{
+}
+
+#categories-box-typo {
   font-size: 40px;
   color: #053480;
- }
- #date-title{
-        width: 280px;
-        color:#053480;
-        line-height: 1.3rem;
-        font-size: 22px;
- }
+}
 
- @media (max-width:1600px) {
-  
-.categories-box {
-  width: 23%;
-  height:280px;
-  margin: 8px;
- 
- 
- }
-
- #categories-box-typo{
-  font-size: 32px;
+#date-title {
+  width: 280px;
   color: #053480;
- }
- }
+  line-height: 1.3rem;
+  font-size: 20px;
+}
 
- @media (max-width:1300px) {
-  
+@media (max-width:1600px) {
+
   .categories-box {
     width: 23%;
-    height:220px;
-   
-   
-   }
-  
-   #categories-box-typo{
+    height: 280px;
+    margin: 8px;
+  }
+
+  #categories-box-typo {
+    font-size: 32px;
+    color: #053480;
+  }
+
+  #date-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:1300px) {
+
+  .categories-box {
+    width: 23%;
+    height: 220px;
+
+
+  }
+
+  #categories-box-typo {
     font-size: 25px;
     color: #053480;
-   }
-   }
+  }
+  #date-title {
+    font-size: 14px;
+  }
+}
 
-   
- @media (max-width:1024px) {
-  
+
+@media (max-width:1024px) {
+
   .categories-box {
     width: 23%;
-    height:160px;
-   
-   
-   }
-  
-   #categories-box-typo{
+    height: 160px;
+
+
+  }
+
+  #categories-box-typo {
     font-size: 20px;
-   }
-   }
+  }
+}
 
-   @media (max-width:768px) {
-  
-    .categories-box {
-       width: 22%;
-      height:130px;   
-     }
-    
-     #categories-box-typo{
-      font-size: 15px;
-     }
-     }
+@media (max-width:768px) {
 
-     @media (max-width:680px) {
-  
-      .categories-box {
-         width: 200px;
-        height:200px;   
-       }
-      
-       #categories-box-typo{
-        font-size: 15px;
-       }
-       }
-    
+  .categories-box {
+    width: 22%;
+    height: 130px;
+  }
+
+  #categories-box-typo {
+    font-size: 15px;
+  }
+  #date-title {
+    font-size: 11px;
+  }
+}
+
+@media (max-width:680px) {
+
+  .categories-box {
+    width: 200px;
+    height: 200px;
+  }
+
+  #categories-box-typo {
+    font-size: 15px;
+  }
+  #date-title {
+    font-size: 10px;
+  }
+}

@@ -1,7 +1,8 @@
 #blog-card {
   width: 31%;
-  height: 550px;
+  height: 540px;
   margin: 1.5% 0%;
+
 }
 .blogsimg {
 
@@ -20,7 +21,7 @@
 
 #card-typography {
   font-size: 16px;
-  line-height: 200%;
+  line-height: 180%;
   padding-top: 2%;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -41,7 +42,7 @@
 
 @media (max-width:1600px) {
   #blog-card {
-    height: 500px;
+    height:490px;
     margin: 1.5% 0%;
   }
 
@@ -50,8 +51,8 @@
   }
 
   #card-typography {
-    font-size: 14px;
-    line-height: 200%;
+    font-size: 13px;
+    line-height: 180%;
   }
 
   .blogsimg {
@@ -69,13 +70,23 @@
     height: 220px;
     width: 100%;
   }
+  #blog-card {
+    height: 450px;
+    margin: 1.5% 0%;
+   
+  }
+  #card-typography {
+   
+    line-height: 160%;
+  }
 }
 
 
 @media (max-width:1200px) {
   #blog-card {
-    height: 430px;
+    
     margin: 1.5% 0%;
+    /* padding-bottom: 0px; */
   }
 
   #card-heading {
@@ -84,7 +95,36 @@
 
   #card-typography {
     font-size: 12px;
-    line-height: 200%;
+    line-height:180%;
+  }
+
+  .blogsimg {
+
+    height: 180px;
+    width: 100%;
+
+  }
+}
+
+
+@media (max-width:1080px) {
+  #blog-card {
+    height: 380px;
+    margin: 1.5% 0%;
+   
+  }
+  #blog-card {
+    margin: 1.5% 0%;
+  }
+
+  #card-heading {
+    font-size: 16px;
+    line-height: 1rem;
+  }
+
+  #card-typography {
+    font-size: 11px;
+    line-height:150%;
   }
 
   .blogsimg {
@@ -107,11 +147,12 @@
 
   #card-heading {
     font-size: 14px;
+    line-height: 1.5rem;
   }
 
   #card-typography {
     font-size: 11px;
-    line-height: 200%;
+    line-height: 160%;
   }
 
   .blogsimg {

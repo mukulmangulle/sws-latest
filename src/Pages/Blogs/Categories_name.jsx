@@ -6,12 +6,17 @@ import { fetchcategories } from '../../features/Categories/categoriesSlice'
 import { Link } from 'react-router-dom'
 
 
-const Categories = () => {
+const Categories_name = () => {
     const dispatch = useDispatch();
+//   const { slug } = location.state
+//   console.log(slug)
+const url_slug="https://wp.phpcodedemo"
+
+
+
 
     const { blogcontents } = useSelector((state) => state.blogs);
     const { categoriescontents, isLoading } = useSelector((state) => state.categorie)
-
 
     useEffect(() => {
         const fetchData = () => {
@@ -25,17 +30,14 @@ const Categories = () => {
             <Box className="singleblogpage-man1"  >
 
                 <Box className="singleblogpage-man11" >
-                <Typography>Blog Heading</Typography>
+                <Typography id='blog-heading'>Blog Heading</Typography>
                    <Box className="sigleblog-second">
-                   <Box className="categoriess">
+                   <Box className="categories">
                        
-                       <Typography fontWeight={700} fontSize={22}>categories</Typography>
-                       {/* {
-                           categoriescontents.map((categoriescontent) => (
-                               <Categoriestitle key={categoriescontent?.id} categoriescontent={categoriescontent} name={categoriescontent.name} />))
-                       } */}
+                       <Typography id='categorie-heading'>categories</Typography>
+                       
                        {categoriescontents.map((categoriescontent) => (
-                           <Link key={categoriescontent?.id} to={`/categories/${categoriescontent.slug}`} state={{ id: categoriescontent.id }} style={{ textDecoration: "none" }} >
+                           <Link key={categoriescontent?.id} to={`/${process.env.SLUG_URL}/${categoriescontent.slug}/`} state={{ id: categoriescontent.id }} style={{ textDecoration: "none" }} >
 
                                   <Typography id='card-heading'>
                                    {categoriescontent.name}
@@ -47,7 +49,7 @@ const Categories = () => {
 
                    <Box id="unlocking"   >
                        {/* 1 */}
-                       <Typography fontWeight={700} fontSize={22}>Latest Blog</Typography>
+                       <Typography id='categorie-heading'>Latest Blogs</Typography>
 
                        {
                            blogcontents.slice(1, 4).map((blogcontent) => (
@@ -80,4 +82,4 @@ const Categories = () => {
     )
 }
 
-export default Categories
+export default Categories_name

@@ -9,12 +9,13 @@ import PhpCategories from './boxCategories';
 import { Key } from '@mui/icons-material';
 
 
-const CategoriesChild = ({ slug }) => {
+const Festival = ({url_slug }) => {
 
   const [blogData, setBlogData] = useState(null);
   const params = useParams();
   const location = useLocation()
   const { id } = location.state
+  // console.log('CAT',url_slug)
 
   useEffect(() => {
     const fetchBlogData = async () => {
@@ -54,7 +55,7 @@ const CategoriesChild = ({ slug }) => {
 
               <CardContent  >
 
-                <Link to={`${slug}/${item.slug}`} state={{ id: item.id }} style={{ textDecoration: "none" }}  >
+                <Link to={`/${process.env.SLUG_URL}/categories/${item.slug}/`} state={{ id: item.id ,slug:url_slug }} style={{ textDecoration: "none" }}  >
                   <Typography id='card-heading'>
 
                     {item?.title?.rendered}
@@ -76,4 +77,4 @@ const CategoriesChild = ({ slug }) => {
   )
 }
 
-export default CategoriesChild;
+export default Festival;

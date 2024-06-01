@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 
 
 
-const AllBlogs = ({ blogcontent ,slug}) => {
+const AllBlogs = ({ blogcontent ,url_slug}) => {
     const dispatch = useDispatch();
     return (
         <>
@@ -17,8 +17,8 @@ const AllBlogs = ({ blogcontent ,slug}) => {
                 />
 
                 <CardContent  >
-            
-                    <Link to={`${slug}/${blogcontent.slug}`} state={{ id: blogcontent.id }} style={{ textDecoration: "none" }} >
+              
+                    <Link to={`/${process.env.SLUG_URL}/categorie/${blogcontent.slug}`} state={{ id: blogcontent.id }} style={{ textDecoration: "none" }} >
                         <Typography id='card-heading'>
                             {blogcontent.title.rendered}
                            

@@ -1,11 +1,13 @@
 import { Box, Card, Typography } from '@mui/material'
-import CategoriesChild from './CategoriesChild'
+
 import { useSelector } from 'react-redux'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import Festival from './Festival'
 
 
-const CategoriesChildMan = ({ Api_url, slug }) => {
+
+const Festival_title = ({ Api_url}) => {
   const [blogData, setBlogData] = useState(null);
   const params = useParams();
   const location = useLocation()
@@ -40,7 +42,7 @@ const CategoriesChildMan = ({ Api_url, slug }) => {
     <>
       <Box id="about-background" >
           <Typography id='Heading-h2' variant='h2' paddingTop={10} >
-           
+          
           {blogData && blogData.find(category => category.id === Number(id))?.name}
           </Typography>
        
@@ -48,10 +50,10 @@ const CategoriesChildMan = ({ Api_url, slug }) => {
 
       </Box>
 
-      <CategoriesChild slug={slug} Api_url={Api_url} />
-      {/* <PhpCategories /> */}
+      <Festival  Api_url={Api_url} />
+   
     </>
   )
 }
 
-export default CategoriesChildMan
+export default Festival_title
