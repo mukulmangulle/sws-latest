@@ -11,53 +11,54 @@ import Blckt from "../../assets/single blog page/blact.svg"
 import Youtuve from "../../assets/single blog page/youtuve.svg"
 import Wordpress from "../../assets/single blog page/wordpress.svg"
 import { useLocation, useParams } from 'react-router'
-import Categories from './Categories_name'
+import Categories_name from './Categories_name'
 
 
 
-const SingleBlogcontents = ({Api_url}) => {
-  const [blogData, setBlogData] = useState(null);
+const Singlecontent = ({Api_url}) => {
+  const [blog, setBlog] = useState([]);
   const params = useParams();
   const location = useLocation()
   const { id } = location.state
 
   useEffect(() => {
-    const fetchBlogData = async () => {
-      try {
-        const response = await fetch(`${Api_url}posts/${id}`, {
-          method: 'GET'
-        });
-        // console.log('new', response)
+    fetch(`${Api_url}posts/${id}`)
+      .then(response => {
         if (!response.ok) {
-          throw new Error('Failed to fetch blog data');
-          console.log(response)
+          throw new Error(` ${response.status}`);
         }
-        const data = await response.json();
-        setBlogData(data);
-      } catch (error) {
-        // console.error('Error fetching data:', error); // Log any errors
-      }
-    };
-
-    if (params.SingleBlogcontentsId) {
-      fetchBlogData();
-    }
+        return response.json();
+      })
+      .then(data => {
+        // console.log('Fetched data:', data); // Check the fetched data
+        setBlog(data);
+      })
+      .catch(error => {
+        // console.error('Error fetching data:', error);
+      });
   }, []);
-  return (
+  return ( 
     <>
       <Box maxWidth={"1920px"} margin={'auto'} className="flex-center" marginY={5} flexDirection={"column"} >
         <Box id="about-background" width={"85%"}  >
-          <Typography id="heading-1" variant='h2' >  {blogData?.title?.rendered}</Typography>
+         
+          <Typography id="heading-1" variant='h2' >
+            {blog?.title?.rendered}
+            </Typography>
+         
         </Box>
         <Box className="singleblogpage-man"   >
 
           <Box className="all-pg420" >
+        
             <img className='singleblogpage-img' src=
-              {blogData?.jetpack_featured_media_url} alt="" />
+              {blog?.jetpack_featured_media_url} 
+            
+              alt="" />
 
             <Box className="singlepage-section2" width={"100%"}>
               <Typography flexWrap={'wrap'} id='pregraph' marginY={3}  
-                dangerouslySetInnerHTML={{ __html: blogData?.content?.rendered }}
+                dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }}
               />
 
               <Box display={'flex'} alignItems={'center'} justifyContent={'space-between'}>
@@ -83,12 +84,12 @@ const SingleBlogcontents = ({Api_url}) => {
             </Box>
           </Box>
 
-       <Categories/>
-
+          <Categories_name Api_url={Api_url}/>
+       {location.pathname === 'http://localhost:5173/https://categories=${id}' ? <Categories_name Api_url={Api_url} /> : ''} 
         </Box>
       </Box>
     </>
   )
 }
 
-export default SingleBlogcontents
+export default Singlecontent

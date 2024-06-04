@@ -1,59 +1,50 @@
-import { Box, Card, Typography } from '@mui/material'
 
-import { useSelector } from 'react-redux'
-import { Link, useLocation, useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import Festival from './Festival'
+import { Box, Typography } from '@mui/material';
+import { useEffect, useState } from 'react';
+import { useLocation, useParams } from 'react-router-dom';
+import Festival from './Festival';
 
-
-
-const Festival_title = ({ Api_url}) => {
-  const [blogData, setBlogData] = useState(null);
-  const params = useParams();
+const Festival_title = ({ Api_url }) => {
+  const [blogData, setBlogData] = useState(null); // State to store fetched blog data
+  const params = useParams(); // Get URL parameters
   const location = useLocation()
-  const { id } = location.state
+    const { name } = location.state || {};
 
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
-
         const response = await fetch(`https://sohamsolution.com/wp-json/wp/v2/categories`, {
           method: 'GET'
         });
-        // console.log('new', response)
+
         if (!response.ok) {
           throw new Error('Failed to fetch blog data');
-          console.log(response)
         }
+
         const data = await response.json();
-        // console.log('Fetched data:', data); // Log the fetched data
-        setBlogData(data);
+        setBlogData(data); // Set fetched blog data to state
       } catch (error) {
-        // console.error('Error fetching data:', error); // Log any errors
+        console.error('Error fetching data:', error); // Log error if fetching fails
       }
     };
 
-    if (params.CategoriesId) {
-      fetchBlogData();
-    }
-  }, []);
+    fetchBlogData(); // Fetch blog data when component mounts
+  }, [params.CategoriesId]); // Refetch blog data if CategoriesId changes
+  console.log(blogData)
 
   return (
     <>
-      <Box id="about-background" >
-          <Typography id='Heading-h2' variant='h2' paddingTop={10} >
-          
-          {blogData && blogData.find(category => category.id === Number(id))?.name}
-          </Typography>
-       
-
-
+      <Box id="about-background">
+        <Typography id='Heading-h2' variant='h2' paddingTop={10} paddingBottom={5}>
+        {/* {blogData && blogData.filter(blog => blog.id === Number(params.CategoriesId))[0]?.name} */}
+          {name}
+         
+         {/* {blogData && blogData.find(blog => blog.id === Number(params.CategoriesId))?.name}  */}
+        </Typography>
       </Box>
-
-      <Festival  Api_url={Api_url} />
-   
+      <Festival Api_url={Api_url} />
     </>
-  )
+  );
 }
 
-export default Festival_title
+export default Festival_title;
