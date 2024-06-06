@@ -5,6 +5,8 @@ import { useLocation, useParams } from 'react-router';
 import BoxCategories from './boxCategories';
 
 const Festival = ({ Api_url, category }) => {
+
+  
   const [blogContentForPageTwo, setBlogContentForPageTwo] = useState([]);
   const [loading, setLoading] = useState(true); // State to track loading
   const params = useParams();
@@ -49,6 +51,7 @@ const Festival = ({ Api_url, category }) => {
           <Box>Data is not an array</Box>
         )}
       </Box>
+     
       <BoxCategories Api_url={Api_url} />
     </>
   );

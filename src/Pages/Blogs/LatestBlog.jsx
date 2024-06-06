@@ -5,8 +5,11 @@ import Month from "../../assets/single blog page/Month.svg";
 import { Link, useParams } from 'react-router-dom';
 
 const LatestBlog = ({ Api_url }) => {
+
+    
     const [blog, setBlog] = useState([]);
-    const [loading, setLoading] = useState(true); // State to track loading
+    const [loading, setLoading] = useState(true);
+   
 
     const { id } = useParams();
     useEffect(() => {
@@ -19,35 +22,35 @@ const LatestBlog = ({ Api_url }) => {
             })
             .then(data => {
                 setBlog(data);
-                setLoading(false); // Set loading to false when data is received
+                setLoading(false);
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
-                setLoading(false); // Also set loading to false on error
+                setLoading(false);
             });
     }, []);
-
+// console.log(process.env.SLUG_URL)
     return (
         <>
             <Box id="unlocking">
                 <Typography id='categorie-heading'>Latest Blogs</Typography>
-               
+
                 {loading ? (
-                    // Show loading indicator while data is being fetched
                     <CircularProgress />
                 ) : (
-                    // Show blogs when data is available
                     blog.slice(1, 4).map((blog) => (
                         <Box key={blog?.id} id="unlocking-child" display={'flex'} marginY={3}>
                             <img id='unlocking-img' src={blog.jetpack_featured_media_url} alt="" />
                             <Box padding={1} display={"flex"} alignItems={"start"} justifyContent={"center"} flexDirection={"column"}>
                                 <Link
-                                    to={`/${process.env.SLUG_URL}/${blog.slug}/`}
-                                    state={{ id: blog.id }}
+                                    to={`/${process.env.SLUG_URL}/${blog?.slug}/`}
+                                    state={{ id: blog?.id }}
+
                                     style={{ textDecoration: "none" }}
                                     id='date-title'>
                                     {blog.title.rendered}
                                 </Link>
+                              
                                 <Box display={"flex"} marginTop={1.2}>
                                     <img src={Month} alt="" height={25} />
                                     <Typography color={"#053480"} marginLeft={1}>
@@ -63,3 +66,5 @@ const LatestBlog = ({ Api_url }) => {
     )
 }
 export default LatestBlog;
+
+

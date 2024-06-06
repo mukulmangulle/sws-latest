@@ -14,16 +14,11 @@ import PhpDepartment from "./Pages/PhpDepartmentPage/PhpDepartment";
 import Festival_title from "./Pages/Blogs/Festival_title";
 import Singlecontent from "./Pages/Blogs/Singlecontent";
 import AllBlogs from "./Pages/Blogs/AllBlogs";
-import Festival from "./Pages/Blogs/Festival";
-import Categories_name from "./Pages/Blogs/Categories_name";
-import LatestBlog from "./Pages/Blogs/LatestBlog";
-import BoxCategories from "./Pages/Blogs/boxCategories";
 import ScrollToTop from "./ScrollToTop";
 
 
 function App() {
   const url_slug = "https://wp.phpcodedemo"
-  // const url_slug="https://sohamsolution.com"
   let Api_url = "https://sohamsolution.com/wp-json/wp/v2/"
 
   return (
@@ -42,18 +37,19 @@ function App() {
 
         
         <Route path={`/${process.env.SLUG_URL}/blogs`} element={<AllBlogs url_slug={url_slug} />} />
-        <Route path={`/${process.env.SLUG_URL}/:id`} element={<Singlecontent Api_url={Api_url} />} />
         <Route path={`/${process.env.SLUG_URL}/categories/:id`} element={<Festival_title url_slug={url_slug} />} />
        
-        <Route path={`/${process.env.SLUG_URL}/cat/:id`} element={<BoxCategories url_slug={url_slug} />} />
-
-
+        
 
 
         <Route path={`/${process.env.SLUG_URL}/career/`} element={<Careermain />} />
         <Route path={`/${process.env.SLUG_URL}/services/`} element={<Service />} />
         <Route path={`/${process.env.SLUG_URL}/Php_department`} element={<PhpDepartment />} />
-       
+    
+    
+    
+        <Route path={`/${process.env.SLUG_URL}/:id`} element={<Singlecontent Api_url={Api_url}  />} />
+
       </Routes>
 
       <Footer />
