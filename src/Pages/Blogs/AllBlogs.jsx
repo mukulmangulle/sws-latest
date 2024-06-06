@@ -1,13 +1,8 @@
 import { Box, Container, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Carditem from './Carditem';
 import { fetchblogcontents } from '../../features/blog/blogsSlice';
-
-
 
 const AllBlogs = () => {
     const dispatch = useDispatch();
@@ -34,10 +29,9 @@ const AllBlogs = () => {
         return () => clearInterval();
     }, [dispatch, isLoading]);
 
-
     // if (isLoading) {
     //     return (
-    //         <Typography variant='h3' textAlign={'center'}>Loading......</Typography>
+    //         <Typography variant='h3' id="Heading-h2" textAlign={'center'}>Loading......</Typography>
     //     )
     // }
 

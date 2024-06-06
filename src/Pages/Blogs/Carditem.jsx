@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Carditem = ({ blogcontent }) => {
   return (
     <>
-      <Card id='blog-card'>
+      <Card id='blog-card' >
         <img className='blogsimg' src={blogcontent.jetpack_featured_media_url} alt="" />
         <CardContent>
           <Link

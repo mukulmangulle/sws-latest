@@ -1,11 +1,14 @@
-import { Box, Typography } from '@mui/material'
-import React, { useEffect, useState } from 'react'
+import { Box, CircularProgress, Typography } from '@mui/material';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import Month from "../../assets/single blog page/Month.svg"
+import Month from "../../assets/single blog page/Month.svg";
+import { Link, useParams } from 'react-router-dom';
 
-const LatestBlog = ({Api_url}) => {
-     const [blog, setBlog] = useState([]);
+const LatestBlog = ({ Api_url }) => {
+    const [blog, setBlog] = useState([]);
+    const [loading, setLoading] = useState(true); // State to track loading
 
+    const { id } = useParams();
     useEffect(() => {
         fetch(`${Api_url}posts/`)
             .then(response => {
@@ -15,43 +18,48 @@ const LatestBlog = ({Api_url}) => {
                 return response.json();
             })
             .then(data => {
-                // console.log('Fetched data:', data); 
                 setBlog(data);
+                setLoading(false); // Set loading to false when data is received
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
+                setLoading(false); // Also set loading to false on error
             });
     }, []);
-
-
-
-
 
     return (
         <>
             <Box id="unlocking">
                 <Typography id='categorie-heading'>Latest Blogs</Typography>
-
-                {blog.slice(1, 4).map((blog) => (
-                    <Box key={blog?.id} id="unlocking-child" display={'flex'} marginY={3}>
-                        <img id='unlocking-img' src={blog.jetpack_featured_media_url} alt="" />
-                        <Box padding={1} display={"flex"} alignItems={"start"} justifyContent={"center"} flexDirection={"column"}>
-                            <Typography id='date-title'>
-                                {blog.title.rendered}
-                            </Typography>
-                            <Box display={"flex"} marginTop={1.2}>
-                                <img src={Month} alt="" height={25} />
-                                <Typography color={"#053480"} marginLeft={1}>
-                                    {blog.modified}
-                                </Typography>
+               
+                {loading ? (
+                    // Show loading indicator while data is being fetched
+                    <CircularProgress />
+                ) : (
+                    // Show blogs when data is available
+                    blog.slice(1, 4).map((blog) => (
+                        <Box key={blog?.id} id="unlocking-child" display={'flex'} marginY={3}>
+                            <img id='unlocking-img' src={blog.jetpack_featured_media_url} alt="" />
+                            <Box padding={1} display={"flex"} alignItems={"start"} justifyContent={"center"} flexDirection={"column"}>
+                                <Link
+                                    to={`/${process.env.SLUG_URL}/${blog.slug}/`}
+                                    state={{ id: blog.id }}
+                                    style={{ textDecoration: "none" }}
+                                    id='date-title'>
+                                    {blog.title.rendered}
+                                </Link>
+                                <Box display={"flex"} marginTop={1.2}>
+                                    <img src={Month} alt="" height={25} />
+                                    <Typography color={"#053480"} marginLeft={1}>
+                                        {blog.modified}
+                                    </Typography>
+                                </Box>
                             </Box>
                         </Box>
-                    </Box>
-                ))}
+                    ))
+                )}
             </Box>
-
         </>
     )
 }
-
-export default LatestBlog
+export default LatestBlog;

@@ -14,16 +14,16 @@ const blogcontentSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchblogcontents.pending, (state) => {
-        state.isLoading = true;
-        state.message = "";
-      })
+    .addCase(fetchblogcontents.pending, (state) => {
+      state.isLoading = true
+    })
       .addCase(fetchblogcontents.fulfilled, (state, action) => {
-        state.isLoading = false;
+        // state.isLoading = false;
+       state.isSuccess=true;
         state.blogcontents = action.payload;
       })
       .addCase(fetchblogcontents.rejected, (state, action) => {
-        state.isLoading = false;
+        // state.isLoading = false;
         state.isSuccess = false;
         state.isError = true;
         state.message = "Products Cannot Be Fetched!";

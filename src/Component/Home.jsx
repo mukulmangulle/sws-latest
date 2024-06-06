@@ -12,6 +12,7 @@ import Linkdin from "../assets/media/linkdin.svg"
 import Insta from "../assets/media/insta.svg"
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchcontents } from '../features/content/contentSlice';
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 const Home = () => {
@@ -25,16 +26,6 @@ const Home = () => {
     }, [dispatch]);
 
 
-    // if (isLoading) {
-    //     return (
-    //         <Typography variant='h3' textAlign={'center'}>Loading......</Typography>
-    //     )
-    // }
-    // if (isError) {
-    //     return (
-    //         <Typography variant='h3' textAlign={'center'}>Error......</Typography>
-    //     )
-    // }
 
     return (
         <Box  className="home flex-center" flexDirection={'column'}>

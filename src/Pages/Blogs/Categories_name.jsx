@@ -16,6 +16,11 @@ const Categories_name = ({Api_url}) => {
         dispatch(fetchcategories());
     }, [dispatch]);
 
+      if (isLoading) {
+        return (
+            <Typography variant='h5' id="Heading-h2" textAlign={'center'}>Loading......</Typography>
+        )
+    }
     return (
         <>
             <Box className="singleblogpage-man1">

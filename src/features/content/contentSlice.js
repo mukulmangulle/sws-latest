@@ -269,15 +269,15 @@ const contentSlice = createSlice({
   extraReducers: (builder) => {
 
     builder
-      .addCase(fetchcontents.pending, (state, action) => {
-        state.isLoading = true
+      .addCase(fetchcontents.pending, (state) => {
+        state.isLoading = true;
       })
       .addCase(fetchcontents.fulfilled, (state, action) => {
         state.isLoading = false
         state.isSuccess = true
         state.contents = action.payload
       })
-      .addCase(fetchcontents.rejected, (state, action) => {
+      .addCase(fetchcontents.rejected, (state) => {
         state.isLoading = false
         state.isError = true
 
