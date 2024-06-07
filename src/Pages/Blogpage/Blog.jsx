@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
-import LatestBlog from './LatestBlog'
+import LatestBlog from './blogLatestBlog'
 
 const Blog = () => {
     return (
@@ -11,7 +11,7 @@ const Blog = () => {
             </Box>
 
 
-            <LatestBlog />
+            <blogLatestBlog />
      
         </>
     )

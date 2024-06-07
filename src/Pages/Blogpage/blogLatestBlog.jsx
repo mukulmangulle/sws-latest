@@ -11,7 +11,7 @@ import BlogButton from '../../Child-Component/BlogButton';
 import contentSlice, { fetchcontents } from '../../features/content/contentSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
-const LatestBlog = () => {
+const blogLatestBlog = ({}) => {
     const dispatch = useDispatch()
     const { contents } = useSelector((state) => state.content);
 
@@ -589,4 +589,4 @@ const LatestBlog = () => {
     )
 }
 
-export default LatestBlog;
+export default blogLatestBlog;

@@ -1,7 +1,7 @@
 
 import { Box, Typography } from '@mui/material';
 import { useLocation } from 'react-router-dom';
-import Festival from './Festival';
+import BoxCategories from './boxCategories';
 
 const Festival_title = ({ Api_url }) => {
   const location = useLocation()
@@ -14,7 +14,7 @@ const Festival_title = ({ Api_url }) => {
           {name}
         </Typography>
       </Box>
-      <Festival Api_url={Api_url} />
+      <BoxCategories Api_url={Api_url} />
     </>
   );
 }

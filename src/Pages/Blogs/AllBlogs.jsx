@@ -8,16 +8,13 @@ const AllBlogs = () => {
     const dispatch = useDispatch();
     const { blogcontents, isLoading } = useSelector((state) => state.blogs);
     // const blogs = [];
-
     // for (let i = 0; i < blogcontents.length; i++) {
     //     const blogcontent = blogcontents[i];
     //     blogs.push(<AllBlogs key={blogcontent._id} blogcontent={blogcontent} />);
     // }
-
     useEffect(() => {
         const fetchData = () => {
             dispatch(fetchblogcontents());
-
         };
         fetchData();
 
