@@ -1,6 +1,7 @@
 
 body{
     display: block !important;
+    background-color: white! important;
 }
 
 #heading-1 {
@@ -10,8 +11,6 @@ body{
     font-size: 45px;
     padding: 4rem 0rem;
 }
-
-
 
 #unlocking {
     color: #053480;
