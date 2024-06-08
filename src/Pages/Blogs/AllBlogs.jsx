@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import Carditem from './Carditem';
 import { fetchblogcontents } from '../../features/blog/blogsSlice';
+import NextPrevious from './NextPrevious';
 
 const AllBlogs = () => {
     const dispatch = useDispatch();
@@ -45,6 +46,11 @@ const AllBlogs = () => {
                         blogcontents.map((blogcontent) => (
                             <Carditem key={blogcontent?.id} blogcontent={blogcontent} />))
                     }
+
+
+                
+
+
                 </Box>
 
             </Box>

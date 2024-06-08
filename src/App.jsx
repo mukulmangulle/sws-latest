@@ -15,6 +15,7 @@ import Festival_title from "./Pages/Blogs/Festival_title";
 import Singlecontent from "./Pages/Blogs/Singlecontent";
 import AllBlogs from "./Pages/Blogs/AllBlogs";
 import ScrollToTop from "./ScrollToTop";
+import NextPrevious from "./Pages/Blogs/NextPrevious";
 
 
 function App() {
@@ -33,12 +34,15 @@ function App() {
         <Route path={`/${process.env.SLUG_URL}/about/`} element={<Aboutmain />} />
         <Route path={`/${process.env.SLUG_URL}/contact-us/`} element={<Contact />} />
         <Route path={`/${process.env.SLUG_URL}/bloges`} element={<Blog />} />
-        <Route path="/" element={<HomeSection />} />
 
 
         <Route path={`/${process.env.SLUG_URL}/blogs`} element={<AllBlogs url_slug={url_slug} />} />
         <Route path={`/${process.env.SLUG_URL}/:id`} element={<Singlecontent Api_url={Api_url} />} />
         <Route path={`/${process.env.SLUG_URL}/categories/:id`} element={<Festival_title url_slug={url_slug} />} />
+
+
+
+
 
 
         <Route path={`/${process.env.SLUG_URL}/career/`} element={<Careermain />} />
