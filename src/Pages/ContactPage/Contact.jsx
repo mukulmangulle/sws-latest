@@ -1,10 +1,31 @@
-import { Box, Typography } from '@mui/material'
-import React from 'react'
+import { Box, CircularProgress, Typography } from '@mui/material'
+import React, { useEffect, useState } from 'react'
 import ContactUsSohamweb from './ContactUsSohamweb'
 
 
 
 const Contact = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchDataFromAPI();
+  }, []);
+
+  const fetchDataFromAPI = () => {
+   
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); 
+  };
+
+  
+  if (loading) {
+    return (
+      <Box display="flex" justifyContent="center" alignItems="center" height="70vh">
+        <CircularProgress />
+      </Box>
+    );
+  }
   return (
     <Box maxWidth={"1920px"} margin={'auto'}>
       <Box  id="about-background" >

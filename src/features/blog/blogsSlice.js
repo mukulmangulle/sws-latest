@@ -33,8 +33,7 @@ const blogcontentSlice = createSlice({
 
 export default blogcontentSlice.reducer;
 
-
-const apiUrl = "https://sohamsolution.com/wp-json/wp/v2/posts/";
+const apiUrl = "https://sohamsolution.com/wp-json/wp/v2/posts?per_page=10&page=1";
 export const fetchblogcontents = createAsyncThunk("FETCH/BLOGCONTENT", async () => {
   const response = await fetch(apiUrl);
   const data = await response.json();

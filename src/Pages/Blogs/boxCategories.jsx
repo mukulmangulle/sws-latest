@@ -8,22 +8,21 @@ import Carditem from './Carditem';
 
 const BoxCategories = ({ Api_url }) => {
   const dispatch = useDispatch();
-  const { categoriescontents, isLoading } = useSelector((state) => state.categorie);
+  const { categoriescontents, isLoading: categoriesLoading } = useSelector((state) => state.categorie);
   const [loading, setLoading] = useState(true);
-
   const [blogContentForPageTwo, setBlogContentForPageTwo] = useState([]);
+
+  const params = useParams();
+  const location = useLocation();
+  const { id } = location.state || {};
 
   useEffect(() => {
     dispatch(fetchcategories());
   }, [dispatch]);
 
-  const params = useParams();
-  const location = useLocation();
-
-  const { id } = location.state || {};
-
   useEffect(() => {
     if (id) {
+      setLoading(true);
       fetch(`https://sohamsolution.com/wp-json/wp/v2/posts?categories=${id}`)
         .then(response => {
           if (!response.ok) {
@@ -42,7 +41,7 @@ const BoxCategories = ({ Api_url }) => {
     }
   }, [id]);
 
-  if (isLoading || loading) {
+  if (categoriesLoading || loading) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" height="70vh">
         <CircularProgress />
