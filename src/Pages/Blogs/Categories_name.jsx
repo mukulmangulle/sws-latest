@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, CircularProgress, Typography } from '@mui/material';
 import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchcategories } from '../../features/Categories/categoriesSlice';
@@ -21,7 +21,7 @@ const Categories_name = () => {
         let scrollPosition = 0;
 
         const autoScroll = () => {
-            const scrollAmount = imageList.clientWidth / 2; // Adjust the scroll amount as needed
+            const scrollAmount = imageList.clientWidth / 2; 
             if (scrollPosition >= maxScrollLeft) {
                 scrollPosition = 0;
             } else {
@@ -33,14 +33,14 @@ const Categories_name = () => {
             });
         };
 
-        const autoScrollInterval = setInterval(autoScroll, 5000); // Adjust the interval time as needed
+        const autoScrollInterval = setInterval(autoScroll, 5000); 
 
         return () => clearInterval(autoScrollInterval);
     };  
 
     if (isLoading) {
         return (
-            <Typography variant='h5' id="Heading-h2" textAlign={'center'}>Loading......</Typography>
+            <Typography margin={"auto"} variant='h5' id="Heading-h2" textAlign={'center'} height={"70vh"}><CircularProgress /></Typography>
         )
     }
 

@@ -4,7 +4,7 @@ import AddIcon from '@mui/icons-material/Add';
 import CareerButton from '../../../Child-Component/CareerButton';
 import CareerForm from './CareerForm';
 
-function Careertoggle4() {
+function Careertoggle6() {
     const [expanded, setExpanded] = useState(false);
     const [showForm, setShowForm] = useState(false);
     const toggleForm = () => {
@@ -20,7 +20,7 @@ function Careertoggle4() {
             <AccordionSummary   >
                 <Box width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} paddingY={1.5}>
                     <Typography variant='h5' id="Hr-excutive" paddingLeft={1.5}  >
-                    Shopify Developer (Any Graduate can apply) </Typography>
+                    Mobile App Developer (React Native) (Any Graduate can apply)</Typography>
                     <AddIcon fontSize='large' sx={{ color: "#0160E7" }} />
                 </Box>
             </AccordionSummary>
@@ -49,26 +49,26 @@ function Careertoggle4() {
                             <Typography fontSize={"25px"}>•</Typography>
                             <Typography marginLeft={1} id="Typography-gray-career" >
 
-                            Develop custom Shopify themes and modify pre-existing templates to meet client needs.</Typography>
+                            Develop high-quality mobile applications using React Native framework.</Typography>
                         </Box>
 
                         <Box display={"flex"} alignItems={"start"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Implement and maintain Shopify apps to enhance website functionality.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Collaborate with cross-functional teams to define, design, and ship new features.</Typography>
                         </Box>
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Ensure the technical feasibility of UI/UX designs and optimize for mobile platforms.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Ensure robust code quality and responsiveness of applications.</Typography>
 
                         </Box>
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Collaborate with cross-functional teams to ensure a consistent and effective end-user experience.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Maintain code and write automated tests to ensure the product is of the highest quality.</Typography>
 
                         </Box>
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Conduct website performance tests and optimize for speed and scalability.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Troubleshoot and debug to optimize performance.</Typography>
 
                         </Box>
 
@@ -79,35 +79,29 @@ function Careertoggle4() {
 
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Proven experience as a Shopify Developer with a strong understanding of the Shopify platform.
-</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Proficiency in React Native with a solid understanding of its ecosystem.</Typography>
 
                         </Box>
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Strong Proficiency in web technologies such as HTML5, CSS3, JavaScript, and Liquid.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Experience with third-party libraries and APIs.</Typography>
 
                         </Box>
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" > Experience with Shopify's theming system and store setup.
- </Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" > Familiarity with code versioning tools (such as Git). </Typography>
 
                         </Box>
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Familiarity with payment gateway integration and third-party APIs.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Strong problem-solving skills and a detail-oriented mindset.</Typography>
                         </Box>
 
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Strong grasp of responsive design principles and e-commerce best practices.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Ability to work in a fast-paced environment and adapt to changing requirements.</Typography>
                         </Box>
-                        <Box display={"flex"} alignItems={"center"} margin={1}>
-                            <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Excellent problem-solving skills and the ability to work in a fast-paced environment.
-                            </Typography>
-                        </Box>
+                       
 
                     </Box>
 
@@ -116,22 +110,28 @@ function Careertoggle4() {
 
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Join a team that values creativity, collaboration, and innovation.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Be at the forefront of mobile technology in a company that champions innovation.</Typography>
 
                         </Box>
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >Participate in diverse projects that push the boundaries of online retail.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Collaborate with a team that values creativity and fresh ideas.</Typography>
 
                         </Box>
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" > Enjoy a culture that supports professional growth and personal achievement.</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" > Work on projects that reach a diverse and global audience.</Typography>
+
+                        </Box>
+
+                        <Box display={"flex"} alignItems={"center"} margin={1}>
+                            <Typography fontSize={"25px"}>•</Typography>
+                            <Typography marginLeft={1} id="Typography-gray-career" >Enjoy a culture that supports continuous learning and career growth.</Typography>
 
                         </Box>
                         <Box display={"flex"} alignItems={"center"} margin={1}>
                             <Typography fontSize={"25px"}>•</Typography>
-                            <Typography marginLeft={1} id="Typography-gray-career" >If you're ready to take your Shopify expertise to new heights and contribute to the success of online businesses, Soham Web Solutions is your next destination. Apply now and let's revolutionize the e-commerce space together!
+                            <Typography marginLeft={1} id="Typography-gray-career" >If you're eager to take on the challenge and shape the future of mobile applications with Soham Web Solutions, we would love to hear from you. Together, let's turn visionary concepts into user-friendly realities.
                             </Typography>
 
                         </Box>
@@ -155,11 +155,11 @@ function Careertoggle4() {
                     
                 </Modal>
 
-
         </Accordion>
 
     </Box>
+
     );
 }
 
-export default Careertoggle4;
+export default Careertoggle6;

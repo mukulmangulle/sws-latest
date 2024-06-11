@@ -46,11 +46,11 @@ const Footer = () => {
                     <Box width={240} margin={1} >
                         <Typography color={'#FFFFFF'} variant="h3" fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1} > {contents.footerData.quickLinks.heading}</Typography>
                         <Box marginTop={2} display={'flex'} alignItems={"start"} flexDirection={"column"}>
-                            <Link to="/about" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text1}</Link>
-                            <Link to="/Service" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text2}</Link>
-                            <Link to="/career" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text3}</Link>
-                            <Link to="/contact" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text4}</Link>
-                            <Link to="/blogs" style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text5}</Link>
+                            <Link  to={`/${process.env.SLUG_URL}/about/`} style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text1}</Link>
+                            <Link to={`/${process.env.SLUG_URL}/services/`} style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text2}</Link>
+                            <Link to={`/${process.env.SLUG_URL}/career/`} style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text3}</Link>
+                            <Link to={`/${process.env.SLUG_URL}/contact-us/`} style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text4}</Link>
+                            <Link to={`/${process.env.SLUG_URL}/blogs`} style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text5}</Link>
                         </Box>
                     </Box>
 

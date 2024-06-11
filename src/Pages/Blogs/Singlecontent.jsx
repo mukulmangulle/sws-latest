@@ -16,7 +16,7 @@ const Singlecontent = ({ Api_url }) => {
   const [loading, setLoading] = useState(true);
   const params = useParams();
   const location = useLocation();
-  const id = location.state ? location.state.id : null; 
+  const id = location.state ? location.state.id : null;
 
   useEffect(() => {
     if (!id) {
@@ -61,10 +61,10 @@ const Singlecontent = ({ Api_url }) => {
             <img className='singleblogpage-img' src={blog?.jetpack_featured_media_url} alt="" />
             <Box className="singlepage-section2">
               <Typography flexWrap={'wrap'} id='pregraph' marginY={3} dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }} />
-              
-                     
-                            <NextPrevious currentId={id}  Api_url={Api_url} />
-                  
+
+
+              <NextPrevious currentId={id} Api_url={Api_url} />
+
 
               <Box className="logo" width={280} display={'flex'} alignItems={'center'} justifyContent={'space-between'} marginTop={4} >
                 <img height={36} src={Facebook} alt="" />

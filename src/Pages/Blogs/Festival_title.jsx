@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Typography, CircularProgress } from '@mui/material';
 import { useLocation } from 'react-router-dom';
-import BoxCategories from './boxCategories';
+import BoxCategories from './BoxCategories';
 import Categories_name from './Categories_name';
 
 const Festival_title = ({ Api_url }) => {
@@ -20,7 +20,7 @@ const Festival_title = ({ Api_url }) => {
   return (
     <>
       <Box id="about-background">
-        <Typography id='Heading-h2' variant='h2' paddingTop={10} paddingBottom={5}>
+        <Typography id='Heading-h2' variant='h2'paddingTop={10} paddingBottom={5} >
           {showLoader ? <CircularProgress  /> : name}
         </Typography>
       </Box>

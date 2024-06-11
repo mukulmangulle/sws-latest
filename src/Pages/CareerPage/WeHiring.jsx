@@ -14,13 +14,11 @@ const WeHiring = () => {
                 </Box>
                 <Box paddingX={2} width={{ xs: '100%', sm: '80%', md: '45%', lg: '47%' }}>
                     <Typography variant="h3" fontSize={{ xs: 30, sm: 40 }} fontWeight={600} color="#053480" marginBottom={2} textAlign={{ xs: 'center', sm: 'left' }}>
-                        We Are Hiring!
-                    </Typography>
+                        We're growing our team!                    </Typography>
                     <Typography marginY={2} fontSize={{ xs: 15, sm: 22, md: 20 }} textAlign={{ xs: 'center', sm: 'left' }}>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </Typography>
+                        At Soham Web Solution, we're not just building websites; we're crafting digital experiences that resonate with users worldwide. We're on the hunt for creative minds, strategic thinkers, and technology enthusiasts to join our vibrant team.                    </Typography>
                     <Link sx={{ textDecoration: "none", fontSize: { xs: 18, sm: 23 }, display: 'block', marginTop: 2 }} href="mailto:career@sohamwebsolution.com">
-                        career@sohamwebsolution.com
+                        Career@sohamwebsolution.com
                     </Link>
                 </Box>
             </Box>

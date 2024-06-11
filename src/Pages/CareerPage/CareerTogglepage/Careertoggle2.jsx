@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
-import { Typography, Accordion, AccordionSummary, AccordionDetails, Box, Button } from '@mui/material';
+import { Typography, Accordion, AccordionSummary, AccordionDetails, Box, Button, Modal, Backdrop } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import CareerButton from '../../../Child-Component/CareerButton';
+import CareerForm from './CareerForm';
 
 function Careertoggle2() {
     const [expanded, setExpanded] = useState(false);
+   
+
+    const [showForm, setShowForm] = useState(false);
+   
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
+    };
+    const toggleForm = () => {
+        setShowForm(!showForm);
     };
 
     return (
@@ -15,7 +23,7 @@ function Careertoggle2() {
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary   >
                     <Box width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} paddingY={1.5}>
-                        <Typography  id="Hr-excutive" variant='h5'  paddingLeft={1.5}  > HR Executive (Any Graduate can apply) </Typography>
+                        <Typography  id="Hr-excutive" variant='h5'  paddingLeft={1.5}  >PHP Developer Any Graduate can apply) </Typography>
                         <AddIcon fontSize='large' sx={{ color: "#0160E7" }} />
                     </Box>
                 </AccordionSummary>
@@ -44,56 +52,30 @@ function Careertoggle2() {
                                 <Typography fontSize={"25px"}>•</Typography>
                                 <Typography marginLeft={1} id="Typography-gray-career" >
 
-                                    Responsible for end-to-end recruitment from Fresher to Senior-level IT positions to fulfill the
-                                    internal requirements of the company.</Typography>
+                                Develop and maintain dynamic websites and web applications using PHP.</Typography>
                             </Box>
 
                             <Box display={"flex"} alignItems={"start"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Posting vacancies on Job portals, company's careers page, social media, Job boards and internal and mass
-                                    mailing to reach out to a maximum qualified pool of candidates.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Utilize various PHP frameworks such as Laravel, Symfony, or CodeIgniter to create scalable applications.</Typography>
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Making cold calls, scheduling and managing recruitment drives.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Collaborate with frontend developers to ensure seamless integration with user interfaces.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Providing shortlists of qualified candidates to hiring managers</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Write clean, well-designed code and contribute to all phases of the development lifecycle.
+</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Monitor key HR metrics, including time-to-fill, time-to-hire, and source of hire.</Typography>
-
-                            </Box>
-                            <Box display={"flex"} alignItems={"center"} margin={1}>
-                                <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" > Issue offer and appointment letters, playing a pivotal role in the hiring process.</Typography>
-
-                            </Box>
-                            <Box display={"flex"} alignItems={"center"} margin={1}>
-                                <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Contributing to policy creation and implementation, ensuring alignment with organizational goals.</Typography>
-
-                            </Box>
-                            <Box display={"flex"} alignItems={"center"} margin={1}>
-                                <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" > Manage employee attendance and leave management, ensuring accurate records and compliance.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Troubleshoot, test, and maintain the core product software to ensure strong optimization and functionality.</Typography>
 
                             </Box>
 
-                            <Box display={"flex"} alignItems={"center"} margin={1}>
-                                <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" > Lead social media management, creating engaging content, posters, and timely posts, enhancing the
-                                    company's online presence.</Typography>
-                            </Box>
-                            <Box display={"flex"} alignItems={"center"} margin={1}>
-                                <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Host and organize celebrations and events to boost team morale and camaraderie.</Typography>
-
-                            </Box>
                         </Box>
 
                         <Box width={"70%"}>
@@ -101,61 +83,61 @@ function Careertoggle2() {
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Education: Graduation from any stream.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Strong knowledge of PHP web frameworks and understanding of MVC design patterns.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Excellent verbal and written English communication..</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Proficiency in front-end technologies, including JavaScript, HTML5, and CSS3.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Basic computer skills, Word and Excel experience preferred along with strong typing skills. </Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Experience with SQL/NoSQL databases and their declarative query languages. </Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Should have effective convincing and negotiation skills to impress and attract top talent.</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Familiarity with object-oriented PHP programming and common PHP or web server exploits and their solutions.</Typography>
+                            </Box>
+                            <Box display={"flex"} alignItems={"center"} margin={1}>
+                                <Typography fontSize={"25px"}>•</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Knowledge of code versioning tools, such as Git.</Typography>
                             </Box>
 
                         </Box>
 
                         <Box width={"70%"}>
-                            <Typography fontWeight={600} fontSize={22} marginY={2} >Benefits:</Typography>
+                            <Typography fontWeight={600} fontSize={22} marginY={2} >Why Soham Web Solutions:</Typography>
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >5 Days working</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >
+                                Be part of a forward-thinking company that embraces new technologies.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >12 Paid leaves</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Work in a collaborative environment that values each team member's input.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" > 13 Official holidays</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" > Engage with diverse projects that challenge your skills and help you grow.</Typography>
 
                             </Box>
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Office parties and celebrations</Typography>
-
-                            </Box>
-
-                            <Box display={"flex"} alignItems={"center"} margin={1}>
-                                <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Friendly work culture</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >•  Enjoy a culture that supports work-life balance and employee well-being.</Typography>
 
                             </Box>
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
-                                <Typography marginLeft={1} id="Typography-gray-career" >Skill development/ Employee engagement activities</Typography>
+                                <Typography marginLeft={1} id="Typography-gray-career" >Are you ready to code with a purpose? If you're a PHP Developer looking for an opportunity to make an impact, apply to Soham Web Solutions today and let's innovate together!</Typography>
 
                             </Box>
+
 
                             <Box display={"flex"} alignItems={"center"} margin={1}>
                                 <Typography fontSize={"25px"}>•</Typography>
@@ -172,8 +154,22 @@ function Careertoggle2() {
                     </Box>
                 </AccordionDetails>
 
+                <CareerButton onClick={toggleForm}/>
+                    <Modal
+                        open={showForm}
+                        onClose={toggleForm}
+                        closeAfterTransition
+                        BackdropComponent={Backdrop}
+                        BackdropProps={{
+                            timeout: 500,
+                        }}
+                    >
 
-                <CareerButton />
+                 <CareerForm/>
+                     
+                            
+                    
+                </Modal>
 
             </Accordion>
 

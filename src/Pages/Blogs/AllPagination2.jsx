@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Box, Card, CardContent, CircularProgress, Typography } from '@mui/material';
 import { Link, useParams } from 'react-router-dom';
+import Carditem from './Carditem';
 
 const AllPagination2 = ({ Api_url }) => {
   const [blog, setBlog] = useState([]);
@@ -70,26 +71,14 @@ const AllPagination2 = ({ Api_url }) => {
         <CircularProgress sx={{ margin: "auto" }} />
       ) : (
         <>
-          {blog.map((blogItem) => (
-            <Card key={blogItem.id} id='blog-card'>
-              <img className='blogsimg' src={blogItem.jetpack_featured_media_url} alt="" />
-              <CardContent>
-                <Link
-                  to={`/${process.env.SLUG_URL}/${blogItem.slug}/`}
-                  state={{ id: blogItem.id }}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Typography id='card-heading'>
-                    {blogItem.title.rendered}
-                  </Typography>
-                </Link>
-                <Typography
-                  id='card-typography'
-                  dangerouslySetInnerHTML={{ __html: blogItem.excerpt.rendered }}
-                />
-              </CardContent>
-            </Card>
-          ))}
+          {Array.isArray(blog) ? (
+            blog.map((blog) => (
+              <Carditem key={blog.id} blogcontent={blog} />
+            ))
+          ) : (
+            <Box>Data is not an array</Box>
+          )}
+      
           <Box id="bottom-of-list" />
         </>
       )}

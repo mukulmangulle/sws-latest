@@ -18,7 +18,7 @@ const AllBlogs = ({ Api_url }) => {
 
         const timeoutId = setTimeout(() => {
             setShowPagination(true);
-        }, 2000);
+        });
 
         return () => clearTimeout(timeoutId);
     }, [dispatch, isLoading]);

@@ -6,6 +6,7 @@ import Down from "../assets/down-arow.svg"
 import Sidebar from '../Pages/Toggle/Sidebar';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar } from '@mui/material';
+import ScrollToTopButton from '../Css/Homepage/ScrollToTopButton';
 
 const Navbar = () => {
   return (
@@ -52,9 +53,9 @@ const Navbar = () => {
           </Box>
 
         </Box>
-
+      
       </Box>
-
+      <ScrollToTopButton />
       <Box sx={{ display: { xs: "flex", md: "none" } }}>
         <Sidebar />
       </Box>
