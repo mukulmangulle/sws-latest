@@ -20,8 +20,11 @@ const ServiceContaint = () => {
                     {/* 1 */}
                     <Box id="man-reverce1" width={"100%"} className="flex-between-wrap"  >
                         <Box width={617} id="devlopment-text" >
-                            <Typography variant='h4' id="typo-fray-hrading">PHP Development</Typography>
-                            <Typography id="Typo-gray-start" >PHP development services focus on implementing secure and powerful server-sides web applications. Our compan deliver robust CMSs, and web-based solutions, we manage complex databases
+                            <Typography variant='h4' id="typo-fray-hrading">PHP Development
+</Typography>
+                            <Typography id="Typo-gray-start" >PHP development services focus on implementing secure and powerful server-sides web applications. Our company deliver robust CMSs, and web-based solutions, we manage complex databases,
+
+
                             </Typography>
                             <ServiceButton onClick={() => { alert("button click new") }} />
                         </Box>
@@ -41,8 +44,10 @@ const ServiceContaint = () => {
                             </Box>
                         </Box>
                         <Box width={617} id="devlopment-text" >
-                            <Typography variant='h4' id="typo-fray-hrading">PHP Development</Typography>
-                            <Typography id="Typo-gray-start" >PHP development services focus on implementing secure and powerful server-sides web applications.
+                            <Typography variant='h4' id="typo-fray-hrading">WordPress Development</Typography>
+                            <Typography id="Typo-gray-start" >We offers all possible WordPress services, ranging from custom WordPress theme development, plugin customization, WordPress speed optimization, SEO, and integration with 3rd party modules and applications with your WordPress website. to meet your business needs
+
+
                             </Typography>
                             <ServiceButton onClick={() => { alert("button click new") }} />
                         </Box>
@@ -53,7 +58,7 @@ const ServiceContaint = () => {
                     <Box id="man-reverce1" width={"100%"} className="flex-between-wrap" >
                         <Box width={617} id="devlopment-text" >
                             <Typography variant='h4' id="typo-fray-hrading">Shopify Development</Typography>
-                            <Typography id="Typo-gray-start" >Shopify web development service will help you with responsive, user-friendly and interactive Shopify themes for your store.
+                            <Typography id="Typo-gray-start" >Armed with a team of efficient UI/UX designers and Shopify certified developers, our Shopify web development service will help you with responsive, user-friendly and interactive Shopify themes for your store.
                             </Typography>
                             <ServiceButton />
                         </Box>
@@ -76,7 +81,7 @@ const ServiceContaint = () => {
 
                         <Box width={617} id="devlopment-text"  >
                             <Typography variant='h4' id="typo-fray-hrading">Web Designing</Typography>
-                            <Typography id="Typo-gray-start" >Designing services are professional services that involve the creation, development, and maintenance of websites.
+                            <Typography id="Typo-gray-start" >Web designing services are professional services that involve the creation, development, and maintenance of websites for individuals, businesses, organizations, or institutions.
                             </Typography>
                             <ServiceButton />
                         </Box>
@@ -86,7 +91,7 @@ const ServiceContaint = () => {
                     <Box id="man-reverce1" width={"100%"} className="flex-between-wrap" >
                         <Box width={617} id="devlopment-text">
                             <Typography variant='h4' id="typo-fray-hrading">Graphic Designing</Typography>
-                            <Typography id="Typo-gray-start" >Our team of experienced graphic designers is here to help you stand out in your industry and drive business growth
+                            <Typography id="Typo-gray-start" >Expert Graphic Design Services for a Wide Range of Industries. Our team of experienced graphic designers is here to help you stand out in your industry and drive business growth. Make a statement with professionally designed graphics that reflect your brand’s personality.
                             </Typography>
                             <ServiceButton />                        </Box>
                         <Box className="img-container" >
@@ -106,7 +111,9 @@ const ServiceContaint = () => {
                         </Box>
                         <Box width={617} id="devlopment-text">
                             <Typography variant='h4' id="typo-fray-hrading">Ecommerce Development</Typography>
-                            <Typography id="Typo-gray-start">Our E-commerce services development includes custom e-commerce website design and shoppi cart development.
+                            <Typography id="Typo-gray-start">We develop e-commerce platforms that feature personalized chatbots and payment gateway integration with PayPal, Authorize.Net, and FirstData. In addition, our services include custom e-commerce website design and shopping cart development
+
+
                             </Typography>
                             <ServiceButton />
                         </Box>

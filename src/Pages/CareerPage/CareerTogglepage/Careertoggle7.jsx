@@ -183,7 +183,7 @@ function Careertoggle7() {
                         }}
                     >
 
-                 <CareerForm/>
+                 <CareerForm heading="HR Executive "/>
                      
                             
                     

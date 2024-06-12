@@ -14,8 +14,10 @@ export default function Mnavbar({ slug }) {
       <Link to={`/${process.env.SLUG_URL}/career/`}>career</Link>
       <Link to={`/${process.env.SLUG_URL}/services/`}>Service</Link>
 
-      {/* <Link to={`/${process.env.SLUG_URL}/Php_department`}>Php department</Link> */}
+      <Link to={`/${process.env.SLUG_URL}/Php_department`}>Php department</Link>
       <Link to={`/${process.env.SLUG_URL}/blogs/`} >All Blog</Link>
+
+
 
 
 

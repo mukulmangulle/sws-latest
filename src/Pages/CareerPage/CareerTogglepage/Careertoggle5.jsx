@@ -144,7 +144,7 @@ function Careertoggle5() {
                         }}
                     >
 
-                 <CareerForm/>
+                 <CareerForm heading="Graphic Designer"/>
                      
                             
                     

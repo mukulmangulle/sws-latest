@@ -20,7 +20,7 @@ function Careertoggle3() {
                 <AccordionSummary   >
                     <Box width={"100%"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} paddingY={1.5}>
                         <Typography variant='h5' id="Hr-excutive" paddingLeft={1.5}  >
-                            Wordpress Developer Any Graduate can apply) </Typography>
+                            Wordpress Developer (Any Graduate can apply) </Typography>
                         <AddIcon fontSize='large' sx={{ color: "#0160E7" }} />
                     </Box>
                 </AccordionSummary>
@@ -148,7 +148,7 @@ function Careertoggle3() {
                         }}
                     >
 
-                 <CareerForm/>
+                 <CareerForm heading=" Wordpress Developer"/>
                      
                             
                     

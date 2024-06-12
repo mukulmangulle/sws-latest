@@ -32,8 +32,11 @@ const Aboutmain = () => {
   }
   return (
     <>
-      <AboutSection1 />
+       
+
       <AboutSection2 />
+      <AboutSection1 />
+    
       {/* <TecnologicalFoucus /> */}
       <LeaderShipTeam />
       <Someourwork2 />

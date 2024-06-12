@@ -20,12 +20,13 @@ const SameOurWork = () => {
 
     return (
         <Box sx={{ maxWidth: 1920, margin: 'auto' }}  className="work flex-center-coulmn padding-top-bottom" >
+            
             <Box display={'flex'} alignItems={'center'} flexDirection={'column'} >
                 <Typography variant='h2' id="Heading-h2"   >
-                    {contents.SomeourWorks.heading}
+                    {contents.SomeourWorksection2.heading}
                 </Typography>
                 <Typography width={"100%"} id="Typography-black" paddingBottom={5} paddingTop={2}>
-                    {contents.SomeourWorks.contant}
+                {contents.SomeourWorksection2.contant}
                 </Typography>
             </Box>
 
@@ -41,10 +42,10 @@ const SameOurWork = () => {
 
                         <Box display={'flex'} variant="h6" className="flex-center" flexDirection={'column'} paddingTop={1}>
                             <Typography className='card-heading' color="#053480" fontSize={24} fontWeight={800}>
-                                {contents.SomeourWorks.card.title2}
+                                {contents.SomeourWorksection2.card.title2}
                             </Typography>
                             <Typography className='card-pregraph ludo-earn-p' >
-                                {contents.SomeourWorks.card.description2}
+                                {contents.SomeourWorksection2.card.description1}
 
                             </Typography>
                         </Box>
@@ -64,10 +65,10 @@ const SameOurWork = () => {
 
                             <Box display={'flex'} variant="h6" className="flex-center" flexDirection={'column'} paddingTop={1}>
                                 <Typography className='card-heading' color="#053480" fontSize={24} fontWeight={800}>
-                                    {contents.SomeourWorks.card.title2}
+                                    {contents.SomeourWorksection2.card.title2}
                                 </Typography>
                                 <Typography className='card-pregraph ludo-earn-p' >
-                                    {contents.SomeourWorks.card.description2}
+                                    {contents.SomeourWorksection2.card.description2}
 
                                 </Typography>
                             </Box>
@@ -87,10 +88,10 @@ const SameOurWork = () => {
 
                         <Box display={'flex'} variant="h6" className="flex-center" flexDirection={'column'} paddingTop={1}>
                             <Typography className='card-heading' color="#053480" fontSize={24} fontWeight={800}>
-                                {contents.SomeourWorks.card.title3}
+                                {contents.SomeourWorksection2.card.title3}
                             </Typography>
                             <Typography className=' ludo-earn-p ' >
-                                {contents.SomeourWorks.card.description3}
+                                {contents.SomeourWorksection2.card.description3}
                             </Typography>
                         </Box>
                         <CardActions>

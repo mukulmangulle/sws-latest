@@ -7,6 +7,8 @@ import Sidebar from '../Pages/Toggle/Sidebar';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar } from '@mui/material';
 import ScrollToTopButton from '../Css/Homepage/ScrollToTopButton';
+import CompanyMenu from '../CompanyMenu';
+import ServicesMenu from '../ServicesMenu';
 
 const Navbar = () => {
   return (
@@ -24,23 +26,23 @@ const Navbar = () => {
            sx={{ display: { xs: 'none', md: 'flex' } }}>
 
             <Box className="ul-box">
-              <Typography className='fontSize16'>Company</Typography>
+              <Typography className='fontSize16'><CompanyMenu/></Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
             <Box className="ul-box">
-              <Typography className='fontSize16' >Service</Typography>
+              <Typography className='fontSize16'><ServicesMenu/></Typography>
               <img className='down-arrow' src={Down} alt="" />
             </Box>
-
+{/* 
             <Box className="ul-box" >
               <Typography className='fontSize16'>Soltions</Typography>
               <img className='down-arrow' src={Down} alt="" />
-            </Box>
+            </Box> */}
 
-            <Box className="ul-box">
+            {/* <Box className="ul-box">
               <Typography className='fontSize16'>Hire Developers</Typography>
               <img className='down-arrow' src={Down} alt="" />
-            </Box>
+            </Box> */}
 
             <Box className="ul-box">
               <Typography className='fontSize16'>work</Typography>

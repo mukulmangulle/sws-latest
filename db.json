@@ -102,33 +102,35 @@
       },
       "copyrightText": "Copyright © Soham Web Solution. All Rights Reserved. "
     },
-    "aboutData": {
-      "heading": "About",
-      "subheading": " About us",
-      "text": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer too a galley of type  and scrambled it to  a type specimen book. It has survived not only five centuries, but also typesetting,   remaining essentially remaining essentially remaining essentially  but als n typesetting,   remaining essentially remaining essentially remaining essentiallyess entially remaining essentially remaining essentiallyessentially  ."
-    },
+   
     "aboutSectionData": {
-      "heading": "About Soham Web",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to a type specimen book. It has survived not only five centuries, but also typesetting, remaining essentially remaining essentially remaining essentially but also and scrambled it to a type specimen book. typesetting,"
+      "heading": "About Soham Web Solution",
+      "text": "Welcome to Soham Web Solution – where innovation meets functionality to create web solutions that not only look great but also perform seamlessly. Based in Dewas, Madhya Pradesh, we are a web development company with a mission to transform your digital presence into a dynamic force that stands out in the online world.We believe that every line of code is a stroke of creativity that can transform an idea into a digital masterpiece. Our philosophy is simple: blend artistic design with cutting-edge technology to create web experiences that are not only functional but also aesthetically captivating."
+    },
+    "aboutData": {
+      "heading": " Reasons to count on us! ",
+      "subheading": " Our Journey: A Decade of Empowerment and Innovation",
+      "text": " It all began on September 3,2014, in a small Room that buzzed with the dreams and determination of three visionaries. This was the birthplace of Soham Web Solution, a hub of innovation that would soon become of web design excellence.Our early days were dedicated to mastering the art of web design, not just as a service but as a craft.We provided rigorous training, equipping aspiring designers with the tools to create digital artistry.As our expertise grew, so did our team.We took pride in offering employment to those we had trained, watching them flourish into skilled professionals. With each new member,our capabilities exanded, and our services diversified.Throughout the years, we’ve added layers of sophistication to our offerings. From advanced web development to immersive user experiences, every addition has been a step to wards betterment-a testament to our commitment to growth and innovation.Now,in our 10th year, we stand tall with a family of over 30 dedicated employees. we continue to nurture the next generation of talent,training more than 20students, the majority of whom we proudly integrate onto our workforce through our ‘training-plus-job program.Our joureney has been nothing short of  remarkable-a beautiful tapestry women from hard work,perseverance, and a relentless pursuit of knowledge. As we celebrate a decade of shaping the web, we remain committed to development, innovation, and thw empowerment of those who walk with us. And the Journey Continues...."
     },
     "Technologyfocus": {
       "heading": "Tecnological Foucus",
-      "content": "we provide end -to end software and mobile application developmen services"
+      "content": "we provide end -to end software and mobile application development services "
     },
     "Leadership": {
-      "heading": " Our Leadership Team",
-      "content": "  Driving the Organzation by strength and wisdom, Believing to set clear expecations always diliver, and never breack trust."
+      "heading": "  Our Leadership Circle",
+      "content": "  We're proud to introduce you to our leadership team – a group of visionary individuals who steer us towards success with their expertise, experience, and passion for technology. "
     },
     "SomeourWorksection2": {
-      "heading": "SAME OUR WORK",
+      "heading": "Leading with Vision, Serving with Purpose",
       "contant": "Our some of these projects may seem interesting to you",
       "card": {
-        "title1": " Allan Flowers Market  ",
-        "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit  Curabitur elit risus, mattis a tincidunt quis, aliquet sit amet mauris. Cras nec massa enim. Aliquam congue imperdiet vestibulum.Quisque varius lectus eget est aliquet blandit. Sed et ante non neque volutpat gravida. Nulla dictum eros ac est consectetur sit amet tristique lectus ultrices.",
-        "title2": "Bright Sparqe",
-        "description2": "lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, Curabitur elit risus, mattis a tincidunt quis, aliquet sit amet mauris. Cras nec massa enim. Aliquam congue imperdiet vestibulum.Quisque varius lectus eget est aliquet blandit. Sed et ante non neque volutpat gravida. Nulla dictum eros ac est consectetur sit amet tristique lectus ultrices.",
-        "title3": "Ludo Earn",
-        "description3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit  Curabitur elit risus, mattis a tincidunt quis, aliquet sit amet mauris. Cras nec massa enim. Aliquam congue imperdiet vestibulum.Quisque varius lectus eget est aliquet blandit. Sed et ante non neque volutpat gravida. Nulla dictum eros ac est consectetur sit amet tristique lectus ultrices."
+        "title1": " Our Mission  ",
+        "description1": "Our mission is to empower our clients through bespoke web solutions that enhance their brand, streamline their operations, and connect them with their audiences in meaningful ways. We believe in the transformative power of technology and its ability to solve complex problems and create new opportunities.",
+        "title2": "Our Vision",
+        "description2": "Founded in 2014, Soham Web Solution began as a small startup with big dreams. Today, we stand proud as a beacon of web development excellence, having served a diverse clientele ranging from local businesses to international corporations. Our journey has been fueled by our passion for technology and our commitment to delivering results that exceed expectations.",
+
+        "title3": "Our Promise",
+        "description3": "At Soham Web Solution, we promise to deliver web solutions that are tailored to your needs, built with precision, and launched with care. We are dedicated to your success and work tirelessly to ensure that your website not only meets but surpasses industry standards. Let's work together to turn your vision into reality."
       }
     },
     "blogpages": {

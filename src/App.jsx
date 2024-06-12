@@ -26,7 +26,8 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <Mnavbar />
+      
+      {/* <Mnavbar /> */}
       <Header />
       <Navbar />
 
@@ -45,8 +46,9 @@ function App() {
         <Route path={`/${process.env.SLUG_URL}/Php_department`} element={<PhpDepartment />} />
 
       </Routes>
-      
+        
       <Footer />
+  
     </Router>
   );
 }

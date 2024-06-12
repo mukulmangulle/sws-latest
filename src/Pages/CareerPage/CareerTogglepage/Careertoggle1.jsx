@@ -6,7 +6,7 @@ import CareerForm from './CareerForm';
 
 function Careertoggle1() {
     const [expanded, setExpanded] = useState(false);
-   
+
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
@@ -140,22 +140,22 @@ function Careertoggle1() {
                     </Box>
                 </AccordionDetails >
 
-<CareerButton onClick={toggleForm}/>
-              
-                    <Modal
-                        open={showForm}
-                        onClose={toggleForm}
-                        closeAfterTransition
-                        BackdropComponent={Backdrop}
-                        BackdropProps={{
-                            timeout: 500,
-                        }}
-                    >
+                <CareerButton onClick={toggleForm} />
 
-                 <CareerForm/>
-                     
-                            
-                    
+                <Modal
+                    open={showForm}
+                    onClose={toggleForm}
+                    closeAfterTransition
+                    BackdropComponent={Backdrop}
+                    BackdropProps={{
+                        timeout: 500,
+                    }}
+                >
+
+                    <CareerForm heading=" Frontend Developer" />
+
+
+
                 </Modal>
             </Accordion>
 
