@@ -26,7 +26,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      {/* <Mnavbar /> */}
+      <Mnavbar />
       <Header />
       <Navbar />
 
