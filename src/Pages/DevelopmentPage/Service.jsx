@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material'
 import React from 'react'
 import Rightclick from "../../assets/php-department/rightclick.svg"
 
-const Phpsectiondepartment2 = () => {
+const Service = () => {
     return (
         <>
             <Box className="service padding-top-bottom" maxWidth={"1920px"} margin={'auto'} display={'flex'} alignItems={'center'} justifyContent={"center"} >
@@ -34,4 +34,4 @@ const Phpsectiondepartment2 = () => {
     )
 }
 
-export default Phpsectiondepartment2;
+export default Service;

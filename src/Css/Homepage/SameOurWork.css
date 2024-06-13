@@ -6,7 +6,7 @@
     background: url(../../assets/work/bg.svg);
     object-fit: cover;
     background-repeat: no-repeat;
-  
+
 
 }
 
@@ -26,13 +26,15 @@
     color: white;
     border: none;
 }
-.ludo-earn-p{
+
+.ludo-earn-p {
     align-items: center;
     font-size: 14px !important;
     padding: 1.2rem;
     color: #053480;
     text-align: center;
 }
+
 #heading {
     padding: 1px;
 }
@@ -43,13 +45,13 @@
     background-color: white;
     z-index: 0;
     text-align: center;
-    margin:15px;
+    margin: 15px;
     width: 420px;
     height: 500px;
     padding: 1rem;
     flex-direction: column;
 
-   
+
 
 
     &::before,
@@ -106,9 +108,9 @@
 
 @media (max-width:1500px) {
     #card {
-        width: 350px;
-        height: 440px;
-        padding:5px;
+        width: 320px;
+        height: 450px;
+        padding: 5px;
         padding-bottom: 10px;
         margin: 15px;
     }
@@ -119,25 +121,49 @@
         height: 28px;
         font-size: 12px;
     }
-        .card-heading {
-            font-size: 22px !important;
-        }
+
+    .card-heading {
+        font-size: 22px !important;
+    }
 
     .ludo-earn-p {
         padding: 10px;
-        font-size: 10px;
+        font-size: 10px !important;
     }
 }
 
+@media (max-width:1320px) {
+    #card {
+        width: 280px;
+        height: 380px;
+        padding: 5px;
+        padding-bottom: 10px;
+        margin: 10px;
+    }
+  
+   
+}
+
+@media (max-width:1130px) {
+    #card {
+        width: 250px;
+        height: 380px;
+        padding: 5px;
+        padding-bottom: 10px;
+        margin: 10px;
+    }
+  
+   
+}
 
 @media (max-width:480px) {
-   
+
 
     #card {
         width: 300px;
         height: 400px;
-        padding:5px;
-        padding-bottom:0px;
+        padding: 5px;
+        padding-bottom: 0px;
         margin: 15px;
     }
 
@@ -147,21 +173,22 @@
         height: 28px;
         font-size: 12px;
     }
-        .card-heading {
-            font-size: 18px !important;
-        }
+
+    .card-heading {
+        font-size: 18px !important;
+    }
 
     .ludo-earn-p {
         padding: 8px;
-        font-size: 10px!important;
+        font-size: 10px !important;
     }
 }
 
 @media (max-width:375px) {
     #card {
-        width: 380px ;
+        width: 380px;
         height: 380px;
-        padding:5px;
+        padding: 5px;
         padding-bottom: 10px;
         margin: 15px;
     }
@@ -172,13 +199,14 @@
         height: 28px;
         font-size: 12px;
     }
-        .card-heading {
-            font-size: 18px !important;
-        }
+
+    .card-heading {
+        font-size: 18px !important;
+    }
 
     .ludo-earn-p {
         padding: 5px;
-        font-size: 10px;
+        font-size: 10px !important;
     }
- 
+
 }

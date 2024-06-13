@@ -24,17 +24,20 @@ const AboutSection1 = () => {
   };
   return (
     <>
-    <Box sx={{ maxWidth: 1920, margin: 'auto' }}>
- 
-      <Box className="flex-center-coulmn" textAlign={'center'}>
-        <Typography id="about-soham" variant='h3'>
-          {contents.aboutData.subheading}</Typography>
-        <Typography sx={textStyle} id="Typography-black" width={"71%"} >
-          {contents.aboutData.text}
-        </Typography>
+      <Box sx={{ maxWidth: 1920, margin: 'auto' }}>
 
+        <Box className="flex-center-coulmn" textAlign={'center'}>
+          <Typography paddingY={1} id='Heading-h2' variant='h2' >
+            {contents.aboutData.subheading}
+          </Typography>
+          
+          
+          <Typography sx={textStyle} id="Typography-black" width={"71%"} >
+            {contents.aboutData.text}
+          </Typography>
+
+        </Box>
       </Box>
-    </Box>
 
     </>
   )

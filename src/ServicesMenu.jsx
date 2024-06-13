@@ -32,12 +32,13 @@ function ServicesMenu() {
             {isOpen && (
                 <div style={{ borderRadius: 20, position: 'absolute', top: '100%', left: '0', width: "280px", color: "#053480", background: "white", border: '1px solid #ccc' }}>
                     <ul style={{ display: "flex", flexDirection: "column", listStyleType: 'none', margin: 0, padding: 0, marginTop: 15, width: "280px", marginBottom: 15, marginLeft: 20 }} >
-                        <li style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>PHP Development</li>
-                        <li style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>WordPress Development</li>
-                        <li style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Shopify Development</li>
-                        <li style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Web Designing</li>
-                        <li style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Graphic Designing</li>
-                        <li style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Ecommerce Development</li>
+                    <Link to={`/${process.env.SLUG_URL}/Php_Development`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Php Development</Link>
+                    <Link to={`/${process.env.SLUG_URL}/wordpress_Development`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Wordpress Development</Link>
+                    <Link to={`/${process.env.SLUG_URL}/ Shopify_Development`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Shopify Development</Link>
+                    <Link to={`/${process.env.SLUG_URL}/WebDesigning`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Web Designing</Link>
+                    <Link to={`/${process.env.SLUG_URL}/GraphicDesigning`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Graphic Designing</Link>
+                    <Link to={`/${process.env.SLUG_URL}/Ecommerce_Development`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Ecommerce Development</Link>
+
                     </ul>
                 </div>
             )}

@@ -16,6 +16,10 @@
   padding-bottom: 2rem;
 
 }
+.about-welcome{
+  width: 55%;
+
+}
 
 .blank{
   width:190px;
@@ -61,6 +65,13 @@
   .blank1{
     display: none;
   }
+  .about-welcome{
+  width: 100%;
+ 
+  }
+  #about-heading{
+    margin: auto;
+  }
 }
 
 
@@ -102,3 +113,6 @@ display: flex;
 animation-play-state: paused;
 }
 
+.css-k2vjlc-MuiTypography-root {
+  width: 95% !important;
+}

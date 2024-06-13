@@ -5,7 +5,7 @@ import Input1 from '../../Child-Component/Input';
 import contentSlice from '../../features/content/contentSlice';
 import { useSelector } from 'react-redux';
 
-const ContactInformtion = () => {
+const Form = () => {
  
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -138,4 +138,4 @@ const ContactInformtion = () => {
   )
 }
 
-export default ContactInformtion
+export default Form

@@ -10,12 +10,18 @@ import Aboutmain from "./Pages/Aboutpage/Aboutmain";
 import Careermain from "./Pages/CareerPage/Careermain";
 import Mnavbar from "./Component/M-navbar";
 import Service from "./Pages/ServicePage/Service";
-import PhpDepartment from "./Pages/PhpDepartmentPage/PhpDepartment";
 import Festival_title from "./Pages/Blogs/Festival_title";
 import Singlecontent from "./Pages/Blogs/Singlecontent";
 import AllBlogs from "./Pages/Blogs/AllBlogs";
 import ScrollToTop from "./ScrollToTop";
 import ContactUsSohamweb from "./Pages/ContactPage/ContactUsSohamweb";
+import PhpDepartment from "./Pages/DevelopmentPage/PhpDepartment";
+import WordPress from "./Pages/DevelopmentPage/WordPress";
+import Shopify from "./Pages/DevelopmentPage/Shopify";
+import WebDesigning from "./Pages/DevelopmentPage/WebDesigning";
+import Graphic from "./Pages/DevelopmentPage/Graphic";
+import Ecommerce from "./Pages/DevelopmentPage/Ecommerce";
+
 
 
 
@@ -26,7 +32,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      
+
       {/* <Mnavbar /> */}
       <Header />
       <Navbar />
@@ -43,12 +49,19 @@ function App() {
 
         <Route path={`/${process.env.SLUG_URL}/career/`} element={<Careermain />} />
         <Route path={`/${process.env.SLUG_URL}/services/`} element={<Service />} />
-        <Route path={`/${process.env.SLUG_URL}/Php_department`} element={<PhpDepartment />} />
+
+        <Route path={`/${process.env.SLUG_URL}/Php_Development`} element={<PhpDepartment />} />
+        <Route path={`/${process.env.SLUG_URL}/wordpress_Development`} element={<WordPress />} />
+        <Route path={`/${process.env.SLUG_URL}/ Shopify_Development`} element={< Shopify />} />
+        <Route path={`/${process.env.SLUG_URL}/WebDesigning`} element={<WebDesigning />} />
+        <Route path={`/${process.env.SLUG_URL}/GraphicDesigning`} element={<Graphic />} />
+        <Route path={`/${process.env.SLUG_URL}/Ecommerce_Development`} element={<Ecommerce />} />
+
 
       </Routes>
-        
+
       <Footer />
-  
+
     </Router>
   );
 }

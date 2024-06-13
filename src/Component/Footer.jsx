@@ -29,12 +29,12 @@ const Footer = () => {
             <Box sx={{ maxWidth: 1920, margin: 'auto' }} width={'100%'} color={"#FFFFFF"} className="flex-center" flexDirection={'column'} bgcolor={"#053480"} >
                 <Box width={'87%'} paddingTop={20} display={'flex'} alignItems={'start'} justifyContent={"space-between"} flexWrap={'wrap'}>
                     <Box  className="footer-sec1" >
-                        <img src={Soham} alt="" />
+                      <Link to={"/"}>  <img src={Soham} alt="" /></Link>
                         <Typography color={'#FFFFFF'} marginTop={2.5} fontSize={16}>
                             {contents.footerData.aboutText}
                         </Typography>
 
-                        <Box width={210} marginTop={3} className="flex-between"  >
+                        <Box  className="flex-between footer-sec-icon"  >
                             <img src={Facebook} alt="" />
                             <img src={Insta} alt="" />
                             <img src={Twitter} alt="" />
@@ -44,7 +44,7 @@ const Footer = () => {
                     </Box>
 
                     <Box className="footer-sec2" >
-                        <Typography color={'#FFFFFF'} variant="h3" fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1} > {contents.footerData.quickLinks.heading}</Typography>
+                        <Typography  id="footer-h3" variant="h3"  > {contents.footerData.quickLinks.heading}</Typography>
                         <Box marginTop={2} display={'flex'} alignItems={"start"} flexDirection={"column"}>
                             <Link  to={`/${process.env.SLUG_URL}/about/`} style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text1}</Link>
                             <Link to={`/${process.env.SLUG_URL}/services/`} style={{ textDecoration: "none" }} id="typography">{contents.footerData.quickLinks.text2}</Link>
@@ -55,7 +55,7 @@ const Footer = () => {
                     </Box>
 
                     <Box className="footer-sec3" >
-                        <Typography color={'#FFFFFF'} variant="h3" fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} fontWeight={600} marginBottom={1}>{contents.footerData.policyLinks.heading}</Typography>
+                        <Typography    id="footer-h3" variant="h3"  >{contents.footerData.policyLinks.heading}</Typography>
                         <Box marginTop={2} fontSize={50} >
                             <Typography id="typography">{contents.footerData.policyLinks.text1}</Typography>
                             <Typography id="typography">{contents.footerData.policyLinks.text2}</Typography>
@@ -67,7 +67,7 @@ const Footer = () => {
                     </Box>
 
                     <Box className="footer-sec4" >
-                        <Typography color={'#FFFFFF'} fontSize={{ xl: 32, lg: 25, md: 25, sm: 22, xs: 25 }} variant="h3" fontWeight={600} marginBottom={1} width={'100%'} >
+                        <Typography   id="footer-h3" variant="h3"    >
                             {contents.footerData.contactDetails.heading}</Typography>
                         <Box marginTop={2}>
                             <Box display={'flex'} margin={0.5}  >

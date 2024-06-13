@@ -17,13 +17,13 @@ return (
     <>
 <Box id="about-background" >
         <Typography id='Heading-h2' variant='h2' paddingY={6} >
-          {contents.aboutData.heading}</Typography>
+          {contents.aboutData.heading} </Typography>
       </Box>
       <Box className='aboutsectiocolor padding-top-bottom ' >
 
         <img id='aboutsectionimg'  src={AboutSectionimg} alt="" />
 
-        <Box id='aboutsectiontypo' padding={5} width={"55%"} display={'flex'} alignItems={'start'} justifyContent={'center'} flexDirection={'column'}>
+        <Box id='aboutsectiontypo ' className="about-welcome" padding={5}  display={'flex'} alignItems={'start'} justifyContent={'center'} flexDirection={'column'}>
           <Typography id='about-heading'  variant='h3' fontSize={40}  fontWeight={'600'} textAlign={'center'} paddingBottom={3} color={'white'}>{contents.aboutSectionData.heading}</Typography>
           <Typography id="typography">  {contents.aboutSectionData.text}</Typography>
 
