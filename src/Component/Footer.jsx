@@ -29,7 +29,7 @@ const Footer = () => {
             <Box sx={{ maxWidth: 1920, margin: 'auto' }} width={'100%'} color={"#FFFFFF"} className="flex-center" flexDirection={'column'} bgcolor={"#053480"} >
                 <Box width={'87%'} paddingTop={20} display={'flex'} alignItems={'start'} justifyContent={"space-between"} flexWrap={'wrap'}>
                     <Box  className="footer-sec1" >
-                      <Link to={"/"}>  <img src={Soham} alt="" /></Link>
+                      <Link to="/">  <img src={Soham} alt="" /></Link>
                         <Typography color={'#FFFFFF'} marginTop={2.5} fontSize={16}>
                             {contents.footerData.aboutText}
                         </Typography>
