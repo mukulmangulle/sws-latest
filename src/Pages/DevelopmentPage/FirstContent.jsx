@@ -18,7 +18,6 @@ const FirstContent = () => {
                                 and powerful server-sides web applications. Our company
                                 deliver robust CMSs, and web-based solutions, we manage
                                 complex databases</Typography>
-                            <BlogButton onClick={() => { alert("button click new") }} />
                         </Box>
                         <Box className="img-container" display={'flex'} alignItems={'center'} justifyContent={"center"}   >
                             <Box className="background-service" display={'flex'} alignItems={'center'} justifyContent={"center"} >

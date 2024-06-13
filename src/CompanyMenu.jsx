@@ -38,7 +38,6 @@ function CompanyMenu() {
                         <Link to={`/${process.env.SLUG_URL}/blogs/`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Blogs</Link>
                         <Link to={`/${process.env.SLUG_URL}/contact-us/`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Contact us</Link>
                         <Link to={`/${process.env.SLUG_URL}/bloges`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}> blog</Link>
-                        <Link to={`/${process.env.SLUG_URL}/Php_department`} style={{ padding: '12px', textDecoration: "none" }} onClick={closeMenu}>Php department</Link>
                     </ul>
                 </div>
             )}

@@ -8,7 +8,11 @@ import Form  from "./Form"
 
 const Ecommerce = () => {
     return (
-        <>
+        <>  <Box>
+        <Box id="about-background" >
+            <Typography id='Heading-h2' variant='h2' paddingTop={7} >Ecommerce Development</Typography>
+        </Box>
+    </Box>
             <Box className="padding-top-bottom" maxWidth={"1920px"} margin={'auto'} display={"flex"} alignItems={"center"} justifyContent={"center"}>
                 <Box width={"84%"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
                     <Box id="man-reverce1" width={"100%"} className="flex-between-wrap"  >
@@ -18,7 +22,6 @@ const Ecommerce = () => {
                                 and powerful server-sides web applications. Our company
                                 deliver robust CMSs, and web-based solutions, we manage
                                 complex databases</Typography>
-                            <BlogButton onClick={() => { alert("button click new") }} />
                         </Box>
                         <Box className="img-container" display={'flex'} alignItems={'center'} justifyContent={"center"}   >
                             <Box className="background-service" display={'flex'} alignItems={'center'} justifyContent={"center"} >

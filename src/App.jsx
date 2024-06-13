@@ -50,12 +50,12 @@ function App() {
         <Route path={`/${process.env.SLUG_URL}/career/`} element={<Careermain />} />
         <Route path={`/${process.env.SLUG_URL}/services/`} element={<Service />} />
 
-        <Route path={`/${process.env.SLUG_URL}/Php_Development`} element={<PhpDepartment />} />
-        <Route path={`/${process.env.SLUG_URL}/wordpress_Development`} element={<WordPress />} />
-        <Route path={`/${process.env.SLUG_URL}/ Shopify_Development`} element={< Shopify />} />
-        <Route path={`/${process.env.SLUG_URL}/WebDesigning`} element={<WebDesigning />} />
-        <Route path={`/${process.env.SLUG_URL}/GraphicDesigning`} element={<Graphic />} />
-        <Route path={`/${process.env.SLUG_URL}/Ecommerce_Development`} element={<Ecommerce />} />
+        <Route path={`/${process.env.SLUG_URL}/services/php-development/`} element={<PhpDepartment />} />
+        <Route path={`/${process.env.SLUG_URL}/services/wordpress-development/`} element={<WordPress />} />
+        <Route path={`/${process.env.SLUG_URL}/services/shopify-development/`} element={< Shopify />} />
+        <Route path={`/${process.env.SLUG_URL}/services/web-designing/`} element={<WebDesigning />} />
+        <Route path={`/${process.env.SLUG_URL}/services/graphic-designing/`} element={<Graphic />} />
+        <Route path={`/${process.env.SLUG_URL}/services/ecommerce-development/`} element={<Ecommerce />} />
 
 
       </Routes>

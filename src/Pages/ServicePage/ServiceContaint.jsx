@@ -8,6 +8,7 @@ import Graphic from "../../assets/Service/graphic.svg"
 import Ecommerce from "../../assets/Service/ecoomerce.svg"
 import ServiceButton from '../../Child-Component/ServiceButton'
 import ProjectRequirement from './ProjectRequirement'
+import { Link } from 'react-router-dom'
 
 
 
@@ -21,12 +22,17 @@ const ServiceContaint = () => {
                     <Box id="man-reverce1" width={"100%"} className="flex-between-wrap"  >
                         <Box width={617} id="devlopment-text" >
                             <Typography variant='h4' id="typo-fray-hrading">PHP Development
-</Typography>
+                            </Typography>
                             <Typography id="Typo-gray-start" >PHP development services focus on implementing secure and powerful server-sides web applications. Our company deliver robust CMSs, and web-based solutions, we manage complex databases,
 
 
                             </Typography>
-                            <ServiceButton onClick={() => { alert("button click new") }} />
+                            {/* <Link to={`/${process.env.SLUG_URL}/services/php-development/`} style={{  textDecoration: "none" }} >
+                                 <Button sx={{marginTop:"10px"}}  className='apply-now' >
+                                Read More
+                            </Button> 
+                            </Link>*/}
+
                         </Box>
                         <Box className="img-container"   >
                             <Box className="background-service" display={'flex'} alignItems={'center'} justifyContent={"center"} >
@@ -49,7 +55,11 @@ const ServiceContaint = () => {
 
 
                             </Typography>
-                            <ServiceButton onClick={() => { alert("button click new") }} />
+                            <Link to={`/${process.env.SLUG_URL}/services/wordpress-development/`} style={{  textDecoration: "none" }} >
+                                 <Button sx={{marginTop:"10px"}} type="submit" className='apply-now' >
+                                Read More
+                            </Button>
+                            </Link>
                         </Box>
 
                     </Box>
@@ -60,7 +70,11 @@ const ServiceContaint = () => {
                             <Typography variant='h4' id="typo-fray-hrading">Shopify Development</Typography>
                             <Typography id="Typo-gray-start" >Armed with a team of efficient UI/UX designers and Shopify certified developers, our Shopify web development service will help you with responsive, user-friendly and interactive Shopify themes for your store.
                             </Typography>
-                            <ServiceButton />
+                            <Link to={`/${process.env.SLUG_URL}/services/shopify-development/`} style={{  textDecoration: "none" }} >
+                                 <Button sx={{marginTop:"10px"}} type="submit" className='apply-now' >
+                                Read More
+                            </Button>
+                            </Link>
                         </Box>
                         <Box className="img-container" >
                             <Box className="background-service" display={'flex'} alignItems={'center'} justifyContent={"center"} >
@@ -83,7 +97,11 @@ const ServiceContaint = () => {
                             <Typography variant='h4' id="typo-fray-hrading">Web Designing</Typography>
                             <Typography id="Typo-gray-start" >Web designing services are professional services that involve the creation, development, and maintenance of websites for individuals, businesses, organizations, or institutions.
                             </Typography>
-                            <ServiceButton />
+                            <Link to={`/${process.env.SLUG_URL}/services/web-designing/`} style={{  textDecoration: "none" }} >
+                                 <Button sx={{marginTop:"10px"}} type="submit" className='apply-now' >
+                                Read More
+                            </Button>
+                            </Link>
                         </Box>
                     </Box>
 
@@ -93,7 +111,11 @@ const ServiceContaint = () => {
                             <Typography variant='h4' id="typo-fray-hrading">Graphic Designing</Typography>
                             <Typography id="Typo-gray-start" >Expert Graphic Design Services for a Wide Range of Industries. Our team of experienced graphic designers is here to help you stand out in your industry and drive business growth. Make a statement with professionally designed graphics that reflect your brand’s personality.
                             </Typography>
-                            <ServiceButton />                        </Box>
+                            <Link to={`/${process.env.SLUG_URL}/services/graphic-designing/`} style={{  textDecoration: "none" }} >
+                                 <Button sx={{marginTop:"10px"}} type="submit" className='apply-now' >
+                                Read More
+                            </Button>
+                            </Link>                     </Box>
                         <Box className="img-container" >
                             <Box className="background-service" display={'flex'} alignItems={'center'} justifyContent={"center"} >
                                 <img src={Graphic} alt="" />
@@ -115,7 +137,11 @@ const ServiceContaint = () => {
 
 
                             </Typography>
-                            <ServiceButton />
+                            <Link to={`/${process.env.SLUG_URL}/services/ecommerce-development/`} style={{  textDecoration: "none" }} >
+                                 <Button sx={{marginTop:"10px"}} type="submit" className='apply-now' >
+                                Read More
+                            </Button>
+                            </Link>
                         </Box>
                     </Box>
                 </Box>
